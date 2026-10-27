@@ -18,13 +18,9 @@ export const IconPhone3D = () => (
         <feDropShadow dx="0" dy="6" stdDeviation="5" floodColor="#0369A1" floodOpacity="0.5" />
       </filter>
     </defs>
-    {/* Base Sphere */}
     <rect x="4" y="4" width="56" height="56" rx="28" fill="url(#phoneGlow)" filter="url(#phoneShadow)" />
-    {/* 3D Glass Highlights */}
     <path d="M10 22C14 11 26 7 38 7C49 7 54 11 54 20C44 14 30 13 10 22Z" fill="url(#phoneShine)" />
-    {/* Metallic Phone Receiver */}
     <path d="M22.5 19.5C21.6 19.5 20.8 19.8 20.2 20.4L18.2 22.4C16.8 23.8 16.4 25.8 17.2 27.7C19.3 32.4 23 37.2 27.7 41.5C32.2 45.6 37.3 48.9 42.2 50.4C44.1 51 46.1 50.4 47.5 48.9L49.5 46.9C50.7 45.7 50.7 43.8 49.5 42.6L44.5 37.6C43.3 36.4 41.4 36.4 40.2 37.6L38.4 39.4C37.9 39.2 36.4 38.4 34.3 36.6C32.1 34.5 31.2 33.1 30.9 32.5L32.8 30.6C34 29.4 34 27.5 32.8 26.3L27.8 21.3C26.4 19.9 24.3 19.5 22.5 19.5Z" fill="#FFFFFF" />
-    {/* Sound Wave Accents */}
     <path d="M42 20C45 23 46.5 27 46.5 31" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" opacity="0.9" />
     <path d="M46.5 15.5C51 19.5 53 25 53 31" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" opacity="0.6" />
   </svg>
@@ -48,14 +44,11 @@ export const IconWhatsApp3D = () => (
     </defs>
     <rect x="4" y="4" width="56" height="56" rx="28" fill="url(#waGlow)" filter="url(#waShadow)" />
     <path d="M10 22C14 11 26 7 38 7C49 7 54 11 54 20C44 14 30 13 10 22Z" fill="url(#waShine)" />
-    {/* Chat Bubble */}
     <path d="M32 16C23.2 16 16 23.2 16 32C16 35.1 16.9 38 18.5 40.5L16.5 48L24.3 46C26.6 47.3 29.2 48 32 48C40.8 48 48 40.8 48 32C48 23.2 40.8 16 32 16Z" fill="#FFFFFF" />
-    {/* Phone icon inside bubble */}
     <path d="M26.2 24.8C25.7 23.7 25.2 23.7 24.7 23.7C24.3 23.7 23.8 23.7 23.3 24.2C22.8 24.7 21.5 25.9 21.5 28.3C21.5 30.7 23.3 33 23.5 33.3C23.8 33.7 26.9 38.6 31.7 40.6C35.7 42.3 36.5 41.9 37.4 41.8C38.3 41.7 40.3 40.6 40.7 39.4C41.1 38.2 41.1 37.2 41 37C40.9 36.8 40.5 36.7 40 36.4C39.5 36.2 37 35 36.5 34.8C36.1 34.6 35.7 34.5 35.4 35C35 35.6 34 36.8 33.7 37.2C33.4 37.5 33.1 37.6 32.6 37.3C32.1 37.1 30.5 36.6 28.6 34.9C27.1 33.6 26.1 32 25.8 31.5C25.5 31 25.8 30.7 26 30.5C26.3 30.2 26.6 29.8 26.8 29.5C27.1 29.2 27.2 29 27.4 28.6C27.6 28.2 27.5 27.9 27.4 27.6C27.3 27.4 26.7 25.9 26.2 24.8Z" fill="#128C7E" />
   </svg>
 );
 
-// Official High-Precision WhatsApp Vector Icon
 export const IconWhatsApp = ({ size = 18, color = "#FFFFFF", className = "" }) => (
   <svg 
     width={size} 
@@ -71,7 +64,6 @@ export const IconWhatsApp = ({ size = 18, color = "#FFFFFF", className = "" }) =
   </svg>
 );
 
-// Clean Vector Itinerary Document Icon
 export const IconItinerary = ({ size = 16, color = "currentColor", className = "" }) => (
   <svg 
     width={size} 
@@ -119,16 +111,11 @@ export const IconInstagram3D = () => (
         <feDropShadow dx="0" dy="6" stdDeviation="5" floodColor="#C13584" floodOpacity="0.5" />
       </filter>
     </defs>
-    {/* 3D Curved Squircle */}
     <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#igBase)" filter="url(#igShadow)" />
     <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#igGlowTop)" />
-    {/* Glass Top Curve */}
     <path d="M7 18C10 10 18 6 30 6C42 6 51 9 55 16C45 11 30 11 7 18Z" fill="url(#igShine)" />
-    {/* Camera Body */}
     <rect x="17" y="17" width="30" height="30" rx="9" stroke="#FFFFFF" strokeWidth="3" fill="none" />
-    {/* Camera Lens */}
     <circle cx="32" cy="32" r="7.5" stroke="#FFFFFF" strokeWidth="3" fill="none" />
-    {/* Lens Flash */}
     <circle cx="40.5" cy="23.5" r="2" fill="#FFFFFF" />
   </svg>
 );
@@ -151,303 +138,92 @@ export const IconFacebook3D = () => (
     </defs>
     <rect x="4" y="4" width="56" height="56" rx="28" fill="url(#fbGlow)" filter="url(#fbShadow)" />
     <path d="M10 22C14 11 26 7 38 7C49 7 54 11 54 20C44 14 30 13 10 22Z" fill="url(#fbShine)" />
-    {/* Bold 3D 'f' Symbol */}
     <path d="M37.5 33.5L38.4 27.5H32.7V23.6C32.7 21.9 33.5 20.3 36.1 20.3H38.7V15.2C38.7 15.2 36.3 14.8 34.1 14.8C29.4 14.8 26.3 17.6 26.3 22.8V27.5H21V33.5H26.3V48H32.7V33.5H37.5Z" fill="#FFFFFF" />
   </svg>
 );
 
-// --- OFFICIAL MNP HOLIDAYS ALL 19 PROMOTIONAL FLYERS & BROCHURES ---
-export const FLYERS_DATA = [
-  {
-    id: 'fl-1',
-    title: 'Thailand Tour Package (4N/5D)',
-    category: 'packages',
-    tag: 'Official Package Flyer',
-    price: '3★ ₹14,999 | 4★ ₹17,999',
-    desc: 'Explore the Land of Smiles! Includes Coral Island with lunch, Pattaya City tour, Tiger Park, Sunset Yacht party with liqueur, breakfast & airport transfers. No fixed dates.',
-    image: '/photos/mnp1.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-2',
-    title: 'Singapore, Malaysia & Thailand Group Departure',
-    category: 'departures',
-    tag: 'Ex-Ahmedabad & Mumbai',
-    price: '10 Nights / 11 Days',
-    desc: 'Fixed departure dates (Dec 2026 to Apr 2027). Includes return flight tickets, daily breakfast and dinner, all transfer sightseeing tickets, and airport pickups.',
-    image: '/photos/mnp2.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-3',
-    title: 'Kumbhalgarh & Udaipur Top Hotels Booking',
-    category: 'hotels',
-    tag: 'Verified Resorts',
-    price: 'Best Rates Guaranteed',
-    desc: 'Booking available for 20+ top luxury resorts: Club Mahindra, Lemon Tree, Radisson Blu, Raajsa Resort, Sajjanbagh, Via Lakhela, and scenic valley stays.',
-    image: '/photos/mnp3.jpeg',
-    branches: 'Ahmedabad: 97122 04028 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-4',
-    title: 'Tourist Visa / E-Visa Fast Assistance',
-    category: 'visas',
-    tag: '7 to 10 Working Days',
-    price: 'Hassle-Free Processing',
-    desc: 'Fast approvals for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
-    image: '/photos/mnp4.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-5',
-    title: 'Magical Udaipur Group Tour (2N/3D)',
-    category: 'departures',
-    tag: 'Fixed Group Tour',
-    price: 'ONLY ₹7,999/- Per Person',
-    desc: '13-14-15 November 2026 departure! Full 3-day itinerary: City Palace, Lake Pichola, Bahubali Hills, Shilpgram, cultural folk dance show, DJ party & Shrinathji Darshan.',
-    image: '/photos/mnp5.jpeg',
-    branches: 'Ahmedabad: 97122 04028'
-  },
-  {
-    id: 'fl-6',
-    title: 'Dubai Tourist Visa / E-Visa Assistance',
-    category: 'visas',
-    tag: 'Explore City of Dreams',
-    price: '7 to 10 Working Days',
-    desc: 'Safe, reliable & hassle-free Dubai visa processing with dedicated documentation assistance and fast approvals.',
-    image: '/photos/mnp6.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-7',
-    title: 'Family Tours - Cherish Every Moment',
-    category: 'packages',
-    tag: 'Family Holidays',
-    price: 'Custom Family Plans',
-    desc: 'Family-friendly vacations across Mountains, Beaches, Heritage forts, and scenic Road Trips with comfortable private transport and kid-friendly stays.',
-    image: '/photos/mnp7.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-8',
-    title: 'Corporate Tours & MICE Solutions',
-    category: 'corporate',
-    tag: 'Work Hard, Travel Smart',
-    price: 'Custom Corporate Proposals',
-    desc: 'Seamless corporate travel solutions: group flight bookings, luxury convention hotels, executive AC coaches, team building, and gala DJ nights.',
-    image: '/photos/mnp8.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-9',
-    title: 'Couple Tour - Romantic Escapes',
-    category: 'packages',
-    tag: 'Romantic Getaways',
-    price: 'Better Together Deals',
-    desc: 'Unforgettable couple vacations to Goa, Udaipur, Manali, and Andaman with candlelight beach dining and private luxury stays.',
-    image: '/photos/mnp9.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-10',
-    title: 'Visitor Visa Worldwide (USA, UK, Canada, Australia, Schengen)',
-    category: 'visas',
-    tag: 'Global Visa Desk',
-    price: 'Document Assistance',
-    desc: 'Tourist Visa, Family Visa, Business Visa, and Student Visa processing with complete documentation and expert file preparation.',
-    image: '/photos/mnp10.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-11',
-    title: 'Air Ticket Booking (Domestic & International)',
-    category: 'services',
-    tag: 'Best Airfares',
-    price: 'Quick Confirmation',
-    desc: 'Safe & secure flight bookings, exclusive airline deals, quick confirmation, and 24/7 flight customer support.',
-    image: '/photos/mnp11.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-12',
-    title: 'Hotel Booking (Domestic & International)',
-    category: 'hotels',
-    tag: 'Comfort & Luxury',
-    price: 'Best Deals Guaranteed',
-    desc: 'Stay in comfort, travel in style! Verified 3★, 4★, and 5★ hotels and heritage boutique resorts across India and worldwide.',
-    image: '/photos/mnp12.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-13',
-    title: 'Tourist Visa / E-Visa Destinations Showcase',
-    category: 'visas',
-    tag: 'Explore World Hassle-Free',
-    price: '7 to 10 Working Days',
-    desc: 'Comprehensive visa services for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
-    image: '/photos/mnp13.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-14',
-    title: 'International Tour Package (Paris, Santorini, Dubai, NY, Bali)',
-    category: 'packages',
-    tag: 'Global Dream Tours',
-    price: 'From Dream to Destination',
-    desc: 'World tour vacations with global destinations, hassle-free visa handling, premium verified hotels, and fully customized holiday plans.',
-    image: '/photos/mnp14.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
-  },
-  {
-    id: 'fl-15',
-    title: 'Vietnam 3 Cities Package (6 Nights / 7 Days)',
-    category: 'packages',
-    tag: 'Bestseller Vietnam',
-    price: '₹59,999/- without flight*',
-    desc: 'Three Cities One Unforgettable Journey: 2N Hanoi (Flower Garden Hotel), 2N Da Nang (Cicilla Hotel), 2N Ho Chi Minh (Adora Art Hotel). Includes 6 buffet breakfasts, Ninh Binh, Ba Na Hills & Mekong Delta.',
-    image: '/photos/mnp15.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-16',
-    title: 'Vietnam Grand 5 Destinations (9 Nights / 10 Days)',
-    category: 'packages',
-    tag: 'Ha Long Bay Cruise & Phu Quoc',
-    price: '₹89,999/- without flight*',
-    desc: '5 Destinations One Amazing Journey: Hanoi, Da Nang, Ho Chi Minh, Phu Quoc Island & 1 Night Overnight on La Regina Royal Cruise (Ha Long Bay). 9 buffet breakfasts included.',
-    image: '/photos/mnp16.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-17',
-    title: 'Vietnam Phu Quoc Island Adventure (4 Nights / 5 Days)',
-    category: 'packages',
-    tag: 'Island & Safari',
-    price: '₹49,999/- rate per adult',
-    desc: '4 Nights Times Corner Amalfi Hotel Phu Quoc. Includes Grand World Venice water taxi, Vin Pearl Safari, 4 Island speedboat tour, Cable Car, Sunset Town & Kiss Bridge.',
-    image: '/photos/mnp17.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-18',
-    title: 'Vietnam Hanoi, Ha Long Bay Cruise & Da Nang (5 Nights / 6 Days)',
-    category: 'packages',
-    tag: 'Cruise & Culture',
-    price: '₹54,999/- rate per adult',
-    desc: '2N Flower Garden Hanoi, 1N La Regina Royal Cruise (Ha Long Bay), 2N Cicilla Hotel Da Nang. 5 buffet breakfasts, Ninh Binh, Marble Mountain, Hoi An lantern boat & Ba Na Hills.',
-    image: '/photos/mnp18.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
-  },
-  {
-    id: 'fl-19',
-    title: 'Golden City Jaisalmer Desert Camp & Fort (3 Nights / 4 Days)',
-    category: 'packages',
-    tag: 'Rajasthan Desert Hit',
-    price: '₹25,500/- Per Couple',
-    desc: 'Arrival & Sam Sand Dunes Swiss luxury tent, camel safari, jeep dune bashing, Tanot Mata Temple, Longewala Border, Kuldhara abandoned village, Jaisalmer Fort & Patwon Ki Haveli.',
-    image: '/photos/mnp19.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 98251 79524'
-  }
-];
-
-// --- COMPREHENSIVE TOUR PACKAGES DATA (FEATURING OFFICIAL FLYERS) ---
-const PACKAGES_DATA = [
+// --- COMPREHENSIVE CURATED TOUR PACKAGES DATA (FEATURING BESPOKE HD PHOTOGRAPHY) ---
+export const PACKAGES_DATA = [
   // ==========================================
   // 1. DOMESTIC INDIA TOURS
   // ==========================================
   {
     id: 'dom-1',
     category: 'domestic',
-    title: 'Magical Udaipur Group Tour (Official Departure)',
-    tag: 'Official Flyer Deal',
-    duration: '3 Days / 2 Nights (13-15 Nov 2026)',
-    desc: 'Experience royal Udaipur and Shrinathji! Highlights include City Palace, Lake Pichola, Bahubali Hills, Shilpgram, traditional Rajasthani culture show, DJ party, and full dining.',
+    title: 'Magical Udaipur & Shrinathji Royal Tour',
+    tag: 'Bestseller Heritage',
+    duration: '3 Days / 2 Nights',
+    desc: 'Experience royal Udaipur and Shrinathji! Highlights include City Palace, Lake Pichola, Bahubali Hills, Shilpgram, traditional Rajasthani culture show, DJ party, and full royal dining.',
     price: '₹7,999/- per person',
     location: 'Udaipur & Shrinathji, Rajasthan',
-    rating: '★ 4.9 (Official Group Tour)',
-    inclusions: ['City Palace & Jagdish Temple', 'Lake Pichola & Fateh Sagar Lake', 'Bahubali Hills & Shilpgram Tour', 'Rajasthani Culture Show & DJ Party', 'Shrinathji Darshan Sightseeing', 'All Meals (Breakfast, Lunch, Dinner)'],
-    image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp5.jpeg'
+    rating: '★ 4.9 (Official Tour)',
+    inclusions: ['City Palace & Jagdish Temple Entry', 'Lake Pichola & Fateh Sagar Sightseeing', 'Bahubali Hills & Shilpgram Cultural Tour', 'Rajasthani Folk Dance & DJ Night', 'Shrinathji Darshan Excursion', 'All Meals (Breakfast, Lunch, Dinner)'],
+    image: '/images/udaipur.jpg'
   },
   {
     id: 'dom-kumbhalgarh',
     category: 'domestic',
-    title: 'Kumbhalgarh & Udaipur Luxury Resorts & Fort Tour',
-    tag: 'Official Flyer Booking',
-    duration: 'Flexible 3D/2N or 4D/3N',
-    desc: 'Booking available for over 20+ top luxury resorts: Club Mahindra, Radisson Blu, Lemon Tree, Raajsa Resort, Sajjanbagh, Via Lakhela, and scenic valley stays with Kumbhalgarh Fort Wall safari.',
+    title: 'Kumbhalgarh & Udaipur Luxury Heritage Resorts',
+    tag: 'Luxury Heritage Stay',
+    duration: '4 Days / 3 Nights',
+    desc: 'Stay at premier luxury heritage resorts: Club Mahindra, Radisson Blu, Lemon Tree, Raajsa Resort, and Via Lakhela with private chauffeur and Kumbhalgarh Fort Great Wall safari.',
     price: 'Best Rates Guaranteed',
     location: 'Kumbhalgarh & Udaipur, Rajasthan',
     rating: '★ 5.0 (20+ Top Resorts)',
-    inclusions: ['20+ Verified Luxury Heritage Resorts', 'Kumbhalgarh Great Wall Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Pool Access'],
-    image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp3.jpeg'
+    inclusions: ['Verified Luxury Heritage Resort Stay', 'Kumbhalgarh Great Wall Safari Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Swimming Pool Access'],
+    image: '/images/kumbhalgarh.jpg'
   },
   {
     id: 'dom-7',
     category: 'domestic',
-    title: 'Golden City Jaisalmer Desert Camp & Fort Package',
-    tag: 'Official Flyer Deal',
+    title: 'Golden City Jaisalmer Desert Camp & Fort Tour',
+    tag: 'Desert Camp Special',
     duration: '4 Days / 3 Nights',
-    desc: 'Arrival welcome with tikka, aarti & dhol, luxury Swiss tent stay at Sam Sand Dunes, camel safari, jeep dune bashing, Tanot Mata Temple, Longewala Border, Kuldhara village & Jaisalmer Fort.',
+    desc: 'Traditional welcome with tikka, aarti & dhol, luxury Swiss tent stay at Sam Sand Dunes, camel safari, sunset jeep dune bashing, Tanot Mata Temple, Longewala Border & Jaisalmer Fort.',
     price: '₹25,500/- Per Couple',
     location: 'Jaisalmer & Sam Sand Dunes, Rajasthan',
-    rating: '★ 5.0 (Desert Camp Special)',
-    inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Music, Folk Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Meals Included'],
-    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp19.jpeg'
-  },
-  {
-    id: 'dom-2',
-    category: 'domestic',
-    title: 'Enchanting Ooty & Coonoor Hills',
-    tag: 'Trending Hill Station',
-    duration: '5 Days / 4 Nights',
-    desc: 'Board the historic UNESCO Nilgiri Toy Train, take misty walks across sprawling emerald tea gardens, marvel at Botanical Gardens, and catch sunset panoramas over Doddabetta Peak.',
-    price: '₹18,500*',
-    location: 'Ooty & Coonoor, Tamil Nadu',
-    rating: '★ 4.8 (240+ reviews)',
-    inclusions: ['Hillview Luxury Resort', 'Nilgiri Heritage Toy Train Ride', 'Tea Factory & Fresh Tasting Tour', 'Dedicated Sightseeing Cab', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80'
+    rating: '★ 5.0 (Couples & Families)',
+    inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Folk Music, Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Traditional Meals'],
+    image: '/images/jaisalmer.jpg'
   },
   {
     id: 'dom-3',
     category: 'domestic',
-    title: 'Heavenly Kashmir, Gulmarg & Pahalgam',
+    title: 'Heavenly Kashmir, Dal Lake, Gulmarg & Pahalgam',
     tag: 'Crown of India',
     duration: '6 Days / 5 Nights',
-    desc: 'Stay on a handcrafted cedar houseboat on Dal Lake, ride the world’s highest Gulmarg Gondola over snowy peaks, explore the saffron fields and Betaab Valley of Pahalgam.',
-    price: '₹24,999*',
-    location: 'Kashmir, India',
-    rating: '★ 4.9 (480+ reviews)',
-    inclusions: ['1 Night Luxury Houseboat', '4 Nights 4★ Hotel', 'Dal Lake Shikara Ride', 'Gulmarg Cable Car Assistance', 'Breakfast & Dinner (MAP Plan)'],
-    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80'
+    desc: 'Stay on a handcrafted cedar houseboat on Dal Lake, ride the world’s highest Gulmarg Gondola over snowy peaks, and explore the saffron fields and Betaab Valley of Pahalgam.',
+    price: '₹24,999/- per person',
+    location: 'Srinagar, Gulmarg & Pahalgam, Kashmir',
+    rating: '★ 4.9 (480+ Reviews)',
+    inclusions: ['1 Night Luxury Cedar Houseboat Stay', '4 Nights 4★ Valley-View Hotel', 'Dal Lake Shikara Boat Ride with Flowers', 'Gulmarg Cable Car Gondola Pass Assistance', 'Breakfast & Dinner (MAP Plan)'],
+    image: '/images/kashmir.jpg'
   },
   {
     id: 'dom-4',
     category: 'domestic',
-    title: 'Vibrant Goa Beach & Watersports',
+    title: 'Vibrant Goa Beach, Luxury Cabana & Watersports',
     tag: 'Top Beach Vacation',
     duration: '4 Days / 3 Nights',
-    desc: 'Feel the ocean breeze on Calangute and Baga beaches, parasail over turquoise waves, experience a Mandovi River evening cruise with live Goan folk music, and visit Old Goa churches.',
-    price: '₹14,500*',
+    desc: 'Feel the ocean breeze on Calangute, Baga & South Goa beaches. Parasail over turquoise waves, experience a Mandovi River evening cruise with live Goan folk music, and visit historic churches.',
+    price: '₹14,500/- per person',
     location: 'North & South Goa, India',
-    rating: '★ 4.8 (390+ reviews)',
-    inclusions: ['4★ Beachside Resort with Pool', 'Sunset River Cruise', 'Speedboat & Parasailing Combo', 'AC Sedan / SUV Transfers', 'Daily Breakfast Buffet'],
-    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80'
+    rating: '★ 4.8 (390+ Reviews)',
+    inclusions: ['4★ Beachside Luxury Resort with Pool', 'Sunset River Cruise on Mandovi', 'Speedboat, Bumper & Parasailing Combo', 'AC Private Sedan / SUV Transfers', 'Daily Multi-Cuisine Breakfast Buffet'],
+    image: '/images/goa.jpg'
   },
   {
     id: 'dom-5',
     category: 'domestic',
-    title: 'God’s Own Kerala, Munnar & Alleppey',
-    tag: 'Nature & Wellness',
+    title: 'God’s Own Kerala, Munnar Hills & Alleppey Houseboat',
+    tag: 'Nature & Serenity',
     duration: '5 Days / 4 Nights',
-    desc: 'Drive through misty tea estates in Munnar, encounter elephants at Periyar sanctuary in Thekkady, and sleep aboard a private luxury houseboat cruising the palm backwaters of Alleppey.',
-    price: '₹19,999*',
-    location: 'Kerala, India',
-    rating: '★ 4.9 (340+ reviews)',
-    inclusions: ['Private Houseboat Cruise', 'Munnar 4★ Tea Valley Resort', 'Spice Plantation Guided Tour', 'Private Dedicated Vehicle', 'All Meals on Houseboat'],
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80'
+    desc: 'Drive through misty emerald tea estates in Munnar, encounter elephants at Periyar sanctuary in Thekkady, and sleep aboard a private luxury houseboat cruising the palm backwaters of Alleppey.',
+    price: '₹19,999/- per person',
+    location: 'Munnar, Thekkady & Alleppey, Kerala',
+    rating: '★ 4.9 (340+ Reviews)',
+    inclusions: ['Private Luxury Houseboat Cruise & Overnight', 'Munnar 4★ Tea Valley Luxury Resort', 'Spice Plantation Guided Nature Tour', 'Private Dedicated Vehicle Throughout', 'All Meals Included on Houseboat'],
+    image: '/images/kerala.jpg'
   },
 
   // ==========================================
@@ -456,288 +232,398 @@ const PACKAGES_DATA = [
   {
     id: 'int-3',
     category: 'international',
-    title: 'Thailand Tour Package (Pattaya, Coral Island & Yacht Party)',
-    tag: 'Official Flyer Deal',
+    title: 'Thailand Escapes (Bangkok, Pattaya & Sunset Yacht)',
+    tag: 'Bestseller International',
     duration: '5 Days / 4 Nights',
-    desc: 'Explore the Land of Smiles! Coral Island with lunch, Pattaya City tour (Big Buddha, Gems Gallery, View Point), 1st day breakfast at Tiger Topia, Sunset Yacht party with liqueur & airport transfers.',
+    desc: 'Explore the Land of Smiles! Coral Island speedboat tour with lunch, Pattaya City tour (Big Buddha, Gems Gallery, View Point), breakfast at Tiger Topia, Sunset Yacht party with drinks & transfers.',
     price: '3★ ₹14,999 | 4★ ₹17,999',
     location: 'Bangkok & Pattaya, Thailand',
     rating: '★ 4.9 (MNP Bestseller)',
-    inclusions: ['Airport Pickup & Drop Transfers', '1st Day Breakfast at Tiger Topia', 'Daily Buffet Breakfast', 'Coral Island Speedboat Tour with Lunch', 'Pattaya City Tour & View Point', 'Sunset Yacht Party with Liqueur', 'Visa on Arrival FREE for Indians'],
-    image: 'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp1.jpeg'
-  },
-  {
-    id: 'int-5',
-    category: 'international',
-    title: 'Singapore, Malaysia & Thailand 10N/11D Group Departure',
-    tag: 'Official Ex-Ahmedabad & Mumbai',
-    duration: '11 Days / 10 Nights',
-    desc: 'Specially planned group departure package ex-Ahmedabad & Mumbai! Dates: Dec 2026, Jan, Feb, Mar, Apr 2027. Includes flights, daily breakfast & dinner, all transfer sightseeing tickets, and airport pickups.',
-    price: 'Special Group Departure Quote',
-    location: 'Singapore, Malaysia & Thailand',
-    rating: '★ 5.0 (Fixed Group Departure)',
-    inclusions: ['Roundtrip International Flight Tickets', 'Daily Breakfast and Dinner Included', 'All Transfer Sightseeing with Entry Tickets', 'Airport Pickups and Drops Throughout', 'Universal Studios & Sentosa Access', 'Kuala Lumpur, Genting & Bangkok Highlights'],
-    image: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp2.jpeg'
+    inclusions: ['Airport Pickup & Drop Transfers in AC Coach', '1st Day Welcome Breakfast at Tiger Topia', 'Daily Buffet Breakfast at 3★/4★ Hotel', 'Coral Island Speedboat Tour with Lunch', 'Pattaya City Tour & View Point Panorama', 'Sunset Yacht Cruise Party with Drinks', 'Visa on Arrival FREE for Indians'],
+    image: '/images/thailand.jpg'
   },
   {
     id: 'int-15',
     category: 'international',
-    title: 'Vietnam 3 Cities Package (Hanoi, Da Nang & Ho Chi Minh)',
-    tag: 'Official Flyer Deal',
+    title: 'Vietnam 3 Cities (Hanoi, Da Nang & Ho Chi Minh)',
+    tag: 'Top Rated Vietnam',
     duration: '7 Days / 6 Nights',
-    desc: 'Three Cities One Unforgettable Journey: 2N Flower Garden Hanoi Hotel, 2N Cicilla Hotel Da Nang, 2N Adora Art Hotel Ho Chi Minh. 6 Buffet breakfasts, Ninh Binh, Ba Na Hills & Mekong Delta.',
-    price: '₹59,999/- without flight*',
+    desc: 'Three Cities One Unforgettable Journey: 2N Flower Garden Hanoi, 2N Cicilla Hotel Da Nang, 2N Adora Art Hotel Ho Chi Minh. Includes 6 buffet breakfasts, Ninh Binh, Ba Na Hills & Mekong Delta.',
+    price: '₹59,999/- per person',
     location: 'Hanoi, Da Nang & Ho Chi Minh, Vietnam',
     rating: '★ 4.9 (Popular Vietnam)',
-    inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily Buffet Breakfasts', 'Hanoi 4 Hours City Tour + Ninh Binh Tour', 'Marble Mountain, Coconut Village & Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Tour', 'Cu Chi Tunnel & Mekong Delta Tour'],
-    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp15.jpeg'
+    inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily International Buffet Breakfasts', 'Hanoi City Tour & Ninh Binh Boat Cruise', 'Marble Mountain, Coconut Village Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Golden Bridge', 'Cu Chi Tunnels & Mekong Delta Excursion'],
+    image: '/images/vietnam_bridge.jpg'
   },
   {
     id: 'int-16',
     category: 'international',
-    title: 'Vietnam Grand 5 Destinations (With Ha Long Bay Cruise & Phu Quoc)',
-    tag: 'Official Flyer Deal',
+    title: 'Vietnam Grand 5 Destinations & Ha Long Bay Cruise',
+    tag: 'Luxury Cruise Special',
     duration: '10 Days / 9 Nights',
-    desc: '5 Destinations One Amazing Journey: Hanoi, Da Nang, Ho Chi Minh, Phu Quoc Island & 1 Night Luxury Overnight Cruise on La Regina Royal Cruise (Ha Long Bay). 9 buffet breakfasts included.',
-    price: '₹89,999/- without flight*',
+    desc: '5 Destinations One Amazing Journey: Hanoi, Da Nang, Ho Chi Minh, Phu Quoc Island & 1 Night Luxury Overnight Cruise on La Regina Royal Cruise in Ha Long Bay. 9 buffet breakfasts included.',
+    price: '₹89,999/- per person',
     location: 'Hanoi, Da Nang, Ho Chi Minh, Phu Quoc & Ha Long Bay',
     rating: '★ 5.0 (Luxury Cruise Special)',
-    inclusions: ['1 Night Stay at La Regina Royal Cruise (Ha Long Bay)', '2N Flower Garden Hanoi + 2N Cicilla Da Nang', '2N Adora Art Hotel Ho Chi Minh', '2N Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour, Vin Pearl Safari & Speedboat Tour', 'Hanoi City, Ninh Binh & Ba Na Hills Golden Bridge', '9 Daily Buffet Breakfasts'],
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp16.jpeg'
+    inclusions: ['1 Night Stay at La Regina Royal Cruise (Ha Long Bay)', '2N Flower Garden Hanoi + 2N Cicilla Da Nang', '2N Adora Art Hotel Ho Chi Minh', '2N Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour, Vin Pearl Safari & Speedboat Tour', 'Hanoi City, Ninh Binh & Ba Na Hills Golden Bridge', '9 Daily International Buffet Breakfasts'],
+    image: '/images/vietnam.jpg'
   },
   {
-    id: 'int-17',
+    id: 'int-5',
     category: 'international',
-    title: 'Vietnam Phu Quoc Island Adventure & Safari',
-    tag: 'Official Flyer Deal',
-    duration: '5 Days / 4 Nights',
-    desc: 'Island, Adventure, Culture, Relax! 4 Nights Stay at Times Corner Amalfi Hotel Phu Quoc. Includes Grand World Venice water taxi, Vin Pearl Safari, 4 Island speedboat tour, Cable Car & Kiss Bridge.',
-    price: '₹49,999/- rate per adult',
-    location: 'Phu Quoc Island, Vietnam',
-    rating: '★ 4.9 (Tropical Island)',
-    inclusions: ['4 Nights at Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour with Venice Water Taxi', 'Vin Pearl Safari & Vin Wonder Pass', '4 Island Tour in South by Speedboat', 'One Way Cable Car, Sunset Town & Kiss Bridge', 'Kiss of The Sea Spectacular Show Pass', '4 Daily Buffet Breakfasts'],
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp17.jpeg'
-  },
-  {
-    id: 'int-18',
-    category: 'international',
-    title: 'Vietnam Hanoi, Ha Long Bay Cruise & Da Nang',
-    tag: 'Official Flyer Deal',
-    duration: '6 Days / 5 Nights',
-    desc: '2 Nights Flower Garden Hanoi Hotel, 1 Night Luxury La Regina Royal Cruise (Ha Long Bay), 2 Nights Cicilla Hotel Da Nang. 5 buffet breakfasts, Ninh Binh, Marble Mountain, Hoi An lantern boat & Ba Na Hills.',
-    price: '₹54,999/- rate per adult',
-    location: 'Hanoi, Ha Long Bay & Da Nang',
-    rating: '★ 4.9 (Cruise & Heritage)',
-    inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '1N Stay on Luxury La Regina Royal Cruise (Ha Long Bay)', '2N Stay at Cicilla Hotel Da Nang', '5 Daily Buffet Breakfasts', 'Hanoi City Tour & Ninh Binh Day Tour', 'Marble Mountain & Coconut Village Basket Boat', 'Hoi An Ancient Town Lantern Boat & Ba Na Hills'],
-    image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp18.jpeg'
-  },
-  {
-    id: 'int-14',
-    category: 'international',
-    title: 'International Tour Packages (Paris, Santorini, Dubai, NY, Bali)',
-    tag: 'Official Flyer Showcase',
-    duration: 'Custom 5D to 10D',
-    desc: 'From dream to destination, explore the world with our international tours! Global destinations, hassle-free visa handling, premium hotels, and customized packages tailored to you.',
-    price: 'Best International Rates',
-    location: 'Europe, UAE, Bali & Global',
-    rating: '★ 5.0 (World Tour Special)',
-    inclusions: ['Global Destinations Coverage', 'Hassle-Free Visa & E-Visa Processing', 'Premium 4★ & 5★ Accommodations', 'Airport Transfers & Guided Sightseeing', 'Customized Family & Group Itineraries'],
-    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp14.jpeg'
+    title: 'Singapore, Malaysia & Thailand Grand Departure',
+    tag: 'Fixed Group Departure',
+    duration: '11 Days / 10 Nights',
+    desc: 'Specially planned group departure package ex-Ahmedabad & Mumbai! Includes return flights, daily breakfast & dinner, all transfer sightseeing tickets, and airport pickups throughout.',
+    price: 'Special Group Departure Quote',
+    location: 'Singapore, Kuala Lumpur & Bangkok',
+    rating: '★ 5.0 (Ex-Ahmedabad & Mumbai)',
+    inclusions: ['Roundtrip International Flight Tickets', 'Daily Breakfast and Dinner Included', 'All Transfer Sightseeing with Entry Tickets', 'Airport Pickups and Drops Throughout', 'Universal Studios Singapore & Sentosa Island', 'Kuala Lumpur, Genting Highlands & Bangkok'],
+    image: '/images/singapore.jpg'
   },
   {
     id: 'int-2',
     category: 'international',
-    title: 'Magical Bali Island & Nusa Penida',
-    tag: 'Top Rated Tropical',
+    title: 'Magical Bali Island, Ubud Terraces & Nusa Penida',
+    tag: 'Tropical Island Paradise',
     duration: '6 Days / 5 Nights',
-    desc: 'Soar on iconic swings over Ubud’s lush terraced hills, pray at sacred sea temples like Tanah Lot, ride speedboats to Nusa Penida’s T-Rex cliff, and sip cocktails at Seminyak beach clubs.',
-    price: '₹32,500*',
-    location: 'Bali, Indonesia',
-    rating: '★ 4.9 (560+ reviews)',
-    inclusions: ['4★ Ubud & Kuta Resorts', 'Nusa Penida West Island Tour & Boat', 'Bali Jungle Swing Pass', 'Private Chauffeur Daily', 'Airport Pickup & Drop'],
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80'
+    desc: 'Soar on iconic jungle swings over Ubud’s lush terraced hills, pray at sacred sea temples like Tanah Lot, ride speedboats to Nusa Penida’s T-Rex cliff, and sip cocktails at Seminyak beach clubs.',
+    price: '₹32,500/- per person',
+    location: 'Ubud, Nusa Penida & Kuta, Bali',
+    rating: '★ 4.9 (560+ Reviews)',
+    inclusions: ['4★ Ubud Rainforest & Kuta Beach Resorts', 'Nusa Penida West Island Tour & Speedboat', 'Bali Jungle Swing Pass & Rice Terrace Walk', 'Private Chauffeur Sedan Daily', 'Airport Pickup & Drop Transfers'],
+    image: '/images/bali.jpg'
   },
   {
     id: 'int-4',
     category: 'international',
     title: 'Dazzling Dubai & Abu Dhabi Grandeur',
-    tag: 'Luxury Modern Marvel',
+    tag: 'Modern Luxury Marvel',
     duration: '5 Days / 4 Nights',
     desc: 'Gaze at the planet from Burj Khalifa’s 124th observation deck, thrill yourself with 4x4 desert dune bashing and BBQ belly dance show, and admire the white marble domes of Sheikh Zayed Mosque.',
-    price: '₹28,900*',
-    location: 'Dubai & Abu Dhabi, UAE',
-    rating: '★ 4.9 (510+ reviews)',
-    inclusions: ['4★ Luxury City Centre Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 & BBQ Dinner', 'Dubai Marina Dhow Dinner Cruise', 'UAE Tourist Visa Included'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp6.jpeg'
+    price: '₹28,900/- per person',
+    location: 'Dubai Marina & Abu Dhabi, UAE',
+    rating: '★ 4.9 (510+ Reviews)',
+    inclusions: ['4★ Luxury City Centre / Marina Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 Dune Bashing & BBQ Dinner', 'Dubai Marina Luxury Dhow Dinner Cruise', 'UAE Tourist Visa Processing Included'],
+    image: '/images/dubai.jpg'
   },
 
   // ==========================================
-  // 3. SPECIAL HONEYMOON PACKAGES
+  // 3. HONEYMOON SPECIALS
   // ==========================================
-  {
-    id: 'hny-flyer',
-    category: 'honeymoon',
-    title: 'Couple Tour - Romantic Escapes & Honeymoon Getaways',
-    tag: 'Official Flyer Deal',
-    duration: 'Custom 4D/3N to 6D/5N',
-    desc: 'Romantic escapes, unforgettable moments, plan your couple’s getaway now! Romantic destinations in Goa, Udaipur, Manali, and Andaman with candlelight dinners and luxury stays.',
-    price: 'Better Together Deals',
-    location: 'Goa, Udaipur, Manali, Andaman & Global',
-    rating: '★ 5.0 (Couple Specialist)',
-    inclusions: ['Handpicked Romantic Resorts & Overwater Villas', 'Candlelight Beach Dinner Setup', 'Flower Bed Decoration & Honeymoon Cake', 'Couple Spa Rejuvenation Session', 'Private Chauffeur Sedan Car Throughout'],
-    image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp9.jpeg'
-  },
   {
     id: 'hny-1',
     category: 'honeymoon',
-    title: 'Maldives Overwater Luxury Romance',
+    title: 'Maldives Overwater Luxury Lagoon Villa',
     tag: 'Pure Romantic Bliss',
     duration: '4 Days / 3 Nights',
     desc: 'Live in a private overwater villa perched directly over turquoise lagoons. Includes complimentary couple spa massage, floating breakfast, and private beach candlelight dinner.',
-    price: '₹44,999*',
-    location: 'Maldives Islands',
-    rating: '★ 5.0 (380+ couples)',
-    inclusions: ['Overwater Villa with Pool Access', 'Speedboat Airport Transfers', 'Candlelight 3-Course Beach Dinner', 'Snorkeling & Coral Reef Safari', 'All-Inclusive Dine Around Meals'],
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80'
+    price: '₹44,999/- per person',
+    location: 'Maldives Private Island Atoll',
+    rating: '★ 5.0 (380+ Couples)',
+    inclusions: ['Overwater Villa with Direct Lagoon Access', 'Speedboat / Seaplane Airport Transfers', 'Candlelight 3-Course Beachside Dinner', 'Snorkeling & Coral Reef Safari Pass', 'All-Inclusive Dine Around Meals & Drinks'],
+    image: '/images/maldives.jpg'
   },
   {
     id: 'hny-2',
     category: 'honeymoon',
-    title: 'Bali Romantic Private Pool Villa & Spa',
+    title: 'Bali Romantic Private Pool Villa & Clifftop Spa',
     tag: 'Signature Couple Getaway',
     duration: '6 Days / 5 Nights',
-    desc: 'Unwind in your secluded private villa with fragrant flower petal baths, private clifftop Uluwatu sunset dinner with Kecak fire dance, and catamaran yacht cruise to Lembongan island.',
-    price: '₹36,999*',
+    desc: 'Unwind in your secluded private pool villa with fragrant flower petal baths, private clifftop Uluwatu sunset dinner with Kecak fire dance, and catamaran yacht cruise to Lembongan island.',
+    price: '₹36,999/- per person',
     location: 'Ubud & Seminyak, Bali',
-    rating: '★ 4.9 (310+ couples)',
-    inclusions: ['Private Pool Luxury Villa Stay', 'Flower Petal Bath & Couple Massage', 'Uluwatu Clifftop Sunset Dinner', 'Private Chauffeur Car Throughout', 'Honeymoon Cake & Room Setup'],
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80'
+    rating: '★ 4.9 (310+ Couples)',
+    inclusions: ['Private Pool Luxury Villa Stay', 'Flower Petal Bath & Couple Aromatherapy Massage', 'Uluwatu Clifftop Sunset Dinner Setup', 'Private Chauffeur Car Throughout', 'Honeymoon Cake & Romantic Room Decor'],
+    image: '/images/bali_honeymoon.jpg'
   },
 
   // ==========================================
   // 4. CORPORATE & MICE TOURS
   // ==========================================
   {
-    id: 'corp-flyer',
-    category: 'corporate',
-    title: 'Corporate Tour - Work Hard, Travel Smart',
-    tag: 'Official Flyer Solutions',
-    duration: 'Custom Corporate Itinerary',
-    desc: 'Work hard, travel smart with seamless corporate travel solutions! Includes group flight bookings, luxury convention hotel reservations, ground luxury coaches, and dedicated corporate support.',
-    price: 'Custom Corporate Proposals',
-    location: 'Domestic & Global Sectors',
-    rating: '★ 5.0 (Corporate Specialist)',
-    inclusions: ['Group Flight Bookings & Seat Blocks', '5★ Hotel & Convention Reservations', 'Ground AC Volvo / Luxury Transportation', 'Curated Professional Team Building Facilitator', 'Dedicated 24/7 Corporate Travel Account Manager'],
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp8.jpeg'
-  },
-  {
     id: 'corp-1',
     category: 'corporate',
-    title: 'Goa Corporate Offsite & Beach Gala Night',
+    title: 'Goa Corporate Offsite, Conference & Beachfront Gala',
     tag: 'Domestic MICE Specialist',
     duration: '3 Days / 2 Nights',
     desc: 'Energize your organization with a 5-star beachfront conference, customized beach volleyball and team-building challenges, private banquet hall with DJ sound setup, and gala cocktail dinner.',
-    price: 'Custom Corporate Quote',
-    location: 'North & South Goa, India',
+    price: 'Custom Corporate Proposals',
+    location: 'North & South Goa Beach Resorts',
     rating: '★ 4.9 (110+ Corporates)',
-    inclusions: ['5★ Beachfront Resort Group Booking', 'State-of-art AC Conference Hall & AV/Projectors', 'Exclusive Gala Dinner & DJ Sound Setup', 'Curated Professional Team Building Facilitator', 'Airport AC Coach Transfers'],
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80'
+    inclusions: ['5★ Beachfront Resort Group Room Booking', 'State-of-art AC Conference Hall & Projectors', 'Exclusive Beach Gala Dinner & DJ Sound Setup', 'Curated Professional Team Building Facilitator', 'Airport AC Volvo / Luxury Coach Transfers'],
+    image: '/images/corporate.jpg'
   },
   {
     id: 'corp-2',
     category: 'corporate',
-    title: 'Dubai Business, Incentive & Yacht Conclave',
+    title: 'Dubai Business Conclave & Luxury Mega-Yacht Gala',
     tag: 'International MICE',
     duration: '4 Days / 3 Nights',
     desc: 'Reward elite partners and top achievers with 5-star skyscraper suites, private luxury chartered mega-yacht networking along Dubai Marina, and desert gala conclave under Bedouin canopies.',
-    price: 'Custom Corporate Quote',
-    location: 'Dubai & Marina, UAE',
+    price: 'Custom Corporate Proposals',
+    location: 'Dubai Marina & Sheikh Zayed Road, UAE',
     rating: '★ 5.0 (85+ Corporates)',
-    inclusions: ['5★ Sheikh Zayed Road Luxury Hotel', 'Private Chartered Yacht Party with Live DJ', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Manager'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80'
+    inclusions: ['5★ Luxury Hotel Booking in Downtown Dubai', 'Private Chartered Yacht Party with Live DJ & Bar', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Director'],
+    image: '/images/dubai_corporate.jpg'
   },
 
   // ==========================================
-  // 5. SCHOOL & COLLEGE EDUCATIONAL TOURS
+  // 5. GROUP TOURS (SCHOOL, COLLEGE & FAMILY)
   // ==========================================
   {
-    id: 'edu-1',
-    category: 'educational',
-    title: 'Golden Triangle Historical & Heritage Tour',
-    tag: 'School & College Domestic',
-    duration: '5 Days / 4 Nights',
-    desc: 'An inspiring curriculum-aligned expedition exploring Mughal architecture at Delhi Red Fort & Qutub Minar, the timeless wonder of Taj Mahal in Agra, and Jaipur Jantar Mantar astronomy.',
-    price: 'Special Institutional Rate',
-    location: 'Delhi, Agra & Jaipur',
-    rating: '★ 4.9 (160+ Schools)',
-    inclusions: ['Student-Safe 3★/4★ Verified Hotels', 'Certified ASI Historian & Archeology Guides', 'All Monument Entries & Audio Guides', 'Nutritious Buffet Meals (Breakfast, Lunch, Dinner)', '24/7 Security Escorts & First Aid Trained Team'],
-    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80'
+    id: 'grp-edu',
+    category: 'group-tours',
+    title: 'School & College Educational, STEM & Industrial Tours',
+    tag: 'Institutional Specialist',
+    duration: '3 to 7 Days (Customized)',
+    desc: 'Certified educational expeditions for schools, universities, and colleges across Gujarat & Maharashtra. Real-world learning at ISRO, Science City, Delhi-Agra heritage, Rishikesh adventure camps, and Singapore/Dubai STEM study tours.',
+    price: 'Special Student Rates (Contact Office)',
+    location: 'Pan-India (ISRO, Delhi, Manali) & Global (Singapore, Dubai)',
+    rating: '★ 5.0 (60+ Institutions)',
+    requiresOfficeContact: true,
+    keywords: 'school college student educational industrial iv isro science city camp study youth university institutional teachers education',
+    inclusions: [
+      '100% Student-Safe Police-Verified AC Luxury Coaches',
+      'Faculty / Teachers Escort Passes 100% Complimentary',
+      'Hygienic Pure Veg & Jain Freshly Prepared Student Meals',
+      'Industrial Plant Visits, Science Centers & Historical Guides',
+      'Adventure Camps: Bonfire, Trekking, Rafting & Leadership Games',
+      'Comprehensive Student Travel Insurance & 24/7 Doctor On-Call'
+    ],
+    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80'
   },
   {
-    id: 'edu-2',
-    category: 'educational',
-    title: 'Singapore Space, Science & STEM Discovery',
-    tag: 'International Educational',
-    duration: '5 Days / 4 Nights',
-    desc: 'Spark scientific curiosity with live STEM experiments at Singapore Science Centre, Omni-Theatre planetarium, Singapore NEWater sustainable water plant, and Universal Studios physics lessons.',
-    price: 'Special Student Rate',
-    location: 'Singapore',
-    rating: '★ 5.0 (55+ Institutions)',
-    inclusions: ['Singapore Science Centre & Omni-Theatre Pass', 'Universal Studios STEM Workshop Access', 'Group International Flights & Student Visas', 'Pure Hygienic Indian Meals Daily', 'Experienced Teacher Escorts & Medical Insurance'],
-    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80'
+    id: 'grp-family',
+    category: 'group-tours',
+    title: 'Grand Family Group Tours (Private AC Coach & Jain/Veg Chef)',
+    tag: 'Family Group Departure',
+    duration: '4 to 12 Days (Family Pace)',
+    desc: 'The ultimate holiday for large joint families, silver jubilees, and family reunions. Enjoy dedicated private luxury coaches, relaxed elder-friendly timings, and warm home-style Maharaj (chef) food throughout.',
+    price: 'Custom Family Quote (Contact Office)',
+    location: 'Rajasthan, Kashmir, Kerala & Char Dham',
+    rating: '★ 5.0 (320+ Families)',
+    requiresOfficeContact: true,
+    keywords: 'family group tour joint family private coach jain food gujarati marwari chef senior citizen kids reunion wedding holiday relatives gujarat',
+    inclusions: [
+      'Dedicated Private AC Volvo / Coach Exclusively for Your Family',
+      'On-Demand Gujarati / Marwari / Jain Maharaj (Chef) Cooking Team',
+      'Elder-Friendly Sightseeing with Minimal Walking & Wheelchair Support',
+      'Child-Friendly Itineraries & Connecting Family Suite Rooms',
+      'Evening Family Antakshari, Music & Cultural Folk Evenings',
+      'Doorstep Pickup & Drop Options in Ahmedabad, Surat & Mumbai'
+    ],
+    image: '/images/gujarati_family.jpg'
   },
 
   // ==========================================
-  // 6. FAMILY TOUR PACKAGES
+  // 6. EUROPE & BESPOKE CUSTOM DESTINATIONS
   // ==========================================
   {
-    id: 'fam-flyer',
-    category: 'family',
-    title: 'Family Tours - Cherish Every Moment, Explore Every Destination',
-    tag: 'Official Flyer Deal',
-    duration: 'Custom Family Holiday',
-    desc: 'Family adventures await! Cherish every moment exploring mountains, pristine beaches, grand heritage palaces, and scenic road trips with safe transport and comfortable family suites.',
-    price: 'Best Family Quote',
-    location: 'Mountains, Beaches, Heritage & Road Trips',
-    rating: '★ 5.0 (Family Specialist)',
-    inclusions: ['Family-Friendly Verified Safe Hotels', 'Spacious AC Private Vehicles (Innova / Crysta)', 'Customized Relaxed Itineraries for All Ages', 'Daily Breakfast & Multi-Cuisine Meal Plans', '24/7 Family Assistance Support'],
-    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
-    flyer: '/photos/mnp7.jpeg'
+    id: 'intl-europe',
+    category: 'international',
+    searchOnly: true,
+    title: 'Grand Europe & Swiss Alpine Panorama (Multi-Country Customized Tour)',
+    tag: 'Bespoke European Tour',
+    duration: '10 to 15 Days (Customized Itinerary)',
+    desc: 'Experience Paris, Swiss Alps, Venice canals, and Rome. Due to Schengen biometric visa appointment availability and seasonal flight variations, this package is 100% customized for families and couples through MNP Ahmedabad & Mumbai offices.',
+    price: 'Custom Quote (Contact MNP Office)',
+    location: 'Switzerland, France, Italy, Austria & Germany',
+    rating: '★ 4.9 (Official Tour Operator)',
+    requiresOfficeContact: true,
+    keywords: 'europe schengen switzerland swiss paris france italy rome venice austria germany london uk alps bespoke euro tour',
+    inclusions: [
+      'Schengen Tourist Visa Application & VFS Slot Guidance',
+      'Handpicked 4★ & 5★ Hotels near City Centres',
+      'Swiss Travel Pass / Eurail Pass / Private AC Coach',
+      'Mount Titlis, Jungfraujoch, Eiffel Tower & Colosseum Entry Pass Assistance',
+      'Daily Indian / Continental Breakfast & Verified Indian Dinners',
+      '24/7 Dedicated MNP On-Tour Concierge & Schengen Travel Insurance'
+    ],
+    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80'
+  },
+
+  // ==========================================
+  // 7. WORLDWIDE VISA ASSISTANCE SERVICES
+  // ==========================================
+  {
+    id: 'visa-schengen',
+    category: 'visa',
+    searchOnly: true,
+    title: 'All-Europe Schengen Tourist & Business Visa Assistance',
+    tag: 'Official Visa Service',
+    duration: 'Express Appointment & File Preparation',
+    desc: 'Complete hassle-free Schengen visa processing for Gujarat & Maharashtra travelers. MNP Holidays verifies your financial files, books biometric slots, and prepares rock-solid documentation to maximize visa approval rates.',
+    price: 'Visa Documentation & Slot Booking (Contact Office)',
+    location: '29 Schengen Countries (France, Switzerland, Germany, Italy, Spain, etc.)',
+    rating: '★ 5.0 (99.2% Visa Approval)',
+    requiresOfficeContact: true,
+    keywords: 'europe visa schengen visa switzerland visa france visa vfs biometric appointment visa assistance passport documentation vfs global germany visa italy visa spain visa europe embassy slot booking',
+    inclusions: [
+      'VFS / Embassy Biometric Appointment Scheduling Assistance',
+      'Complete Document Checklist & Financial Dossier Review',
+      'Custom Day-by-Day Travel Itinerary & Cover Letter Drafting',
+      'Confirmed Hotel Booking & Verifiable Flight Reservation for Visa',
+      'Mandatory €30,000+ Schengen-Approved Travel Medical Insurance',
+      'Mock Interview & Biometrics Preparation Guidance'
+    ],
+    image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1000&q=80'
   },
   {
-    id: 'fam-1',
-    category: 'family',
-    title: 'Exotic Andaman Island Family Coral Wonder',
-    tag: 'Family All-Inclusive',
-    duration: '5 Days / 4 Nights',
-    desc: 'Gaze at the sunset over Radhanagar Beach on Havelock Island, ride glass-bottom boats over vibrant coral reefs, watch the Cellular Jail light and sound saga, and snorkel with colorful fish.',
-    price: '₹26,500*',
-    location: 'Port Blair & Havelock Island',
-    rating: '★ 4.9 (280+ Families)',
-    inclusions: ['Catamaran Sea Cruise between Islands', 'Beachside Family Cottage Stay', 'Glass-Bottom Coral Boat Ride', 'Port Blair Airport Transfers', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+    id: 'visa-usa',
+    category: 'visa',
+    searchOnly: true,
+    title: 'USA B1/B2 Tourist & Visitor Visa Assistance + Custom Holidays',
+    tag: 'US Visa & Tour Specialist',
+    duration: '7 to 21 Days (Customized Family Itineraries)',
+    desc: 'Turn your American dream into reality. From meticulous DS-160 filing, OFC biometric slot assistance, and 1-on-1 consular interview preparation to custom East Coast & West Coast holiday planning.',
+    price: 'Customized Proposal (Contact MNP Office)',
+    location: 'New York, Orlando, Las Vegas, San Francisco & Los Angeles, USA',
+    rating: '★ 4.9 (High Approval Record)',
+    requiresOfficeContact: true,
+    keywords: 'us usa united states america new york orlando b1/b2 us visa ds-160 us embassy visa appointment florida california las vegas san francisco miami ofc slot interview',
+    inclusions: [
+      'DS-160 Online Visa Application Form Accurate Submission',
+      'US Embassy / OFC Biometric & Interview Appointment Slot Assistance',
+      '1-on-1 Mock Consular Interview Preparation with Visa Experts',
+      'Custom US Holiday Itinerary (East Coast / West Coast / Florida)',
+      'Domestic US Flights & Verified Hotel Bookings',
+      'Disneyland, Universal Studios & Grand Canyon Guided Excursions'
+    ],
+    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    id: 'visa-canada',
+    category: 'visa',
+    searchOnly: true,
+    title: 'Canada Visitor Visa Assistance & Canadian Rockies Vacation',
+    tag: 'Canada Visa & Tour Specialist',
+    duration: '8 to 14 Days (Bespoke Family Itineraries)',
+    desc: 'Planning to visit family or explore the breathtaking Canadian Rockies and Niagara Falls? Our Ahmedabad & Mumbai visa desks provide end-to-end IRCC portal filing, biometric scheduling, and custom holiday logistics.',
+    price: 'Customized Proposal (Contact MNP Office)',
+    location: 'Toronto, Niagara Falls, Vancouver, Banff & Jasper, Canada',
+    rating: '★ 4.9 (IRCC Portal Filing)',
+    requiresOfficeContact: true,
+    keywords: 'canada canada visa visitor visa ircc vancouver toronto niagara banff canadian rockies calgary montreal biometrics vfs canada family visitor visa',
+    inclusions: [
+      'IRCC Canada Portal Visa Filing & Biometric Appointment Setup',
+      'Invitation Letter & Purpose of Travel Statement Drafting',
+      'Verified Canadian Hotel Vouchers & Roundtrip Flight Itinerary',
+      'Banff National Park, Lake Louise & Columbia Icefield Glacier Tour',
+      'Niagara Falls Hornblower Boat Cruise & CN Tower Entry',
+      'Mandatory Travel Medical Insurance Assistance'
+    ],
+    image: 'https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    id: 'visa-uk',
+    category: 'visa',
+    searchOnly: true,
+    title: 'UK Standard Visitor Visa Assistance & London-Scotland Highlights',
+    tag: 'UK Visa & Tour Specialist',
+    duration: '7 to 12 Days (Custom Itinerary)',
+    desc: 'Fast-track UK tourist visa filing and bespoke Great Britain holidays. Experience London theatre, Big Ben, Oxford colleges, and majestic Scottish castles with MNP Holidays dedicated coordination.',
+    price: 'Custom Quote (Contact MNP Office)',
+    location: 'London, Manchester, Edinburgh & Scottish Highlands, UK',
+    rating: '★ 4.9 (UKVI Authorized Assistance)',
+    requiresOfficeContact: true,
+    keywords: 'uk united kingdom london scotland uk visa standard visitor visa ukvi edinburgh manchester england vfs uk britain british visa london tour',
+    inclusions: [
+      'UKVI Visa Application Submission & Priority Appointment Booking',
+      'Financial Evidence & Tax Document Organization',
+      'Central London 4★ Hotel Stay near Underground Stations',
+      'London Eye, Madame Tussauds & Tower Bridge Fast-Track Passes',
+      'Scenic Edinburgh Castle & Loch Ness Scottish Highlands Tour',
+      'Comprehensive UK Travel Insurance Coverage'
+    ],
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    id: 'visa-australia',
+    category: 'visa',
+    searchOnly: true,
+    title: 'Australia & New Zealand Scenic Splendour & Tourist Visa Service',
+    tag: 'Australia & NZ Specialist',
+    duration: '10 to 16 Days (Customizable)',
+    desc: 'Discover Sydney Harbour, kangaroo wildlife sanctuaries, and New Zealand fjords. Our visa desk processes Australian and NZ tourist visas seamlessly from Gujarat & Mumbai offices.',
+    price: 'Custom Quote (Contact MNP Office)',
+    location: 'Sydney, Melbourne, Gold Coast, Cairns & Queenstown',
+    rating: '★ 5.0 (Online Subclass 600 Filing)',
+    requiresOfficeContact: true,
+    keywords: 'australia new zealand sydney melbourne gold coast queenstown australia visa subclass 600 nz visa great barrier reef auckland visa assistance',
+    inclusions: [
+      'Australia Subclass 600 / New Zealand Tourist Visa Online Filing',
+      'Sydney Opera House, Harbour Cruise & Blue Mountains Excursion',
+      'Great Barrier Reef Snorkeling & Helicopter Scenic Flight Options',
+      'Melbourne Great Ocean Road & Phillip Island Penguin Parade',
+      'New Zealand Milford Sound & Rotorua Geothermal Exploration',
+      'End-to-End Flight & 4★/5★ Hotel Accommodations'
+    ],
+    image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1000&q=80'
+  },
+  {
+    id: 'visa-dubai-fast',
+    category: 'visa',
+    searchOnly: true,
+    title: 'Dubai / UAE Express Tourist Visa (14/30/60 Days) 24-48 Hr Service',
+    tag: 'Instant Visa Service',
+    duration: '14 Days / 30 Days / 60 Days Multiple/Single Entry',
+    desc: 'Get your Dubai tourist visa within 24 to 48 hours with minimal documents. Contact our Ahmedabad or Mumbai office for instant issuance, family visas, and special transit visas.',
+    price: 'Express Best Rates (Contact Office)',
+    location: 'Dubai, Abu Dhabi & Sharjah, UAE',
+    rating: '★ 5.0 (24-48 Hr Guarantee)',
+    requiresOfficeContact: true,
+    keywords: 'dubai visa uae visa express visa abu dhabi visa 30 days visa 60 days visa ok to board visa 24 hours urgent dubai visa',
+    inclusions: [
+      'Fast 24 to 48 Hour UAE Visa Issuance Guarantee',
+      'Only Passport Front/Back Copy & Passport Photo Required',
+      'Free "OK to Board" Airline Update Assistance',
+      'Optionally Bundle with 4★/5★ Dubai Marina & Deira Hotels',
+      'Burj Khalifa, Desert Safari & Yacht Party Tickets at Discount',
+      'COVID/Emergency Travel Insurance Included'
+    ],
+    image: '/images/dubai.jpg'
+  },
+  {
+    id: 'visa-worldwide',
+    category: 'visa',
+    searchOnly: true,
+    title: 'Worldwide Tourist & Business Visa Assistance (50+ Countries)',
+    tag: 'All-Country Visa Desk',
+    duration: 'Document Verification & Fast Filing',
+    desc: 'Don’t risk visa rejections. MNP Holidays has a dedicated visa desk with over a decade of experience ensuring 99%+ approval rates for tourist, visitor, and business visas worldwide.',
+    price: 'Official Consultation (Contact Office)',
+    location: 'Global (Japan, Singapore, Turkey, Egypt, Georgia, Baku, Russia, etc.)',
+    rating: '★ 5.0 (Ahmedabad & Mumbai Visa Desks)',
+    requiresOfficeContact: true,
+    keywords: 'visa visa service visa assistance all visa global visa embassy vfs document verification tourist visa business visa passport appointment japan visa singapore visa turkey visa baku visa georgia visa',
+    inclusions: [
+      'Embassy Form Filling, Cover Letter Drafting & Notarization Advice',
+      'Confirmed Flight Itineraries & Hotel Proof for Visa Processing',
+      'Travel Insurance Issuance up to $500,000 Coverage',
+      'Financial File Structuring (ITR, Bank Statement, CA Net Worth)',
+      'Special Express Visas for Baku, Georgia, Kazakhstan, Turkey, Japan',
+      'Physical Document Pickup & Passport Handover in Ahmedabad & Mumbai'
+    ],
+    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80'
   }
 ];
 
-
 function App() {
   const [scrolled, setScrolled] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [activePage, setActivePage] = useState('all'); // 'all', 'international', 'domestic', 'group-tours', 'corporate', 'honeymoon', 'visa', 'about', 'contact'
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPackage, setSelectedPackage] = useState(null);
-  const [selectedFlyer, setSelectedFlyer] = useState(null);
-  const [flyerCategory, setFlyerCategory] = useState('all');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedInclusions, setExpandedInclusions] = useState({});
+
+  const toggleInclusions = (id, e) => {
+    e.stopPropagation();
+    setExpandedInclusions((prev) => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -747,31 +633,39 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const categories = [
-    { id: 'all', label: 'All Packages', icon: '🌟' },
-    { id: 'domestic', label: 'Domestic India', icon: '🇮🇳' },
-    { id: 'international', label: 'International', icon: '✈️' },
-    { id: 'honeymoon', label: 'Honeymoon Special', icon: '💍' },
-    { id: 'corporate', label: 'Corporate & MICE', icon: '💼' },
-    { id: 'educational', label: 'School & College', icon: '🎓' },
-    { id: 'family', label: 'Family Tours', icon: '👨‍👩‍👧‍👦' }
+  // Main Page Navigation Tabs
+  const pagesList = [
+    { id: 'all', label: 'All Packages', icon: '🌟', badge: '16' },
+    { id: 'international', label: 'International Tours', icon: '✈️', badge: '7' },
+    { id: 'domestic', label: 'Domestic India', icon: '🇮🇳', badge: '6' },
+    { id: 'group-tours', label: 'School & Family Groups', icon: '👨‍👩‍👧‍👦', badge: 'Popular' },
+    { id: 'corporate', label: 'Corporate & MICE', icon: '💼', badge: '2' },
+    { id: 'honeymoon', label: 'Honeymoon Specials', icon: '💍', badge: '2' },
+    { id: 'visa', label: 'Visa Assistance Desk', icon: '🛂', badge: '50+ Countries' },
+    { id: 'about', label: 'Why Choose Us', icon: '🏆', badge: '12+ Yrs' },
+    { id: 'contact', label: 'Offices & Contact', icon: '📍', badge: '2 HQ' }
   ];
 
-  const flyerTabs = [
-    { id: 'all', label: 'All 19 Official Flyers', icon: '📁' },
-    { id: 'packages', label: 'Tour Packages & Specials', icon: '🏝️' },
-    { id: 'departures', label: 'Group Departures', icon: '✈️' },
-    { id: 'visas', label: 'Visa & E-Visa Desk', icon: '🛂' },
-    { id: 'hotels', label: 'Hotels & Resorts', icon: '🏨' },
-    { id: 'services', label: 'Air Tickets', icon: '🎫' },
-    { id: 'corporate', label: 'Corporate MICE', icon: '💼' }
-  ];
-
-  // Multi-token intelligent search across packages & flyers
+  // Multi-token intelligent search across packages & visa requirements
   const searchTokens = searchQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const isSearching = searchTokens.length > 0;
+
+  // Check if search query matches Visa services or custom office consultation destinations
+  const isVisaOrCustomQuery = isSearching && searchTokens.some((t) =>
+    [
+      'europe', 'schengen', 'switzerland', 'swiss', 'france', 'paris', 'italy', 'rome', 'germany',
+      'us', 'usa', 'america', 'canada', 'uk', 'london', 'scotland', 'australia', 'zealand',
+      'visa', 'visas', 'embassy', 'vfs', 'passport', 'appointment', 'japan', 'turkey', 'baku',
+      'school', 'college', 'student', 'students', 'family', 'group', 'groups'
+    ].some((keyword) => keyword.includes(t) || t.includes(keyword))
+  );
 
   const allMatchingPackages = PACKAGES_DATA.filter((pkg) => {
-    if (searchTokens.length === 0) return true;
+    if (!isSearching) {
+      // When browsing 'all' without search, hide pure searchOnly visa packages to preserve clean layout
+      if (pkg.searchOnly && activePage === 'all') return false;
+      return true;
+    }
     const searchableText = [
       pkg.title,
       pkg.location,
@@ -780,6 +674,7 @@ function App() {
       pkg.duration,
       pkg.price,
       pkg.category,
+      pkg.keywords || '',
       (pkg.inclusions || []).join(' ')
     ].join(' ').toLowerCase();
 
@@ -787,36 +682,31 @@ function App() {
   });
 
   const filteredPackages = allMatchingPackages.filter((pkg) => {
-    if (selectedCategory === 'all') return true;
-    return pkg.category === selectedCategory;
+    // When actively searching, return all matched results across all categories
+    if (isSearching) return true;
+    if (activePage === 'all' || activePage === 'about' || activePage === 'contact') return true;
+    return pkg.category === activePage;
   });
 
-  const filteredFlyers = FLYERS_DATA.filter((flyer) => {
-    const matchesCategory = flyerCategory === 'all' || flyer.category === flyerCategory;
-    if (searchTokens.length === 0) return matchesCategory;
-
-    const flyerText = [
-      flyer.title,
-      flyer.subtitle,
-      flyer.desc,
-      flyer.price,
-      flyer.tag,
-      flyer.category,
-      (flyer.highlights || []).join(' ')
-    ].join(' ').toLowerCase();
-
-    const matchesSearch = searchTokens.every((token) => flyerText.includes(token));
-    return matchesCategory && matchesSearch;
-  });
-
-  const handleBookOnWhatsApp = (pkgTitle, pkgPrice, pkgDuration) => {
-    const message = `Hello MNP Holidays! I am interested in booking the "${pkgTitle}" package (${pkgDuration} - ${pkgPrice}). Please share the detailed itinerary, inclusions, and best quote.`;
+  const handleBookOnWhatsApp = (pkgTitle, pkgPrice, pkgDuration, requiresOfficeContact = false) => {
+    const message = requiresOfficeContact
+      ? `Hello MNP Holidays! I would like to consult your office regarding "${pkgTitle}". Please provide the complete document checklist, visa requirements, and personalized quotation.`
+      : `Hello MNP Holidays! I am interested in booking the "${pkgTitle}" package (${pkgDuration} - ${pkgPrice}). Please share the detailed itinerary, inclusions, and best quotation.`;
     window.open(`https://wa.me/919825179624?text=${encodeURIComponent(message)}`, '_blank');
   };
 
-  const handleFlyerWhatsApp = (flyerTitle, flyerPrice) => {
-    const message = `Hello MNP Holidays! I saw your official flyer for "${flyerTitle}" (${flyerPrice}). Please share full itinerary details, departure dates, and best quotation.`;
-    window.open(`https://wa.me/919825179624?text=${encodeURIComponent(message)}`, '_blank');
+  const handlePageSwitch = (pageId) => {
+    setActivePage(pageId);
+    setSearchQuery('');
+    setMobileMenuOpen(false);
+    if (pageId === 'about') {
+      document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (pageId === 'contact') {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      const el = document.getElementById('destinations');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -829,7 +719,7 @@ function App() {
           </span>
           <div className="top-banner-contacts">
             <span className="banner-branch-group">
-              <span className="banner-branch-title">Ahmedabad:</span>
+              <span className="banner-branch-title">Ahmedabad HQ:</span>
               <a href="tel:+919825179624" className="banner-contact-link">📞 +91 98251 79624</a>
               <span className="banner-dot">•</span>
               <a href="tel:+919712204028" className="banner-contact-link">+91 97122 04028</a>
@@ -838,6 +728,8 @@ function App() {
             <span className="banner-branch-group">
               <span className="banner-branch-title">Mumbai:</span>
               <a href="tel:+919898083171" className="banner-contact-link">📞 +91 98980 83171</a>
+              <span className="banner-dot">•</span>
+              <a href="tel:+919136774277" className="banner-contact-link">+91 91367 74277</a>
             </span>
             <span className="banner-dot banner-dot-desktop">•</span>
             <a href="mailto:mnholidays88@gmail.com" className="banner-contact-link banner-email">
@@ -850,7 +742,7 @@ function App() {
       {/* Main Navigation */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
-          <a href="#home" className="logo" aria-label="MNP Holidays Home">
+          <a href="#home" className="logo" aria-label="MNP Holidays Home" onClick={() => setActivePage('all')}>
             <div className="logo-text-group">
               <span className="logo-accent">MNP</span>
               <span className="logo-name">Holidays</span>
@@ -860,29 +752,38 @@ function App() {
 
           {/* Desktop Navigation Links */}
           <div className="nav-links">
-            <a href="#home" className="nav-link">Home</a>
-            <a href="#official-flyers" className="nav-link nav-link-special">
-              <span className="flyer-cam-icon">📸</span>
-              <span>Official Flyers</span>
-              <span className="nav-count-badge">19</span>
-            </a>
-            <a href="#destinations" className="nav-link">Tour Packages</a>
-            <a href="#special-services" className="nav-link">Corporate & Schools</a>
-            <a href="#about" className="nav-link">Why Choose Us</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            <a href="#home" className={`nav-link ${activePage === 'all' ? 'active' : ''}`} onClick={() => setActivePage('all')}>Home</a>
+            <a href="#destinations" className={`nav-link ${activePage === 'international' ? 'active' : ''}`} onClick={() => handlePageSwitch('international')}>International</a>
+            <a href="#destinations" className={`nav-link ${activePage === 'domestic' ? 'active' : ''}`} onClick={() => handlePageSwitch('domestic')}>Domestic</a>
+            <a href="#destinations" className={`nav-link ${activePage === 'group-tours' ? 'active' : ''}`} onClick={() => handlePageSwitch('group-tours')}>Group Tours</a>
+            <a href="#destinations" className={`nav-link ${activePage === 'visa' ? 'active' : ''}`} onClick={() => handlePageSwitch('visa')}>Visa Desk</a>
+            <a href="#contact" className={`nav-link ${activePage === 'contact' ? 'active' : ''}`} onClick={() => handlePageSwitch('contact')}>Contact</a>
+            
             <a 
               href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
               target="_blank" 
               rel="noreferrer"
               className="btn-nav-wa"
+              title="Chat directly with MNP Holidays Senior Tour Expert"
             >
               <span className="wa-dot"></span>
               <span className="wa-icon">💬</span>
               <span className="wa-text">WhatsApp Desk</span>
             </a>
+
+            <button 
+              type="button"
+              className="btn-nav-menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle Full Navigation Menu"
+              title="Open all pages, destinations & branch directory"
+            >
+              <span className="menu-icon">{mobileMenuOpen ? '✕' : '☰'}</span>
+              <span className="menu-text">Menu</span>
+            </button>
           </div>
 
-          {/* Mobile & Tablet Quick Actions (WhatsApp & Hamburger) */}
+          {/* Mobile & Tablet Quick Actions */}
           <div className="nav-mobile-controls">
             <a 
               href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
@@ -910,34 +811,45 @@ function App() {
           <div className="mobile-menu">
             <div className="mobile-menu-header">
               <span className="mobile-menu-brand">MNP Holidays</span>
-              <span className="mobile-menu-badge">Pvt. Ltd. • Official Tours</span>
+              <span className="mobile-menu-badge">Pvt. Ltd. • Luxury Tours</span>
             </div>
             
             <div className="mobile-nav-items">
-              <a href="#home" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a href="#home" className="mobile-nav-link" onClick={() => { setActivePage('all'); setMobileMenuOpen(false); }}>
                 <span className="mobile-nav-icon">🏠</span>
-                <span>Home</span>
+                <span>Home Page</span>
               </a>
-              <a href="#official-flyers" className="mobile-nav-link mobile-nav-highlight" onClick={() => setMobileMenuOpen(false)}>
-                <span className="mobile-nav-icon">📸</span>
-                <span>Official Promotional Flyers</span>
-                <span className="mobile-flyer-badge">19 Offers</span>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('international'); setMobileMenuOpen(false); }}>
+                <span className="mobile-nav-icon">✈️</span>
+                <span>International Tours</span>
               </a>
-              <a href="#destinations" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
-                <span className="mobile-nav-icon">🌍</span>
-                <span>All Tour Packages</span>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('domestic'); setMobileMenuOpen(false); }}>
+                <span className="mobile-nav-icon">🇮🇳</span>
+                <span>Domestic India Tours</span>
               </a>
-              <a href="#special-services" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('group-tours'); setMobileMenuOpen(false); }}>
+                <span className="mobile-nav-icon">👨‍👩‍👧‍👦</span>
+                <span>School, College & Family Groups</span>
+              </a>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('corporate'); setMobileMenuOpen(false); }}>
                 <span className="mobile-nav-icon">💼</span>
-                <span>Corporate, Schools & Weddings</span>
+                <span>Corporate & MICE Tours</span>
               </a>
-              <a href="#about" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('visa'); setMobileMenuOpen(false); }}>
+                <span className="mobile-nav-icon">🛂</span>
+                <span>Visa Assistance Desk</span>
+              </a>
+              <a href="#destinations" className="mobile-nav-link" onClick={() => { handlePageSwitch('honeymoon'); setMobileMenuOpen(false); }}>
+                <span className="mobile-nav-icon">💍</span>
+                <span>Honeymoon Specials</span>
+              </a>
+              <a href="#about" className="mobile-nav-link" onClick={() => { handlePageSwitch('about'); setMobileMenuOpen(false); }}>
                 <span className="mobile-nav-icon">🏆</span>
                 <span>Why Choose MNP Holidays</span>
               </a>
-              <a href="#contact" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>
+              <a href="#contact" className="mobile-nav-link" onClick={() => { handlePageSwitch('contact'); setMobileMenuOpen(false); }}>
                 <span className="mobile-nav-icon">📍</span>
-                <span>Branch Contact & Inquiry</span>
+                <span>Ahmedabad & Mumbai Offices</span>
               </a>
             </div>
 
@@ -945,7 +857,7 @@ function App() {
               <div className="mobile-branch-card">
                 <div className="mobile-branch-label">📍 Ahmedabad Head Office</div>
                 <div className="mobile-branch-address">
-                  Shop 467/1, TP No. 11, FP 109/1, SF 224, Townplaza, Near Raspan Cross Road, Nikol, Ahmedabad - 382350
+                  SF 224, Townplaza, Near Raspan Cross Road, Nikol, Ahmedabad - 382350
                 </div>
                 <div className="mobile-branch-actions">
                   <a href="tel:+919825179624" className="mobile-branch-call-btn">📞 +91 98251 79624</a>
@@ -955,7 +867,7 @@ function App() {
               <div className="mobile-branch-card">
                 <div className="mobile-branch-label">📍 Mumbai Branch Office</div>
                 <div className="mobile-branch-address">
-                  Shop No.8, Rangari Height, Samarth Hanuman Lane, Dr. A.B.Road, Lal Baug, Kalachowki, Mumbai - 400033
+                  Shop No.8, Rangari Height, Dr. A.B.Road, Lal Baug, Kalachowki, Mumbai - 400033
                 </div>
                 <div className="mobile-branch-actions">
                   <a href="tel:+919898083171" className="mobile-branch-call-btn">📞 +91 98980 83171</a>
@@ -971,63 +883,62 @@ function App() {
                 rel="noreferrer" 
                 className="mobile-btn wa"
               >
-                <span>💬 WhatsApp Instant Chat & Best Quotes</span>
+                <span>💬 WhatsApp Instant Chat & Quotes</span>
               </a>
             </div>
           </div>
         )}
       </nav>
 
-      {/* Enchanting Luxury Hero Section */}
+      {/* ========================================================
+          SLEEK & SIMPLE LUXURY HERO SECTION (BESPOKE HD PHOTOGRAPHY)
+          ======================================================== */}
       <section id="home" className="hero">
         <div className="hero-glow-orb hero-glow-1"></div>
         <div className="hero-glow-orb hero-glow-2"></div>
         <img 
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=85" 
-          alt="World-Class Travel with MNP Holidays" 
+          src="/images/hero_luxury.jpg" 
+          alt="Luxury Travel with MNP Holidays" 
           className="hero-bg"
           loading="eager"
+          onError={(e) => {
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=85';
+          }}
         />
         <div className="hero-overlay"></div>
 
         <div className="hero-content animate-fade-up">
           <div className="hero-badge-enchanting">
             <span className="badge-sparkle">✨</span>
-            <span>WORLD-CLASS LUXURY TOURS • AHMEDABAD & MUMBAI HEADQUARTERS</span>
+            <span>WORLD-CLASS LUXURY HOLIDAYS • AHMEDABAD & MUMBAI</span>
           </div>
 
           <h1 className="hero-title">
-            Crafting Unforgettable Journeys Across <span className="hero-title-enchanted">India & The World</span>
+            Where Will Your Next <span className="hero-title-enchanted">Journey Take You?</span>
           </h1>
 
           <p className="hero-subtitle">
-            From royal heritage in <strong>Udaipur, Kumbhalgarh & Jaisalmer</strong> to international paradises in <strong>Vietnam, Thailand, Singapore, Bali & Europe</strong>. Verified 4★ & 5★ luxury stays, bespoke itineraries, and 24/7 dedicated human concierge.
+            Handcrafted luxury holidays across India & the World with verified 4★ & 5★ stays, private chauffeurs, and 24/7 dedicated concierge assistance.
           </p>
 
-          {/* Quick Search Console */}
+          {/* Sleek Search Console */}
           <div className="hero-search-box">
             <div className="search-input-wrapper">
               <span className="search-icon">🔍</span>
               <input 
                 type="text" 
-                placeholder="Where is your dream vacation? (e.g. Udaipur, Thailand, Vietnam, Kashmir...)" 
+                placeholder="Search destinations or services (e.g. Europe, Canada, USA, Visa, School Tour, Udaipur, Vietnam...)" 
                 value={searchQuery}
                 onChange={(e) => {
                   const val = e.target.value;
                   setSearchQuery(val);
-                  if (val.trim() !== '') {
-                    setSelectedCategory('all');
-                    setFlyerCategory('all');
-                  }
                 }}
               />
               {searchQuery && (
                 <button 
                   className="search-clear" 
-                  onClick={() => {
-                    setSearchQuery('');
-                    setSelectedCategory('all');
-                  }}
+                  onClick={() => setSearchQuery('')}
                   title="Clear search"
                 >
                   ✕
@@ -1039,22 +950,29 @@ function App() {
             </a>
           </div>
 
-          {/* Trending Destination Quick Pills */}
+          {/* Minimalist Trending Destination Quick Pills */}
           <div className="hero-trending-pills">
-            <span className="hero-trending-label">Trending Now:</span>
+            <span className="trending-label">Trending Now:</span>
             {[
-              { name: 'Thailand', icon: '🏝️', label: 'Thailand 4N/5D (₹14,999)' },
-              { name: 'Udaipur', icon: '🏰', label: 'Udaipur Royal Tour (₹7,999)' },
-              { name: 'Vietnam', icon: '🏮', label: 'Vietnam 3 Cities (₹59,999)' },
-              { name: 'Jaisalmer', icon: '🐪', label: 'Jaisalmer Desert Camp (₹25,500)' },
-              { name: 'Goa', icon: '🌴', label: 'Goa Watersports' }
+              { name: 'Europe', icon: '🏰', label: 'Europe & Schengen' },
+              { name: 'Canada', icon: '🍁', label: 'Canada & US Visa' },
+              { name: 'Visa', icon: '🛂', label: 'Visa Assistance' },
+              { name: 'School', icon: '🎓', label: 'School & College' },
+              { name: 'Family', icon: '👨‍👩‍👧‍👦', label: 'Family Group Tour' },
+              { name: 'Udaipur', icon: '🏰', label: 'Udaipur Royal Tour' },
+              { name: 'Thailand', icon: '🏝️', label: 'Thailand Escapes' },
+              { name: 'Vietnam', icon: '🏮', label: 'Vietnam 3 Cities' },
+              { name: 'Dubai', icon: '🏙️', label: 'Dubai Marina' },
+              { name: 'Bali', icon: '🌺', label: 'Bali Paradise' },
+              { name: 'Kashmir', icon: '🏔️', label: 'Kashmir Valley' },
+              { name: 'Goa', icon: '🌴', label: 'Goa Beach Resort' }
             ].map((item) => (
               <button
                 key={item.name}
                 className="hero-trending-pill-btn"
                 onClick={() => {
                   setSearchQuery(item.name);
-                  setSelectedCategory('all');
+                  setActivePage('all');
                   const el = document.getElementById('destinations');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
@@ -1064,88 +982,21 @@ function App() {
             ))}
           </div>
 
-          {/* Enchanting Floating Highlights Ribbon */}
-          <div className="hero-mini-showcase">
-            <div 
-              className="hero-mini-card"
-              onClick={() => {
-                setSearchQuery('Thailand');
-                setSelectedCategory('all');
-                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=400&q=80" alt="Thailand" />
-              <div className="hero-mini-info">
-                <span className="mini-tag">🔥 BESTSELLER</span>
-                <strong>Thailand Escapes</strong>
-                <span>4N/5D • ₹14,999</span>
-              </div>
-            </div>
-
-            <div 
-              className="hero-mini-card"
-              onClick={() => {
-                setSearchQuery('Udaipur');
-                setSelectedCategory('all');
-                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              <img src="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=400&q=80" alt="Udaipur" />
-              <div className="hero-mini-info">
-                <span className="mini-tag">👑 ROYAL TOUR</span>
-                <strong>Udaipur & Shrinathji</strong>
-                <span>3D/2N • ₹7,999</span>
-              </div>
-            </div>
-
-            <div 
-              className="hero-mini-card"
-              onClick={() => {
-                setSearchQuery('Vietnam');
-                setSelectedCategory('all');
-                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80" alt="Vietnam" />
-              <div className="hero-mini-info">
-                <span className="mini-tag">🏮 POPULAR</span>
-                <strong>Vietnam 3 Cities</strong>
-                <span>7D/6N • ₹59,999</span>
-              </div>
-            </div>
-
-            <div 
-              className="hero-mini-card"
-              onClick={() => {
-                setSearchQuery('Jaisalmer');
-                setSelectedCategory('all');
-                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-            >
-              <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=400&q=80" alt="Jaisalmer" />
-              <div className="hero-mini-info">
-                <span className="mini-tag">🐪 DESERT HIT</span>
-                <strong>Jaisalmer Luxury Camp</strong>
-                <span>4D/3N • ₹25,500/cpl</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Trust Stats Bar */}
+          {/* Sleek Minimalist Trust Metrics Bar */}
           <div className="trust-stats">
             <div className="stat-item">
               <strong>15,000+</strong>
-              <span>Delighted Travelers</span>
+              <span>Happy Travelers</span>
             </div>
             <div className="stat-separator"></div>
             <div className="stat-item">
               <strong>250+</strong>
-              <span>Corporate & College Offsites</span>
+              <span>Corporate Offsites</span>
             </div>
             <div className="stat-separator"></div>
             <div className="stat-item">
-              <strong>19+</strong>
-              <span>Official MNP Flyers</span>
+              <strong>50+</strong>
+              <span>Global Destinations</span>
             </div>
             <div className="stat-separator"></div>
             <div className="stat-item">
@@ -1157,42 +1008,74 @@ function App() {
       </section>
 
       {/* ========================================================
-          CURATED TOUR PACKAGES (WORLD-STANDARD SHOWCASE)
+          SLEEK PAGES & DESTINATION HUB NAVIGATION BAR
+          ======================================================== */}
+      <section className="pages-nav-bar-section">
+        <div className="container">
+          <div className="pages-bar-wrapper">
+            <span className="pages-bar-title">EXPLORE PAGES:</span>
+            <div className="pages-pills-row">
+              {pagesList.map((pg) => (
+                <button
+                  key={pg.id}
+                  className={`page-pill-btn ${activePage === pg.id ? 'active' : ''}`}
+                  onClick={() => handlePageSwitch(pg.id)}
+                >
+                  <span className="page-pill-icon">{pg.icon}</span>
+                  <span className="page-pill-label">{pg.label}</span>
+                  <span className="page-pill-badge">{pg.badge}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          CURATED TOUR PACKAGES SECTION (SLEEK HD PHOTO CARDS)
           ======================================================== */}
       <section id="destinations" className="destinations section-padding">
         <div className="container">
           <div className="section-header">
-            <span className="section-eyebrow">CURATED EXPERIENCES</span>
-            <h2 className="section-title">World-Standard <span className="text-gradient">Tour Packages</span></h2>
+            <span className="section-eyebrow">
+              {activePage === 'international' && 'INTERNATIONAL LUXURY GETAWAYS'}
+              {activePage === 'domestic' && 'ROYAL & TROPICAL INCREDIBLE INDIA'}
+              {activePage === 'group-tours' && 'SCHOOL, COLLEGE & FAMILY GROUP EXPEDITIONS'}
+              {activePage === 'corporate' && 'EXECUTIVE CORPORATE & MICE SOLUTIONS'}
+              {activePage === 'honeymoon' && 'ROMANTIC HONEYMOON EXPERIENCES'}
+              {activePage === 'visa' && 'OFFICIAL VISA ASSISTANCE & EMBASSY DESK'}
+              {(activePage === 'all' || activePage === 'about' || activePage === 'contact') && 'CURATED EXPERIENCES'}
+            </span>
+            <h2 className="section-title">
+              {activePage === 'international' && <>International <span className="text-gradient">Dream Vacations</span></>}
+              {activePage === 'domestic' && <>Incredible India <span className="text-gradient">Heritage & Hills</span></>}
+              {activePage === 'group-tours' && <>School, College & <span className="text-gradient">Family Group Tours</span></>}
+              {activePage === 'corporate' && <>Corporate <span className="text-gradient">MICE & Offsites</span></>}
+              {activePage === 'honeymoon' && <>Romantic <span className="text-gradient">Honeymoon Escapes</span></>}
+              {activePage === 'visa' && <>Worldwide Visa & <span className="text-gradient">Embassy Assistance</span></>}
+              {(activePage === 'all' || activePage === 'about' || activePage === 'contact') && (
+                <>World-Standard <span className="text-gradient">Tour Packages</span></>
+              )}
+            </h2>
             <p className="section-subtitle">
-              Handcrafted itineraries with premium hotels, seamless transfers, personalized guides, and 24/7 on-tour support.
+              All packages feature handpicked 4★ & 5★ hotels, verified luxury transport, private chauffeurs, and 24/7 on-tour human concierge.
             </p>
           </div>
 
-          {/* In-Section Live Search Bar & Quick Destination Chips */}
+          {/* In-Section Live Search Bar */}
           <div className="section-search-container">
             <div className="section-search-bar">
               <span className="section-search-icon">🔍</span>
               <input 
                 type="text" 
-                placeholder="Search packages by destination, city or keyword (e.g. Udaipur, Thailand, Vietnam, Goa, Kashmir...)" 
+                placeholder="Search packages, countries or visa services (e.g. Europe, Canada, USA, Visa, School Tour, Udaipur, Vietnam, Bali...)" 
                 value={searchQuery}
-                onChange={(e) => {
-                  const val = e.target.value;
-                  setSearchQuery(val);
-                  if (val.trim() !== '') {
-                    setSelectedCategory('all');
-                    setFlyerCategory('all');
-                  }
-                }}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
               {searchQuery && (
                 <button 
                   className="section-search-clear" 
-                  onClick={() => {
-                    setSearchQuery('');
-                    setSelectedCategory('all');
-                  }}
+                  onClick={() => setSearchQuery('')}
                   title="Clear search"
                 >
                   ✕
@@ -1200,25 +1083,29 @@ function App() {
               )}
             </div>
 
-            {/* Quick Trending Destination Chips */}
+            {/* Quick Destination & Service Chips */}
             <div className="quick-search-chips">
-              <span className="quick-chips-label">Popular Searches:</span>
+              <span className="quick-chips-label">Popular Filters:</span>
               {[
-                { name: 'Udaipur', icon: '🏰' },
-                { name: 'Thailand', icon: '🏖️' },
-                { name: 'Vietnam', icon: '🏮' },
-                { name: 'Goa', icon: '🌴' },
-                { name: 'Kashmir', icon: '🏔️' },
-                { name: 'Bali', icon: '🌺' },
-                { name: 'Dubai', icon: '🏙️' },
-                { name: 'Kerala', icon: '🛶' }
+                { name: 'Europe & Schengen', icon: '🏰', query: 'Europe' },
+                { name: 'Canada & US Visa', icon: '🍁', query: 'Canada' },
+                { name: 'All Visa Services', icon: '🛂', query: 'Visa' },
+                { name: 'School & College', icon: '🎓', query: 'School' },
+                { name: 'Family Group Tours', icon: '👨‍👩‍👧‍👦', query: 'Family' },
+                { name: 'Udaipur', icon: '🏰', query: 'Udaipur' },
+                { name: 'Thailand', icon: '🏖️', query: 'Thailand' },
+                { name: 'Vietnam', icon: '🏮', query: 'Vietnam' },
+                { name: 'Dubai', icon: '🏙️', query: 'Dubai' },
+                { name: 'Bali', icon: '🌺', query: 'Bali' },
+                { name: 'Kashmir', icon: '🏔️', query: 'Kashmir' },
+                { name: 'Goa', icon: '🌴', query: 'Goa' }
               ].map((item) => (
                 <button
                   key={item.name}
-                  className={`quick-chip ${searchQuery.toLowerCase() === item.name.toLowerCase() ? 'active' : ''}`}
+                  className={`quick-chip ${searchQuery.toLowerCase() === item.query.toLowerCase() ? 'active' : ''}`}
                   onClick={() => {
-                    setSearchQuery(item.name);
-                    setSelectedCategory('all');
+                    setSearchQuery(item.query);
+                    setActivePage('all');
                   }}
                 >
                   <span>{item.icon}</span> {item.name}
@@ -1227,10 +1114,7 @@ function App() {
               {searchQuery && (
                 <button 
                   className="quick-chip-reset" 
-                  onClick={() => {
-                    setSearchQuery('');
-                    setSelectedCategory('all');
-                  }}
+                  onClick={() => setSearchQuery('')}
                 >
                   Clear Filters ↺
                 </button>
@@ -1238,54 +1122,65 @@ function App() {
             </div>
           </div>
 
-          {/* Active Search & Filter Feedback Pill */}
+          {/* Active Search Pill */}
           {searchQuery && (
             <div className="search-active-pill">
               <div className="search-active-info">
                 <span className="search-active-badge">SEARCH ACTIVE</span>
                 <span>
-                  Found <strong>{filteredPackages.length}</strong> {filteredPackages.length === 1 ? 'package' : 'packages'} for "<strong>{searchQuery}</strong>"
-                  {selectedCategory !== 'all' && (
-                    <> in <em>{categories.find(c => c.id === selectedCategory)?.label}</em></>
-                  )}
+                  Found <strong>{filteredPackages.length}</strong> {filteredPackages.length === 1 ? 'service/package' : 'services/packages'} for "<strong>{searchQuery}</strong>"
                 </span>
               </div>
               <button 
                 className="btn-clear-active-search"
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelectedCategory('all');
-                }}
+                onClick={() => setSearchQuery('')}
               >
                 Clear Search ✕
               </button>
             </div>
           )}
 
-          {/* Interactive Category Filter Pills with Live Matching Counters */}
-          <div className="category-tabs" id="categories">
-            {categories.map((cat) => {
-              const count = cat.id === 'all' 
-                ? allMatchingPackages.length 
-                : allMatchingPackages.filter(p => p.category === cat.id).length;
-              return (
-                <button
-                  key={cat.id}
-                  className={`category-pill ${selectedCategory === cat.id ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  <span className="cat-icon">{cat.icon}</span>
-                  <span className="cat-label">{cat.label}</span>
-                  <span className={`cat-count ${count === 0 ? 'zero' : ''}`}>{count}</span>
-                </button>
-              );
-            })}
-          </div>
+          {/* Specialized Office Consultation & Visa Desk Alert Banner */}
+          {isVisaOrCustomQuery && (
+            <div className="search-office-consultation-banner animate-fade-up">
+              <div className="consult-banner-top">
+                <div className="consult-banner-badge">
+                  <span>🏛️ MNP OFFICIAL VISA & BESPOKE TOUR DESK</span>
+                </div>
+                <span className="consult-banner-branch-tag">📍 AHMEDABAD HQ & MUMBAI BRANCH</span>
+              </div>
+              <div className="consult-banner-content">
+                <div className="consult-banner-text">
+                  <h3>Specialized Guidance & Visa Processing for "{searchQuery}"</h3>
+                  <p>
+                    For <strong>Europe (Schengen), USA (B1/B2), Canada, UK, Australia</strong>, and <strong>Embassy Visa Services</strong>, consular biometric appointment slots (VFS/Embassy) and airline rates vary based on traveler profiles and seasonal dates. Our certified specialists in Ahmedabad and Mumbai provide personalized document file preparation, slot booking, and custom quotations.
+                  </p>
+                </div>
+                <div className="consult-banner-ctas">
+                  <a 
+                    href={`https://wa.me/919825179624?text=${encodeURIComponent(`Hello MNP Holidays! I would like to consult your office regarding custom holiday packages & visa requirements for "${searchQuery}". Please guide me with requirements and appointment booking.`)}`} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="btn-consult-wa"
+                  >
+                    <IconWhatsApp size={18} color="#FFFFFF" />
+                    <span>Chat with Visa Specialist (WhatsApp)</span>
+                  </a>
+                  <a href="tel:+919825179624" className="btn-consult-call">
+                    📞 Ahmedabad HQ (+91 98251 79624)
+                  </a>
+                  <a href="tel:+919898083171" className="btn-consult-call">
+                    📞 Mumbai Office (+91 98980 83171)
+                  </a>
+                </div>
+              </div>
+            </div>
+          )}
 
-          {/* Packages Grid */}
+          {/* Packages Grid (With Crisp HD Images) */}
           <div className="packages-grid">
             {filteredPackages.map((pkg) => (
-              <div key={pkg.id} className="package-card">
+              <div key={pkg.id} className={`package-card ${pkg.requiresOfficeContact ? 'office-contact-card' : ''}`}>
                 <div className="package-img-wrap">
                   <img 
                     src={pkg.image} 
@@ -1296,30 +1191,15 @@ function App() {
                       e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80';
                     }}
                   />
-                  <div className="package-tag">{pkg.tag}</div>
+                  <div className={`package-tag ${pkg.requiresOfficeContact ? 'office-tag' : ''}`}>
+                    {pkg.requiresOfficeContact ? `🏛️ ${pkg.tag}` : pkg.tag}
+                  </div>
                   <div className="package-price-overlay">
-                    <span className="price-label">Starting from</span>
+                    <span className="price-label">
+                      {pkg.requiresOfficeContact ? 'Category' : 'Starting from'}
+                    </span>
                     <span className="price-value">{pkg.price}</span>
                   </div>
-                  {pkg.flyer && (
-                    <button 
-                      className="btn-card-flyer-badge"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedFlyer({
-                          title: pkg.title,
-                          image: pkg.flyer,
-                          price: pkg.price,
-                          desc: pkg.desc,
-                          tag: pkg.tag,
-                          branches: 'Ahmedabad: 98251 79624 / 97122 04028 | Mumbai: 98980 83171'
-                        });
-                      }}
-                      title="Click to inspect official promotional brochure"
-                    >
-                      📄 Official Flyer
-                    </button>
-                  )}
                 </div>
 
                 <div className="package-info">
@@ -1332,11 +1212,19 @@ function App() {
                   <p className="package-desc">{pkg.desc}</p>
 
                   <div className="inclusions-chips">
-                    {pkg.inclusions.slice(0, 3).map((inc, i) => (
+                    {(expandedInclusions[pkg.id] ? pkg.inclusions : pkg.inclusions.slice(0, 3)).map((inc, i) => (
                       <span key={i} className="inc-pill">✓ {inc}</span>
                     ))}
                     {pkg.inclusions.length > 3 && (
-                      <span className="inc-pill-more">+{pkg.inclusions.length - 3} more</span>
+                      <button 
+                        type="button"
+                        className={`inc-pill-more inc-pill-toggle ${expandedInclusions[pkg.id] ? 'expanded' : ''}`}
+                        onClick={(e) => toggleInclusions(pkg.id, e)}
+                        title={expandedInclusions[pkg.id] ? "Collapse inclusions" : `Tap to view all ${pkg.inclusions.length} inclusions`}
+                        aria-expanded={!!expandedInclusions[pkg.id]}
+                      >
+                        {expandedInclusions[pkg.id] ? '▴ Show less' : `+${pkg.inclusions.length - 3} more (Tap to view)`}
+                      </button>
                     )}
                   </div>
 
@@ -1344,18 +1232,18 @@ function App() {
                     <button 
                       className="btn-card-details"
                       onClick={() => setSelectedPackage(pkg)}
-                      title={`View detailed itinerary for ${pkg.title}`}
+                      title={`View detailed itinerary & requirements for ${pkg.title}`}
                     >
                       <IconItinerary size={16} />
-                      <span>View Itinerary</span>
+                      <span>{pkg.requiresOfficeContact ? 'Requirements' : 'View Details'}</span>
                     </button>
                     <button 
-                      className="btn-card-wa"
-                      onClick={() => handleBookOnWhatsApp(pkg.title, pkg.price, pkg.duration)}
-                      title={`Inquire on WhatsApp for ${pkg.title}`}
+                      className={`btn-card-wa ${pkg.requiresOfficeContact ? 'btn-office-wa' : ''}`}
+                      onClick={() => handleBookOnWhatsApp(pkg.title, pkg.price, pkg.duration, pkg.requiresOfficeContact)}
+                      title={pkg.requiresOfficeContact ? `Consult Office for ${pkg.title}` : `Inquire on WhatsApp for ${pkg.title}`}
                     >
-                      <IconWhatsApp size={18} color="#FFFFFF" />
-                      <span>Inquire on WhatsApp</span>
+                      <IconWhatsApp size={17} color="#FFFFFF" />
+                      <span>{pkg.requiresOfficeContact ? 'Consult Office' : 'Inquire on WA'}</span>
                     </button>
                   </div>
                 </div>
@@ -1363,48 +1251,59 @@ function App() {
             ))}
           </div>
 
-          {/* Enhanced Context-Aware Empty State */}
+          {/* Empty Search State with Custom Office Consultation CTA */}
           {filteredPackages.length === 0 && (
             <div className="empty-search-card">
-              <div className="empty-search-icon">🔍</div>
-              <h3>No matching packages in {categories.find(c => c.id === selectedCategory)?.label || 'this category'}</h3>
-              
-              {allMatchingPackages.length > 0 ? (
-                <div className="empty-cross-category-notice">
-                  <p>
-                    Great news! We found <strong>{allMatchingPackages.length}</strong> matching tour package{allMatchingPackages.length === 1 ? '' : 's'} for "<strong>{searchQuery}</strong>" in other categories.
-                  </p>
-                  <button 
-                    className="btn-show-all-cross-matches"
-                    onClick={() => setSelectedCategory('all')}
+              <div className="empty-search-icon">🌍</div>
+              <h3>Custom Travel & Visa Assistance for "{searchQuery}"</h3>
+              <p className="empty-lead">
+                We organize custom tour packages, corporate retreats, and visa applications for <strong>50+ countries worldwide</strong>. Even if not listed in our ready catalog, our specialists in Ahmedabad & Mumbai will prepare a tailor-made proposal for you!
+              </p>
+
+              <div className="empty-custom-banner">
+                <span className="empty-custom-tag">✨ 100% PERSONALIZED ITINERARY & EMBASSY FILING</span>
+                <p>Connect directly with our senior holiday and visa managers for instant quotation and official documentation guidance.</p>
+                <div className="empty-custom-ctas">
+                  <a 
+                    href={`https://wa.me/919825179624?text=${encodeURIComponent(`Hello MNP Holidays! I am looking for custom holiday packages / visa assistance for "${searchQuery}". Please provide guidance and best quotation.`)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-empty-whatsapp"
                   >
-                    ✨ View All {allMatchingPackages.length} Matching Packages (Switch to All)
-                  </button>
+                    <IconWhatsApp size={18} color="#FFFFFF" />
+                    <span>Inquire for "{searchQuery}" on WhatsApp</span>
+                  </a>
+                  <a href="tel:+919825179624" className="btn-empty-call">
+                    📞 Call Ahmedabad HQ (+91 98251 79624)
+                  </a>
+                  <a href="tel:+919898083171" className="btn-empty-call">
+                    📞 Call Mumbai Office (+91 98980 83171)
+                  </a>
                 </div>
-              ) : (
-                <p className="empty-lead">
-                  We couldn't find any packages matching "<strong>{searchQuery}</strong>". Try another keyword or explore our most booked destinations:
-                </p>
-              )}
+              </div>
 
               <div className="empty-popular-suggestions">
-                <span className="empty-suggestions-label">Try one of these top destinations:</span>
+                <span className="empty-suggestions-label">Or explore these trending destinations & services:</span>
                 <div className="empty-suggestions-grid">
                   {[
-                    { name: 'Udaipur', label: 'Udaipur & Kumbhalgarh' },
-                    { name: 'Thailand', label: 'Thailand & Pattaya' },
+                    { name: 'Europe', label: 'Europe & Schengen Tour' },
+                    { name: 'Canada', label: 'Canada Visa & Rockies' },
+                    { name: 'USA', label: 'USA B1/B2 Visa & Holidays' },
+                    { name: 'Visa', label: 'All Visa Assistance' },
+                    { name: 'School', label: 'School & College Tours' },
+                    { name: 'Family', label: 'Family Group Tours' },
+                    { name: 'Udaipur', label: 'Udaipur Royal Tour' },
+                    { name: 'Thailand', label: 'Thailand Escapes' },
                     { name: 'Vietnam', label: 'Vietnam 3 Cities' },
-                    { name: 'Goa', label: 'Goa Watersports' },
-                    { name: 'Kashmir', label: 'Kashmir Valley & Shikara' },
-                    { name: 'Bali', label: 'Bali Tropical Island' },
-                    { name: 'Dubai', label: 'Dubai & Abu Dhabi' }
+                    { name: 'Dubai', label: 'Dubai & Abu Dhabi' },
+                    { name: 'Bali', label: 'Bali Tropical Island' }
                   ].map((sug) => (
                     <button
                       key={sug.name}
                       className="empty-suggestion-pill"
                       onClick={() => {
                         setSearchQuery(sug.name);
-                        setSelectedCategory('all');
+                        setActivePage('all');
                       }}
                     >
                       📍 {sug.label}
@@ -1416,19 +1315,10 @@ function App() {
               <div className="empty-card-actions">
                 <button 
                   className="btn-empty-reset"
-                  onClick={() => { setSelectedCategory('all'); setSearchQuery(''); }}
+                  onClick={() => { setActivePage('all'); setSearchQuery(''); }}
                 >
                   ↺ Reset All Filters & View All Packages
                 </button>
-                <a 
-                  href={`https://wa.me/919825179624?text=${encodeURIComponent(`Hello MNP Holidays! I searched for "${searchQuery || 'Custom Destination'}" on your website and would like a custom itinerary & quotation.`)}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-empty-whatsapp"
-                >
-                  <IconWhatsApp size={18} color="#FFFFFF" />
-                  <span>Inquire on WhatsApp for Custom Tour</span>
-                </a>
               </div>
             </div>
           )}
@@ -1436,94 +1326,8 @@ function App() {
       </section>
 
       {/* ========================================================
-          OFFICIAL PROMOTIONAL FLYERS & BROCHURES SHOWCASE (COMPACT CAROUSEL)
+          SPECIAL CORPORATE & INSTITUTIONAL MICE SECTION
           ======================================================== */}
-      <section id="official-flyers" className="official-flyers-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-eyebrow" style={{ color: '#F59E0B' }}>SPECIAL DEALS & GROUP DEPARTURES</span>
-            <h2 className="section-title">Official MNP <span className="text-gradient">Promo Brochures & Flyers</span></h2>
-            <p className="section-subtitle">
-              Browse our official promotional flyers, fixed group departure dates, and special packages. Swipe horizontally or tap any flyer for full high-resolution inspection.
-            </p>
-          </div>
-
-          {/* Category Tabs for Flyers */}
-          <div className="flyer-tabs-wrapper">
-            {flyerTabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`flyer-tab-btn ${flyerCategory === tab.id ? 'active' : ''}`}
-                onClick={() => setFlyerCategory(tab.id)}
-              >
-                <span>{tab.icon}</span>
-                <span>{tab.label}</span>
-              </button>
-            ))}
-          </div>
-
-          {/* Swipe indicator for mobile */}
-          <div className="flyers-swipe-hint">
-            <span>👉 Swipe sideways to browse all flyers</span>
-          </div>
-
-          {/* 19 Official Flyers Carousel / Responsive Track */}
-          <div className="flyers-carousel-track">
-            {filteredFlyers.map((flyer) => (
-              <div key={flyer.id} className="flyer-card">
-                <div 
-                  className="flyer-card-media" 
-                  onClick={() => setSelectedFlyer(flyer)}
-                  title="Click to view full high-res flyer"
-                >
-                  <img 
-                    src={flyer.image} 
-                    alt={flyer.title} 
-                    loading="lazy" 
-                    onError={(e) => {
-                      e.currentTarget.onerror = null;
-                      e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80';
-                    }}
-                  />
-                  <div className="flyer-tag-badge">{flyer.tag}</div>
-                  <div className="flyer-media-overlay">
-                    <button className="btn-flyer-zoom">🔍 Full Size</button>
-                  </div>
-                </div>
-
-                <div className="flyer-card-content">
-                  <h3 className="flyer-title">{flyer.title}</h3>
-                  <div className="flyer-price-chip">
-                    💰 {flyer.price}
-                  </div>
-                  <p className="flyer-summary">{flyer.desc}</p>
-                  <div className="flyer-branch-note">
-                    🏢 {flyer.branches}
-                  </div>
-
-                  <div className="flyer-actions-row">
-                    <button 
-                      className="btn-flyer-view" 
-                      onClick={() => setSelectedFlyer(flyer)}
-                    >
-                      🔍 Full Flyer
-                    </button>
-                    <button 
-                      className="btn-flyer-wa" 
-                      onClick={() => handleFlyerWhatsApp(flyer.title, flyer.price)}
-                    >
-                      <IconWhatsApp size={16} color="#FFFFFF" />
-                      <span>WhatsApp</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Special Corporate & Institutional Services Banner */}
       <section id="special-services" className="special-services-section">
         <div className="container">
           <div className="services-grid">
@@ -1553,7 +1357,7 @@ function App() {
             {/* School & College Educational Tours Card */}
             <div className="service-banner-card school-card">
               <div className="service-card-badge">EDUCATIONAL & EXPEDITION</div>
-              <h3>School & College Educational Tours (Domestic & Global)</h3>
+              <h3>School & College Educational Tours</h3>
               <p>
                 Enrich classroom learning with real-world heritage, science, and leadership adventures. Certified tours across <strong>Delhi-Agra-Jaipur</strong>, <strong>ISRO Bengaluru</strong>, adventure camps in <strong>Rishikesh</strong>, and international STEM explorations in <strong>Singapore & Dubai</strong>.
               </p>
@@ -1576,14 +1380,20 @@ function App() {
         </div>
       </section>
 
-      {/* Why Choose MNP Holidays Section */}
+      {/* ========================================================
+          WHY CHOOSE MNP HOLIDAYS SECTION
+          ======================================================== */}
       <section id="about" className="about section-padding">
         <div className="container about-grid">
           <div className="about-visual">
             <img 
-              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
+              src="/images/bali.jpg" 
               alt="MNP Holidays Premium Travel" 
               className="about-img"
+              onError={(e) => {
+                e.currentTarget.onerror = null;
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80';
+              }}
             />
             <div className="about-floating-badge">
               <span className="badge-number">12+</span>
@@ -1595,7 +1405,7 @@ function App() {
             <span className="section-eyebrow">WORLD STANDARD QUALITY</span>
             <h2>Why Travelers Trust <span className="text-gradient">MNP Holidays</span></h2>
             <p className="lead-text">
-              We are not just a travel agency; we are your personal journey architects. Based in Ahmedabad, we bring world-standard hospitality, verified hotels, transparent pricing, and genuine 24/7 human assistance.
+              We are not just a travel agency; we are your personal journey architects. Based in Ahmedabad & Mumbai, we bring world-standard hospitality, verified hotels, transparent pricing, and genuine 24/7 human assistance.
             </p>
             <div className="about-features">
               <div className="feat-card">
@@ -1624,7 +1434,9 @@ function App() {
         </div>
       </section>
 
-      {/* Contact & Instant Inquiry Section */}
+      {/* ========================================================
+          OFFICES & CONTACT SECTION
+          ======================================================== */}
       <section id="contact" className="contact section-padding">
         <div className="contact-blob"></div>
         <div className="container contact-grid">
@@ -1641,7 +1453,7 @@ function App() {
                   <span className="branch-badge">HEADQUARTERS</span>
                   <h4>📍 Ahmedabad Head Office (Gujarat)</h4>
                 </div>
-                <p className="branch-full-address">
+                <p className="branch-full-address address-compact" style={{ fontSize: '0.78rem', lineHeight: '1.38', color: '#94A3B8', margin: '0.15rem 0 0.35rem 0' }}>
                   Shop 467/1, TP No. 11, FP 109/1, SF 224, Townplaza, Near Raspan Cross Road, Nikol, Ahmedabad, Gujarat - 382350
                 </p>
                 <div className="branch-phones-group">
@@ -1649,8 +1461,16 @@ function App() {
                   <div className="branch-chips-row">
                     <a href="tel:+919825179624" className="branch-phone-chip">📞 +91 98251 79624</a>
                     <a href="tel:+919712204028" className="branch-phone-chip">📞 +91 97122 04028</a>
-                    <a href="tel:+919327371565" className="branch-phone-chip">+91 93273 71565</a>
-                    <a href="tel:+919327130670" className="branch-phone-chip">+91 93271 30670</a>
+                    <a href="tel:+919327371565" className="branch-phone-chip">📞 +91 93273 71565</a>
+                    <a href="tel:+919327130670" className="branch-phone-chip">📞 +91 93271 30670</a>
+                    <a 
+                      href="https://www.google.com/maps/place/MNP+HOLIDAYS+PVT+LTD/@23.0496116,72.6696688,17z/data=!3m1!4b1!4m6!3m5!1s0x395e870001ffdd23:0x3d0e56e3789502df!8m2!3d23.0496067!4d72.6722437!16s%2Fg%2F11v_3hb51r?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="branch-maps-btn"
+                    >
+                      📍 Open in Google Maps
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1661,7 +1481,7 @@ function App() {
                   <span className="branch-badge mumbai-badge">MUMBAI BRANCH</span>
                   <h4>📍 Mumbai Branch Office (Maharashtra)</h4>
                 </div>
-                <p className="branch-full-address">
+                <p className="branch-full-address address-compact" style={{ fontSize: '0.78rem', lineHeight: '1.38', color: '#94A3B8', margin: '0.15rem 0 0.35rem 0' }}>
                   Shop No.8, Rangari Height, Samarth Hanuman Lane, Dr. A.B.Road, Lal Baug, Kalachowki, Mumbai - 400033
                 </p>
                 <div className="branch-phones-group">
@@ -1691,7 +1511,7 @@ function App() {
               </p>
             </div>
 
-            {/* 3D Social & Contact Badges in Section */}
+            {/* 3D Social & Contact Badges */}
             <div className="social-links-container">
               <h4>Connect With Us Across Official Channels:</h4>
               <div className="social-3d-badges-row">
@@ -1782,12 +1602,11 @@ function App() {
                 <div className="form-group">
                   <label>Tour Category</label>
                   <select name="type">
-                    <option value="Domestic Trending (Udaipur, Ooty, Kashmir...)">Domestic India (Udaipur, Ooty...)</option>
-                    <option value="International Holiday (Vietnam, Bali, Dubai...)">International (Vietnam, Bali...)</option>
+                    <option value="Domestic India (Udaipur, Kashmir, Kerala...)">Domestic India (Udaipur, Kashmir...)</option>
+                    <option value="International Holiday (Vietnam, Thailand, Bali...)">International (Vietnam, Bali...)</option>
                     <option value="Special Honeymoon Package">Honeymoon Special</option>
                     <option value="Corporate / MICE Tour">Corporate & MICE Tour</option>
                     <option value="School / College Tour">School / College Educational</option>
-                    <option value="Family Holiday">Family Holiday</option>
                   </select>
                 </div>
                 <div className="form-group">
@@ -1807,7 +1626,9 @@ function App() {
         </div>
       </section>
 
-      {/* Package Detail Modal */}
+      {/* ========================================================
+          PACKAGE DETAIL MODAL (HIGH RESOLUTION & ITINERARY)
+          ======================================================== */}
       {selectedPackage && (
         <div className="modal-backdrop" onClick={() => setSelectedPackage(null)}>
           <div className="modal-card" onClick={(e) => e.stopPropagation()}>
@@ -1824,8 +1645,17 @@ function App() {
                 <span className="modal-price">{selectedPackage.price}</span>
               </div>
               <p className="modal-desc">{selectedPackage.desc}</p>
+
+              {selectedPackage.requiresOfficeContact && (
+                <div className="modal-office-notice">
+                  <div className="modal-office-notice-title">🏛️ DIRECT OFFICE CONSULTATION REQUIRED</div>
+                  <p>
+                    Due to variable consular biometric appointments (VFS / Embassy), individual financial documentation, and seasonal airline fares, this destination / visa category is processed through direct consultation at our <strong>Ahmedabad Head Office</strong> or <strong>Mumbai Branch</strong>.
+                  </p>
+                </div>
+              )}
               
-              <h4>Package Inclusions:</h4>
+              <h4>{selectedPackage.requiresOfficeContact ? 'Documentation & Service Inclusions:' : 'Package Inclusions:'}</h4>
               <ul className="modal-inclusions">
                 {selectedPackage.inclusions.map((inc, idx) => (
                   <li key={idx}>✓ {inc}</li>
@@ -1834,68 +1664,17 @@ function App() {
 
               <div className="modal-actions">
                 <button 
-                  className="modal-btn-wa"
-                  onClick={() => handleBookOnWhatsApp(selectedPackage.title, selectedPackage.price, selectedPackage.duration)}
+                  className={`modal-btn-wa ${selectedPackage.requiresOfficeContact ? 'modal-btn-office-wa' : ''}`}
+                  onClick={() => handleBookOnWhatsApp(selectedPackage.title, selectedPackage.price, selectedPackage.duration, selectedPackage.requiresOfficeContact)}
                 >
                   <IconWhatsApp size={18} color="#FFFFFF" />
-                  <span>Inquire on WhatsApp</span>
+                  <span>{selectedPackage.requiresOfficeContact ? 'Consult Visa Specialist (WhatsApp)' : 'Inquire on WhatsApp'}</span>
                 </button>
                 <a href="tel:+919825179624" className="modal-btn-call">
-                  📞 Call Desk (+91 98251 79624)
+                  📞 Ahmedabad (+91 98251 79624)
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Official Flyer Full-Screen Lightbox Modal */}
-      {selectedFlyer && (
-        <div className="flyer-lightbox-backdrop" onClick={() => setSelectedFlyer(null)}>
-          <div className="flyer-lightbox-container" onClick={(e) => e.stopPropagation()}>
-            <button className="flyer-lightbox-close" onClick={() => setSelectedFlyer(null)} aria-label="Close Flyer">✕</button>
-            <div className="flyer-lightbox-image-wrap">
-              <img 
-                src={selectedFlyer.image} 
-                alt={selectedFlyer.title} 
-                onError={(e) => {
-                  e.currentTarget.onerror = null;
-                  e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80';
-                }}
-              />
-            </div>
-            <div className="flyer-lightbox-footer">
-              <div className="flyer-lightbox-meta">
-                <span className="flyer-tag-badge" style={{ position: 'static', display: 'inline-block', marginBottom: '0.4rem' }}>
-                  {selectedFlyer.tag}
-                </span>
-                <h3>{selectedFlyer.title}</h3>
-                <p style={{ color: '#38BDF8', fontWeight: 700, fontSize: '1.05rem', margin: '0.2rem 0' }}>
-                  💰 {selectedFlyer.price}
-                </p>
-                <p>{selectedFlyer.desc}</p>
-                <div style={{ fontSize: '0.82rem', color: '#94A3B8', marginTop: '0.4rem' }}>
-                  🏢 {selectedFlyer.branches}
-                </div>
-                <div style={{ fontSize: '0.80rem', color: '#7DD3FC', marginTop: '0.3rem' }}>
-                  📍 Mumbai Office: Shop No.8, Rangari Height, Lal Baug, Kalachowki, Mumbai-400033
-                </div>
-              </div>
-              <div className="flyer-lightbox-actions">
-                <button 
-                  className="btn-flyer-wa"
-                  style={{ padding: '0.75rem 1.4rem', fontSize: '0.95rem' }}
-                  onClick={() => handleFlyerWhatsApp(selectedFlyer.title, selectedFlyer.price)}
-                >
-                  <IconWhatsApp size={18} color="#FFFFFF" />
-                  <span>Inquire on WhatsApp</span>
-                </button>
-                <a 
-                  href="tel:+919825179624" 
-                  className="btn-flyer-view"
-                  style={{ padding: '0.75rem 1.2rem', textDecoration: 'none' }}
-                >
-                  📞 Call Desk
+                <a href="tel:+919898083171" className="modal-btn-call">
+                  📞 Mumbai (+91 98980 83171)
                 </a>
               </div>
             </div>
@@ -1907,7 +1686,6 @@ function App() {
           3D FLOATING DOCK (DIALER, WHATSAPP, INSTAGRAM, FACEBOOK)
           ======================================================= */}
       <aside className="floating-dock" aria-label="Quick 3D Contact and Social Dock">
-        {/* Phone Dialer 3D Icon */}
         <a 
           href="tel:+919825179624" 
           className="dock-item" 
@@ -1920,7 +1698,6 @@ function App() {
           <span className="dock-tooltip">Call Desk (+91 98251 79624)</span>
         </a>
 
-        {/* WhatsApp 3D Icon */}
         <a 
           href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20inquire%20about%20a%20tour" 
           target="_blank" 
@@ -1935,7 +1712,6 @@ function App() {
           <span className="dock-tooltip">Chat on WhatsApp</span>
         </a>
 
-        {/* Instagram 3D Icon */}
         <a 
           href="https://www.instagram.com/mnpholidays/" 
           target="_blank" 
@@ -1950,7 +1726,6 @@ function App() {
           <span className="dock-tooltip">Follow on Instagram</span>
         </a>
 
-        {/* Facebook 3D Icon */}
         <a 
           href="https://www.facebook.com/mnpholidays/" 
           target="_blank" 
@@ -1967,21 +1742,20 @@ function App() {
       </aside>
 
       {/* =======================================================
-          MOBILE PERSISTENT BOTTOM NAVIGATION BAR (FIXED ON SCROLL)
+          MOBILE PERSISTENT BOTTOM NAVIGATION BAR
           ======================================================= */}
       <nav className="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
-        <a href="#home" className="mobile-bottom-nav-item">
+        <a href="#home" className="mobile-bottom-nav-item" onClick={() => setActivePage('all')}>
           <span className="bottom-nav-icon">🏠</span>
           <span className="bottom-nav-label">Home</span>
         </a>
-        <a href="#destinations" className="mobile-bottom-nav-item">
+        <a href="#destinations" className="mobile-bottom-nav-item" onClick={() => handlePageSwitch('all')}>
           <span className="bottom-nav-icon">🌍</span>
           <span className="bottom-nav-label">Packages</span>
         </a>
-        <a href="#official-flyers" className="mobile-bottom-nav-item">
-          <span className="bottom-nav-icon">📸</span>
-          <span className="bottom-nav-label">Flyers</span>
-          <span className="bottom-nav-pill">19</span>
+        <a href="#special-services" className="mobile-bottom-nav-item">
+          <span className="bottom-nav-icon">💼</span>
+          <span className="bottom-nav-label">Corporate</span>
         </a>
         <a href="#contact" className="mobile-bottom-nav-item">
           <span className="bottom-nav-icon">📍</span>
@@ -2014,6 +1788,15 @@ function App() {
                 <a href="tel:+919825179624">📞 +91 98251 79624</a>
                 <span>•</span>
                 <a href="tel:+919712204028">+91 97122 04028</a>
+                <span>•</span>
+                <a 
+                  href="https://www.google.com/maps/place/MNP+HOLIDAYS+PVT+LTD/@23.0496116,72.6696688,17z/data=!3m1!4b1!4m6!3m5!1s0x395e870001ffdd23:0x3d0e56e3789502df!8m2!3d23.0496067!4d72.6722437!16s%2Fg%2F11v_3hb51r?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="footer-branch-map-link"
+                >
+                  🗺️ Map Location
+                </a>
               </div>
             </div>
 
