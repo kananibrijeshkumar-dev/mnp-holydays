@@ -366,7 +366,7 @@ const PACKAGES_DATA = [
     location: 'Udaipur & Shrinathji, Rajasthan',
     rating: '★ 4.9 (Official Group Tour)',
     inclusions: ['City Palace & Jagdish Temple', 'Lake Pichola & Fateh Sagar Lake', 'Bahubali Hills & Shilpgram Tour', 'Rajasthani Culture Show & DJ Party', 'Shrinathji Darshan Sightseeing', 'All Meals (Breakfast, Lunch, Dinner)'],
-    image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp5.jpeg'
   },
   {
@@ -380,7 +380,7 @@ const PACKAGES_DATA = [
     location: 'Kumbhalgarh & Udaipur, Rajasthan',
     rating: '★ 5.0 (20+ Top Resorts)',
     inclusions: ['20+ Verified Luxury Heritage Resorts', 'Kumbhalgarh Great Wall Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Pool Access'],
-    image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp3.jpeg'
   },
   {
@@ -394,7 +394,7 @@ const PACKAGES_DATA = [
     location: 'Jaisalmer & Sam Sand Dunes, Rajasthan',
     rating: '★ 5.0 (Desert Camp Special)',
     inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Music, Folk Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Meals Included'],
-    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp19.jpeg'
   },
   {
@@ -408,7 +408,7 @@ const PACKAGES_DATA = [
     location: 'Ooty & Coonoor, Tamil Nadu',
     rating: '★ 4.8 (240+ reviews)',
     inclusions: ['Hillview Luxury Resort', 'Nilgiri Heritage Toy Train Ride', 'Tea Factory & Fresh Tasting Tour', 'Dedicated Sightseeing Cab', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'dom-3',
@@ -421,7 +421,7 @@ const PACKAGES_DATA = [
     location: 'Kashmir, India',
     rating: '★ 4.9 (480+ reviews)',
     inclusions: ['1 Night Luxury Houseboat', '4 Nights 4★ Hotel', 'Dal Lake Shikara Ride', 'Gulmarg Cable Car Assistance', 'Breakfast & Dinner (MAP Plan)'],
-    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'dom-4',
@@ -434,7 +434,7 @@ const PACKAGES_DATA = [
     location: 'North & South Goa, India',
     rating: '★ 4.8 (390+ reviews)',
     inclusions: ['4★ Beachside Resort with Pool', 'Sunset River Cruise', 'Speedboat & Parasailing Combo', 'AC Sedan / SUV Transfers', 'Daily Breakfast Buffet'],
-    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'dom-5',
@@ -447,7 +447,7 @@ const PACKAGES_DATA = [
     location: 'Kerala, India',
     rating: '★ 4.9 (340+ reviews)',
     inclusions: ['Private Houseboat Cruise', 'Munnar 4★ Tea Valley Resort', 'Spice Plantation Guided Tour', 'Private Dedicated Vehicle', 'All Meals on Houseboat'],
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=85'
   },
 
   // ==========================================
@@ -464,7 +464,7 @@ const PACKAGES_DATA = [
     location: 'Bangkok & Pattaya, Thailand',
     rating: '★ 4.9 (MNP Bestseller)',
     inclusions: ['Airport Pickup & Drop Transfers', '1st Day Breakfast at Tiger Topia', 'Daily Buffet Breakfast', 'Coral Island Speedboat Tour with Lunch', 'Pattaya City Tour & View Point', 'Sunset Yacht Party with Liqueur', 'Visa on Arrival FREE for Indians'],
-    image: 'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp1.jpeg'
   },
   {
@@ -478,7 +478,7 @@ const PACKAGES_DATA = [
     location: 'Singapore, Malaysia & Thailand',
     rating: '★ 5.0 (Fixed Group Departure)',
     inclusions: ['Roundtrip International Flight Tickets', 'Daily Breakfast and Dinner Included', 'All Transfer Sightseeing with Entry Tickets', 'Airport Pickups and Drops Throughout', 'Universal Studios & Sentosa Access', 'Kuala Lumpur, Genting & Bangkok Highlights'],
-    image: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp2.jpeg'
   },
   {
@@ -492,7 +492,7 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Da Nang & Ho Chi Minh, Vietnam',
     rating: '★ 4.9 (Popular Vietnam)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily Buffet Breakfasts', 'Hanoi 4 Hours City Tour + Ninh Binh Tour', 'Marble Mountain, Coconut Village & Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Tour', 'Cu Chi Tunnel & Mekong Delta Tour'],
-    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp15.jpeg'
   },
   {
@@ -506,7 +506,7 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Da Nang, Ho Chi Minh, Phu Quoc & Ha Long Bay',
     rating: '★ 5.0 (Luxury Cruise Special)',
     inclusions: ['1 Night Stay at La Regina Royal Cruise (Ha Long Bay)', '2N Flower Garden Hanoi + 2N Cicilla Da Nang', '2N Adora Art Hotel Ho Chi Minh', '2N Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour, Vin Pearl Safari & Speedboat Tour', 'Hanoi City, Ninh Binh & Ba Na Hills Golden Bridge', '9 Daily Buffet Breakfasts'],
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp16.jpeg'
   },
   {
@@ -520,7 +520,7 @@ const PACKAGES_DATA = [
     location: 'Phu Quoc Island, Vietnam',
     rating: '★ 4.9 (Tropical Island)',
     inclusions: ['4 Nights at Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour with Venice Water Taxi', 'Vin Pearl Safari & Vin Wonder Pass', '4 Island Tour in South by Speedboat', 'One Way Cable Car, Sunset Town & Kiss Bridge', 'Kiss of The Sea Spectacular Show Pass', '4 Daily Buffet Breakfasts'],
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp17.jpeg'
   },
   {
@@ -534,7 +534,7 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Ha Long Bay & Da Nang',
     rating: '★ 4.9 (Cruise & Heritage)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '1N Stay on Luxury La Regina Royal Cruise (Ha Long Bay)', '2N Stay at Cicilla Hotel Da Nang', '5 Daily Buffet Breakfasts', 'Hanoi City Tour & Ninh Binh Day Tour', 'Marble Mountain & Coconut Village Basket Boat', 'Hoi An Ancient Town Lantern Boat & Ba Na Hills'],
-    image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp18.jpeg'
   },
   {
@@ -548,7 +548,7 @@ const PACKAGES_DATA = [
     location: 'Europe, UAE, Bali & Global',
     rating: '★ 5.0 (World Tour Special)',
     inclusions: ['Global Destinations Coverage', 'Hassle-Free Visa & E-Visa Processing', 'Premium 4★ & 5★ Accommodations', 'Airport Transfers & Guided Sightseeing', 'Customized Family & Group Itineraries'],
-    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp14.jpeg'
   },
   {
@@ -562,7 +562,7 @@ const PACKAGES_DATA = [
     location: 'Bali, Indonesia',
     rating: '★ 4.9 (560+ reviews)',
     inclusions: ['4★ Ubud & Kuta Resorts', 'Nusa Penida West Island Tour & Boat', 'Bali Jungle Swing Pass', 'Private Chauffeur Daily', 'Airport Pickup & Drop'],
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'int-4',
@@ -575,7 +575,7 @@ const PACKAGES_DATA = [
     location: 'Dubai & Abu Dhabi, UAE',
     rating: '★ 4.9 (510+ reviews)',
     inclusions: ['4★ Luxury City Centre Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 & BBQ Dinner', 'Dubai Marina Dhow Dinner Cruise', 'UAE Tourist Visa Included'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp6.jpeg'
   },
 
@@ -593,7 +593,7 @@ const PACKAGES_DATA = [
     location: 'Goa, Udaipur, Manali, Andaman & Global',
     rating: '★ 5.0 (Couple Specialist)',
     inclusions: ['Handpicked Romantic Resorts & Overwater Villas', 'Candlelight Beach Dinner Setup', 'Flower Bed Decoration & Honeymoon Cake', 'Couple Spa Rejuvenation Session', 'Private Chauffeur Sedan Car Throughout'],
-    image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp9.jpeg'
   },
   {
@@ -607,7 +607,7 @@ const PACKAGES_DATA = [
     location: 'Maldives Islands',
     rating: '★ 5.0 (380+ couples)',
     inclusions: ['Overwater Villa with Pool Access', 'Speedboat Airport Transfers', 'Candlelight 3-Course Beach Dinner', 'Snorkeling & Coral Reef Safari', 'All-Inclusive Dine Around Meals'],
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'hny-2',
@@ -620,7 +620,7 @@ const PACKAGES_DATA = [
     location: 'Ubud & Seminyak, Bali',
     rating: '★ 4.9 (310+ couples)',
     inclusions: ['Private Pool Luxury Villa Stay', 'Flower Petal Bath & Couple Massage', 'Uluwatu Clifftop Sunset Dinner', 'Private Chauffeur Car Throughout', 'Honeymoon Cake & Room Setup'],
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85'
   },
 
   // ==========================================
@@ -637,7 +637,7 @@ const PACKAGES_DATA = [
     location: 'Domestic & Global Sectors',
     rating: '★ 5.0 (Corporate Specialist)',
     inclusions: ['Group Flight Bookings & Seat Blocks', '5★ Hotel & Convention Reservations', 'Ground AC Volvo / Luxury Transportation', 'Curated Professional Team Building Facilitator', 'Dedicated 24/7 Corporate Travel Account Manager'],
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp8.jpeg'
   },
   {
@@ -651,7 +651,7 @@ const PACKAGES_DATA = [
     location: 'North & South Goa, India',
     rating: '★ 4.9 (110+ Corporates)',
     inclusions: ['5★ Beachfront Resort Group Booking', 'State-of-art AC Conference Hall & AV/Projectors', 'Exclusive Gala Dinner & DJ Sound Setup', 'Curated Professional Team Building Facilitator', 'Airport AC Coach Transfers'],
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'corp-2',
@@ -664,7 +664,7 @@ const PACKAGES_DATA = [
     location: 'Dubai & Marina, UAE',
     rating: '★ 5.0 (85+ Corporates)',
     inclusions: ['5★ Sheikh Zayed Road Luxury Hotel', 'Private Chartered Yacht Party with Live DJ', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Manager'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85'
   },
 
   // ==========================================
@@ -681,7 +681,7 @@ const PACKAGES_DATA = [
     location: 'Delhi, Agra & Jaipur',
     rating: '★ 4.9 (160+ Schools)',
     inclusions: ['Student-Safe 3★/4★ Verified Hotels', 'Certified ASI Historian & Archeology Guides', 'All Monument Entries & Audio Guides', 'Nutritious Buffet Meals (Breakfast, Lunch, Dinner)', '24/7 Security Escorts & First Aid Trained Team'],
-    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85'
   },
   {
     id: 'edu-2',
@@ -694,7 +694,7 @@ const PACKAGES_DATA = [
     location: 'Singapore',
     rating: '★ 5.0 (55+ Institutions)',
     inclusions: ['Singapore Science Centre & Omni-Theatre Pass', 'Universal Studios STEM Workshop Access', 'Group International Flights & Student Visas', 'Pure Hygienic Indian Meals Daily', 'Experienced Teacher Escorts & Medical Insurance'],
-    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85'
   },
 
   // ==========================================
@@ -711,7 +711,7 @@ const PACKAGES_DATA = [
     location: 'Mountains, Beaches, Heritage & Road Trips',
     rating: '★ 5.0 (Family Specialist)',
     inclusions: ['Family-Friendly Verified Safe Hotels', 'Spacious AC Private Vehicles (Innova / Crysta)', 'Customized Relaxed Itineraries for All Ages', 'Daily Breakfast & Multi-Cuisine Meal Plans', '24/7 Family Assistance Support'],
-    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp7.jpeg'
   },
   {
@@ -725,7 +725,7 @@ const PACKAGES_DATA = [
     location: 'Port Blair & Havelock Island',
     rating: '★ 4.9 (280+ Families)',
     inclusions: ['Catamaran Sea Cruise between Islands', 'Beachside Family Cottage Stay', 'Glass-Bottom Coral Boat Ride', 'Port Blair Airport Transfers', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=85'
   }
 ];
 
@@ -1003,7 +1003,7 @@ function App() {
         <div className="hero-glow-orb hero-glow-1"></div>
         <div className="hero-glow-orb hero-glow-2"></div>
         <img 
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=85" 
+          src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90" 
           alt="World-Class Travel with MNP Holidays" 
           className="hero-bg"
           loading="eager"
@@ -1128,7 +1128,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=400&q=80" alt="Thailand" />
+              <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=600&q=85" alt="Thailand" />
               <div className="hero-mini-info">
                 <span className="mini-tag">🔥 BESTSELLER</span>
                 <strong>Thailand Escapes</strong>
@@ -1146,7 +1146,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=400&q=80" alt="Udaipur" />
+              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=85" alt="Udaipur" />
               <div className="hero-mini-info">
                 <span className="mini-tag">👑 ROYAL TOUR</span>
                 <strong>Udaipur & Shrinathji</strong>
@@ -1164,7 +1164,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80" alt="Vietnam" />
+              <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=600&q=85" alt="Vietnam" />
               <div className="hero-mini-info">
                 <span className="mini-tag">🏮 POPULAR</span>
                 <strong>Vietnam 3 Cities</strong>
@@ -1182,7 +1182,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=400&q=80" alt="Jaisalmer" />
+              <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=600&q=85" alt="Jaisalmer" />
               <div className="hero-mini-info">
                 <span className="mini-tag">🐪 DESERT HIT</span>
                 <strong>Jaisalmer Luxury Camp</strong>
