@@ -3121,35 +3121,10 @@ footer {
   gap: 1.75rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .flyers-carousel-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1.25rem;
-    padding: 0.5rem 0.25rem 1.75rem;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(56, 189, 248, 0.4) rgba(15, 23, 42, 0.6);
-  }
-
-  .flyers-carousel-track::-webkit-scrollbar {
-    height: 6px;
-  }
-
-  .flyers-carousel-track::-webkit-scrollbar-track {
-    background: rgba(15, 23, 42, 0.6);
-    border-radius: 10px;
-  }
-
-  .flyers-carousel-track::-webkit-scrollbar-thumb {
-    background: var(--primary);
-    border-radius: 10px;
-  }
-
-  .flyers-carousel-track .flyer-card {
-    flex: 0 0 295px;
-    scroll-snap-align: start;
   }
 }
 
