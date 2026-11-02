@@ -998,6 +998,15 @@ function App() {
                 <div className="mobile-branch-actions">
                   <a href="tel:+919825179624" className="mobile-branch-call-btn">📞 +91 98251 79624</a>
                   <a href="tel:+919712204028" className="mobile-branch-call-btn">📞 +91 97122 04028</a>
+                  <a 
+                    href="https://www.google.com/maps/dir/23.0447408,72.6387762/MNP+HOLIDAYS+PVT+LTD,+224,+Town+Plazza,+Raspan+Cross+Rd,+New+India+Colony,+Nicol+Gam,+Nik" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="mobile-branch-call-btn"
+                    style={{ borderColor: 'rgba(56, 189, 248, 0.5)', color: '#38BDF8' }}
+                  >
+                    📍 Map
+                  </a>
                 </div>
               </div>
               <div className="mobile-branch-card">
@@ -1008,6 +1017,15 @@ function App() {
                 <div className="mobile-branch-actions">
                   <a href="tel:+919898083171" className="mobile-branch-call-btn">📞 +91 98980 83171</a>
                   <a href="tel:+919136774277" className="mobile-branch-call-btn">📞 +91 91367 74277</a>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Shop+No.8+Rangari+Height+Samarth+Hanuman+Lane+Dr.+A.B.Road+Lal+Baug+Kalachowki+Mumbai+400033" 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="mobile-branch-call-btn"
+                    style={{ borderColor: 'rgba(56, 189, 248, 0.5)', color: '#38BDF8' }}
+                  >
+                    📍 Map
+                  </a>
                 </div>
               </div>
             </div>
@@ -1765,6 +1783,14 @@ function App() {
                     <a href="tel:+919712204028" className="branch-phone-chip">📞 +91 97122 04028</a>
                     <a href="tel:+919327371565" className="branch-phone-chip">+91 93273 71565</a>
                     <a href="tel:+919327130670" className="branch-phone-chip">+91 93271 30670</a>
+                    <a 
+                      href="https://www.google.com/maps/dir/23.0447408,72.6387762/MNP+HOLIDAYS+PVT+LTD,+224,+Town+Plazza,+Raspan+Cross+Rd,+New+India+Colony,+Nicol+Gam,+Nik" 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="branch-maps-btn"
+                    >
+                      📍 Open in Google Maps
+                    </a>
                   </div>
                 </div>
               </div>
@@ -2010,7 +2036,10 @@ function App() {
                   🏢 {selectedFlyer.branches}
                 </div>
                 <div style={{ fontSize: '0.80rem', color: '#7DD3FC', marginTop: '0.3rem' }}>
-                  📍 Mumbai Office: Shop No.8, Rangari Height, Lal Baug, Kalachowki, Mumbai-400033
+                  📍 Ahmedabad Head Office: SF 224, Townplaza, Raspan Cross Road, Nikol, Ahmedabad - 382350
+                </div>
+                <div style={{ fontSize: '0.80rem', color: '#7DD3FC', marginTop: '0.15rem' }}>
+                  📍 Mumbai Office: Shop No.8, Rangari Height, Lal Baug, Kalachowki, Mumbai - 400033
                 </div>
               </div>
               <div className="flyer-lightbox-actions">
@@ -2146,6 +2175,15 @@ function App() {
                 <a href="tel:+919825179624">📞 +91 98251 79624</a>
                 <span>•</span>
                 <a href="tel:+919712204028">+91 97122 04028</a>
+                <span>•</span>
+                <a 
+                  href="https://www.google.com/maps/dir/23.0447408,72.6387762/MNP+HOLIDAYS+PVT+LTD,+224,+Town+Plazza,+Raspan+Cross+Rd,+New+India+Colony,+Nicol+Gam,+Nik" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="footer-branch-map-link"
+                >
+                  🗺️ Map Location
+                </a>
               </div>
             </div>
 
