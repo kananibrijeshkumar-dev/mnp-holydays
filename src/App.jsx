@@ -231,7 +231,7 @@ export const FLYERS_DATA = [
     tag: 'Family Holidays',
     price: 'Custom Family Plans',
     desc: 'Family-friendly vacations across Mountains, Beaches, Heritage forts, and scenic Road Trips with comfortable private transport and kid-friendly stays.',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/family_vacation.jpg',
     flyer: '/photos/mnp7.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
@@ -730,7 +730,7 @@ const PACKAGES_DATA = [
     location: 'Mountains, Beaches, Heritage & Road Trips',
     rating: '★ 5.0 (Family Specialist)',
     inclusions: ['Family-Friendly Verified Safe Hotels', 'Spacious AC Private Vehicles (Innova / Crysta)', 'Customized Relaxed Itineraries for All Ages', 'Daily Breakfast & Multi-Cuisine Meal Plans', '24/7 Family Assistance Support'],
-    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/family_vacation.jpg',
     flyer: '/photos/mnp7.jpeg'
   },
   {
@@ -744,7 +744,7 @@ const PACKAGES_DATA = [
     location: 'Port Blair & Havelock Island',
     rating: '★ 4.9 (280+ Families)',
     inclusions: ['Catamaran Sea Cruise between Islands', 'Beachside Family Cottage Stay', 'Glass-Bottom Coral Boat Ride', 'Port Blair Airport Transfers', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=85'
+    image: '/destinations/andaman.jpg'
   }
 ];
 
