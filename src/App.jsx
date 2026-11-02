@@ -819,6 +819,26 @@ function App() {
     window.open(`https://wa.me/919825179624?text=${encodeURIComponent(message)}`, '_blank');
   };
 
+  // Ultra-Smooth 3D Perspective Tilt & Specular Light Reflection
+  const handleCardTilt = (e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -10;
+    const rotateY = ((x - centerX) / centerX) * 10;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-10px) scale3d(1.025, 1.025, 1.025)`;
+    card.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
+    card.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+  };
+
+  const handleCardReset = (e) => {
+    const card = e.currentTarget;
+    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0) scale3d(1, 1, 1)';
+  };
+
   return (
     <>
       {/* Top Notification Bar with Branch Contacts */}
@@ -990,6 +1010,38 @@ function App() {
         />
         <div className="hero-overlay"></div>
 
+        {/* 3D Floating Travel Accent Badges with Depth */}
+        <div className="hero-3d-floating-elements" aria-hidden="true">
+          <div className="float-badge float-badge-left-1">
+            <span className="float-badge-icon">✈️</span>
+            <div className="float-badge-text">
+              <strong>Fixed Group Flights</strong>
+              <span>Ahmedabad & Mumbai</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-right-1">
+            <span className="float-badge-icon">🏰</span>
+            <div className="float-badge-text">
+              <strong>20+ Royal Resorts</strong>
+              <span>Kumbhalgarh & Udaipur</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-left-2">
+            <span className="float-badge-icon">🛂</span>
+            <div className="float-badge-text">
+              <strong>Fast E-Visa Desk</strong>
+              <span>7-10 Days Worldwide</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-right-2">
+            <span className="float-badge-icon">🌟</span>
+            <div className="float-badge-text">
+              <strong>15,000+ Guests</strong>
+              <span>★ 4.9 Verified Reviews</span>
+            </div>
+          </div>
+        </div>
+
         <div className="hero-content animate-fade-up">
           <div className="hero-badge-enchanting">
             <span className="badge-sparkle">✨</span>
@@ -1068,6 +1120,8 @@ function App() {
           <div className="hero-mini-showcase">
             <div 
               className="hero-mini-card"
+              onMouseMove={handleCardTilt}
+              onMouseLeave={handleCardReset}
               onClick={() => {
                 setSearchQuery('Thailand');
                 setSelectedCategory('all');
@@ -1084,6 +1138,8 @@ function App() {
 
             <div 
               className="hero-mini-card"
+              onMouseMove={handleCardTilt}
+              onMouseLeave={handleCardReset}
               onClick={() => {
                 setSearchQuery('Udaipur');
                 setSelectedCategory('all');
@@ -1100,6 +1156,8 @@ function App() {
 
             <div 
               className="hero-mini-card"
+              onMouseMove={handleCardTilt}
+              onMouseLeave={handleCardReset}
               onClick={() => {
                 setSearchQuery('Vietnam');
                 setSelectedCategory('all');
@@ -1116,6 +1174,8 @@ function App() {
 
             <div 
               className="hero-mini-card"
+              onMouseMove={handleCardTilt}
+              onMouseLeave={handleCardReset}
               onClick={() => {
                 setSearchQuery('Jaisalmer');
                 setSelectedCategory('all');
@@ -1133,22 +1193,22 @@ function App() {
 
           {/* Trust Stats Bar */}
           <div className="trust-stats">
-            <div className="stat-item">
+            <div className="stat-item" onMouseMove={handleCardTilt} onMouseLeave={handleCardReset}>
               <strong>15,000+</strong>
               <span>Delighted Travelers</span>
             </div>
             <div className="stat-separator"></div>
-            <div className="stat-item">
+            <div className="stat-item" onMouseMove={handleCardTilt} onMouseLeave={handleCardReset}>
               <strong>250+</strong>
               <span>Corporate & College Offsites</span>
             </div>
             <div className="stat-separator"></div>
-            <div className="stat-item">
+            <div className="stat-item" onMouseMove={handleCardTilt} onMouseLeave={handleCardReset}>
               <strong>19+</strong>
               <span>Official MNP Flyers</span>
             </div>
             <div className="stat-separator"></div>
-            <div className="stat-item">
+            <div className="stat-item" onMouseMove={handleCardTilt} onMouseLeave={handleCardReset}>
               <strong>4.9 ★</strong>
               <span>Customer Satisfaction</span>
             </div>
@@ -1285,7 +1345,12 @@ function App() {
           {/* Packages Grid */}
           <div className="packages-grid">
             {filteredPackages.map((pkg) => (
-              <div key={pkg.id} className="package-card">
+              <div 
+                key={pkg.id} 
+                className="package-card"
+                onMouseMove={handleCardTilt}
+                onMouseLeave={handleCardReset}
+              >
                 <div className="package-img-wrap">
                   <img 
                     src={pkg.image} 
@@ -1470,7 +1535,12 @@ function App() {
           {/* 19 Official Flyers Carousel / Responsive Track */}
           <div className="flyers-carousel-track">
             {filteredFlyers.map((flyer) => (
-              <div key={flyer.id} className="flyer-card">
+              <div 
+                key={flyer.id} 
+                className="flyer-card"
+                onMouseMove={handleCardTilt}
+                onMouseLeave={handleCardReset}
+              >
                 <div 
                   className="flyer-card-media" 
                   onClick={() => setSelectedFlyer(flyer)}

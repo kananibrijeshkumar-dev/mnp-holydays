@@ -3635,4 +3635,290 @@ footer {
   }
 }
 
+/* ========================================================
+   ULTRA-PREMIUM 3D DESIGN & BOLD CHARMING ANIMATIONS
+   ======================================================== */
+
+/* --- 3D Hero Floating Badges --- */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-3d-floating-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.float-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50px;
+  padding: 0.6rem 1.15rem;
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.25);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.float-badge-icon {
+  font-size: 1.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.float-badge-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.float-badge-text strong {
+  font-size: 0.84rem;
+  font-family: 'Outfit', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+}
+
+.float-badge-text span {
+  font-size: 0.72rem;
+  color: #38BDF8;
+  font-weight: 600;
+}
+
+.float-badge-left-1 {
+  top: 18%;
+  left: 4%;
+  border-color: rgba(56, 189, 248, 0.4);
+  animation: float3D_1 6.5s ease-in-out infinite;
+}
+
+.float-badge-right-1 {
+  top: 22%;
+  right: 4%;
+  border-color: rgba(245, 158, 11, 0.4);
+  animation: float3D_2 7.2s ease-in-out infinite;
+}
+
+.float-badge-left-2 {
+  bottom: 24%;
+  left: 6%;
+  border-color: rgba(37, 211, 102, 0.4);
+  animation: float3D_3 6.8s ease-in-out infinite;
+}
+
+.float-badge-right-2 {
+  bottom: 26%;
+  right: 5%;
+  border-color: rgba(251, 191, 36, 0.4);
+  animation: float3D_1 7.5s ease-in-out infinite reverse;
+}
+
+@keyframes float3D_1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-16px) rotate(2.5deg) scale(1.03);
+  }
+}
+
+@keyframes float3D_2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-3deg) scale(1.04);
+  }
+}
+
+@keyframes float3D_3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-14px) rotate(2deg) scale(1.02);
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-3d-floating-elements {
+    display: none;
+  }
+}
+
+/* --- 3D Depth on Cards & Light Glare --- */
+.package-card,
+.flyer-card,
+.hero-mini-card,
+.stat-item {
+  transform-style: preserve-3d;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  will-change: transform;
+  position: relative;
+}
+
+/* Specular Light Reflection Sweep */
+.package-card::after,
+.flyer-card::after,
+.hero-mini-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 40%, transparent 65%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 6;
+}
+
+.package-card:hover::after,
+.flyer-card:hover::after,
+.hero-mini-card:hover::after {
+  opacity: 1;
+}
+
+/* Luxury 3D Elevation & Neon Borders */
+.package-card {
+  background: linear-gradient(150deg, rgba(30, 41, 59, 0.92) 0%, rgba(15, 23, 42, 0.96) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #FFFFFF !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.2) !important;
+}
+
+.package-card:hover {
+  border-color: rgba(56, 189, 248, 0.55) !important;
+  box-shadow: 0 25px 55px -12px rgba(2, 132, 199, 0.4), 0 0 40px rgba(56, 189, 248, 0.25) !important;
+}
+
+.package-card .package-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.package-card .package-desc {
+  color: #94A3B8 !important;
+}
+
+.package-card .package-duration {
+  color: #7DD3FC !important;
+}
+
+.package-card .inc-pill {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #CBD5E1 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.package-card .inc-pill-more {
+  background: rgba(14, 165, 233, 0.18) !important;
+  color: #38BDF8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.package-card-actions {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.package-card .btn-card-details {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #FFFFFF !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.16) !important;
+}
+
+.package-card .btn-card-details:hover {
+  background: var(--primary-gradient) !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5) !important;
+}
+
+/* 3D Depth Layer Separation on Hover */
+.package-img-wrap,
+.flyer-card-media {
+  transform: translateZ(16px);
+  transform-style: preserve-3d;
+}
+
+.package-tag,
+.flyer-tag-badge {
+  transform: translateZ(36px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45) !important;
+}
+
+.package-price-overlay {
+  transform: translateZ(32px);
+}
+
+.btn-card-flyer-badge {
+  transform: translateZ(34px);
+}
+
+.package-card-actions,
+.flyer-actions-row {
+  transform: translateZ(28px);
+}
+
+/* --- Charming 3D Button Press Tactile Feel --- */
+.btn-card-wa,
+.btn-flyer-wa,
+.btn-nav-wa,
+.btn-search-explore,
+.modal-btn-wa {
+  transform-style: preserve-3d;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-card-wa:active,
+.btn-flyer-wa:active,
+.btn-nav-wa:active,
+.btn-search-explore:active,
+.modal-btn-wa:active {
+  transform: translateY(3px) scale(0.97) !important;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3) !important;
+}
+
+/* --- Section Title 3D Glow Polish --- */
+.section-title {
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+.section-eyebrow {
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  margin-bottom: 0.8rem;
+}
+
+/* 3D Floating Dock Glow Enhancement */
+.floating-dock {
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.6));
+}
+
+.dock-item {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease !important;
+}
+
+.dock-item:hover {
+  transform: scale(1.15) translateX(-6px) !important;
+}
+
+
 
