@@ -353,7 +353,7 @@ export const FLYERS_DATA = [
 // --- COMPREHENSIVE TOUR PACKAGES DATA (FEATURING OFFICIAL FLYERS) ---
 const PACKAGES_DATA = [
   // ==========================================
-  // 1. DOMESTIC INDIA (OFFICIAL FLYERS FIRST)
+  // 1. DOMESTIC INDIA TOURS
   // ==========================================
   {
     id: 'dom-1',
@@ -366,7 +366,8 @@ const PACKAGES_DATA = [
     location: 'Udaipur & Shrinathji, Rajasthan',
     rating: '★ 4.9 (Official Group Tour)',
     inclusions: ['City Palace & Jagdish Temple', 'Lake Pichola & Fateh Sagar Lake', 'Bahubali Hills & Shilpgram Tour', 'Rajasthani Culture Show & DJ Party', 'Shrinathji Darshan Sightseeing', 'All Meals (Breakfast, Lunch, Dinner)'],
-    image: '/photos/mnp5.jpeg'
+    image: 'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp5.jpeg'
   },
   {
     id: 'dom-kumbhalgarh',
@@ -379,7 +380,8 @@ const PACKAGES_DATA = [
     location: 'Kumbhalgarh & Udaipur, Rajasthan',
     rating: '★ 5.0 (20+ Top Resorts)',
     inclusions: ['20+ Verified Luxury Heritage Resorts', 'Kumbhalgarh Great Wall Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Pool Access'],
-    image: '/photos/mnp3.jpeg'
+    image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp3.jpeg'
   },
   {
     id: 'dom-7',
@@ -392,7 +394,8 @@ const PACKAGES_DATA = [
     location: 'Jaisalmer & Sam Sand Dunes, Rajasthan',
     rating: '★ 5.0 (Desert Camp Special)',
     inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Music, Folk Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Meals Included'],
-    image: '/photos/mnp19.jpeg'
+    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp19.jpeg'
   },
   {
     id: 'dom-2',
@@ -448,7 +451,7 @@ const PACKAGES_DATA = [
   },
 
   // ==========================================
-  // 2. INTERNATIONAL TOURS (OFFICIAL FLYERS FIRST)
+  // 2. INTERNATIONAL TOURS
   // ==========================================
   {
     id: 'int-3',
@@ -461,7 +464,8 @@ const PACKAGES_DATA = [
     location: 'Bangkok & Pattaya, Thailand',
     rating: '★ 4.9 (MNP Bestseller)',
     inclusions: ['Airport Pickup & Drop Transfers', '1st Day Breakfast at Tiger Topia', 'Daily Buffet Breakfast', 'Coral Island Speedboat Tour with Lunch', 'Pattaya City Tour & View Point', 'Sunset Yacht Party with Liqueur', 'Visa on Arrival FREE for Indians'],
-    image: '/photos/mnp1.jpeg'
+    image: 'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp1.jpeg'
   },
   {
     id: 'int-5',
@@ -474,7 +478,8 @@ const PACKAGES_DATA = [
     location: 'Singapore, Malaysia & Thailand',
     rating: '★ 5.0 (Fixed Group Departure)',
     inclusions: ['Roundtrip International Flight Tickets', 'Daily Breakfast and Dinner Included', 'All Transfer Sightseeing with Entry Tickets', 'Airport Pickups and Drops Throughout', 'Universal Studios & Sentosa Access', 'Kuala Lumpur, Genting & Bangkok Highlights'],
-    image: '/photos/mnp2.jpeg'
+    image: 'https://images.unsplash.com/photo-1565967511849-76a60a516170?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp2.jpeg'
   },
   {
     id: 'int-15',
@@ -487,7 +492,8 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Da Nang & Ho Chi Minh, Vietnam',
     rating: '★ 4.9 (Popular Vietnam)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily Buffet Breakfasts', 'Hanoi 4 Hours City Tour + Ninh Binh Tour', 'Marble Mountain, Coconut Village & Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Tour', 'Cu Chi Tunnel & Mekong Delta Tour'],
-    image: '/photos/mnp15.jpeg'
+    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp15.jpeg'
   },
   {
     id: 'int-16',
@@ -500,7 +506,8 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Da Nang, Ho Chi Minh, Phu Quoc & Ha Long Bay',
     rating: '★ 5.0 (Luxury Cruise Special)',
     inclusions: ['1 Night Stay at La Regina Royal Cruise (Ha Long Bay)', '2N Flower Garden Hanoi + 2N Cicilla Da Nang', '2N Adora Art Hotel Ho Chi Minh', '2N Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour, Vin Pearl Safari & Speedboat Tour', 'Hanoi City, Ninh Binh & Ba Na Hills Golden Bridge', '9 Daily Buffet Breakfasts'],
-    image: '/photos/mnp16.jpeg'
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp16.jpeg'
   },
   {
     id: 'int-17',
@@ -513,7 +520,8 @@ const PACKAGES_DATA = [
     location: 'Phu Quoc Island, Vietnam',
     rating: '★ 4.9 (Tropical Island)',
     inclusions: ['4 Nights at Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour with Venice Water Taxi', 'Vin Pearl Safari & Vin Wonder Pass', '4 Island Tour in South by Speedboat', 'One Way Cable Car, Sunset Town & Kiss Bridge', 'Kiss of The Sea Spectacular Show Pass', '4 Daily Buffet Breakfasts'],
-    image: '/photos/mnp17.jpeg'
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp17.jpeg'
   },
   {
     id: 'int-18',
@@ -526,7 +534,8 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Ha Long Bay & Da Nang',
     rating: '★ 4.9 (Cruise & Heritage)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '1N Stay on Luxury La Regina Royal Cruise (Ha Long Bay)', '2N Stay at Cicilla Hotel Da Nang', '5 Daily Buffet Breakfasts', 'Hanoi City Tour & Ninh Binh Day Tour', 'Marble Mountain & Coconut Village Basket Boat', 'Hoi An Ancient Town Lantern Boat & Ba Na Hills'],
-    image: '/photos/mnp18.jpeg'
+    image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp18.jpeg'
   },
   {
     id: 'int-14',
@@ -539,7 +548,8 @@ const PACKAGES_DATA = [
     location: 'Europe, UAE, Bali & Global',
     rating: '★ 5.0 (World Tour Special)',
     inclusions: ['Global Destinations Coverage', 'Hassle-Free Visa & E-Visa Processing', 'Premium 4★ & 5★ Accommodations', 'Airport Transfers & Guided Sightseeing', 'Customized Family & Group Itineraries'],
-    image: '/photos/mnp14.jpeg'
+    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp14.jpeg'
   },
   {
     id: 'int-2',
@@ -565,7 +575,8 @@ const PACKAGES_DATA = [
     location: 'Dubai & Abu Dhabi, UAE',
     rating: '★ 4.9 (510+ reviews)',
     inclusions: ['4★ Luxury City Centre Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 & BBQ Dinner', 'Dubai Marina Dhow Dinner Cruise', 'UAE Tourist Visa Included'],
-    image: '/photos/mnp6.jpeg'
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp6.jpeg'
   },
 
   // ==========================================
@@ -582,7 +593,8 @@ const PACKAGES_DATA = [
     location: 'Goa, Udaipur, Manali, Andaman & Global',
     rating: '★ 5.0 (Couple Specialist)',
     inclusions: ['Handpicked Romantic Resorts & Overwater Villas', 'Candlelight Beach Dinner Setup', 'Flower Bed Decoration & Honeymoon Cake', 'Couple Spa Rejuvenation Session', 'Private Chauffeur Sedan Car Throughout'],
-    image: '/photos/mnp9.jpeg'
+    image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp9.jpeg'
   },
   {
     id: 'hny-1',
@@ -625,7 +637,8 @@ const PACKAGES_DATA = [
     location: 'Domestic & Global Sectors',
     rating: '★ 5.0 (Corporate Specialist)',
     inclusions: ['Group Flight Bookings & Seat Blocks', '5★ Hotel & Convention Reservations', 'Ground AC Volvo / Luxury Transportation', 'Curated Professional Team Building Facilitator', 'Dedicated 24/7 Corporate Travel Account Manager'],
-    image: '/photos/mnp8.jpeg'
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp8.jpeg'
   },
   {
     id: 'corp-1',
@@ -651,7 +664,7 @@ const PACKAGES_DATA = [
     location: 'Dubai & Marina, UAE',
     rating: '★ 5.0 (85+ Corporates)',
     inclusions: ['5★ Sheikh Zayed Road Luxury Hotel', 'Private Chartered Yacht Party with Live DJ', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Manager'],
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80'
   },
 
   // ==========================================
@@ -698,7 +711,8 @@ const PACKAGES_DATA = [
     location: 'Mountains, Beaches, Heritage & Road Trips',
     rating: '★ 5.0 (Family Specialist)',
     inclusions: ['Family-Friendly Verified Safe Hotels', 'Spacious AC Private Vehicles (Innova / Crysta)', 'Customized Relaxed Itineraries for All Ages', 'Daily Breakfast & Multi-Cuisine Meal Plans', '24/7 Family Assistance Support'],
-    image: '/photos/mnp7.jpeg'
+    image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
+    flyer: '/photos/mnp7.jpeg'
   },
   {
     id: 'fam-1',
@@ -964,32 +978,39 @@ function App() {
         )}
       </nav>
 
-      {/* Hero Section */}
+      {/* Enchanting Luxury Hero Section */}
       <section id="home" className="hero">
+        <div className="hero-glow-orb hero-glow-1"></div>
+        <div className="hero-glow-orb hero-glow-2"></div>
         <img 
-          src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=2000&q=80" 
-          alt="World-Class Travel" 
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=85" 
+          alt="World-Class Travel with MNP Holidays" 
           className="hero-bg"
+          loading="eager"
         />
         <div className="hero-overlay"></div>
+
         <div className="hero-content animate-fade-up">
-          <div className="hero-badge">
-            <span>🏆 World-Standard Tour Agency | Domestic & Global Specialist</span>
+          <div className="hero-badge-enchanting">
+            <span className="badge-sparkle">✨</span>
+            <span>WORLD-CLASS LUXURY TOURS • AHMEDABAD & MUMBAI HEADQUARTERS</span>
           </div>
+
           <h1 className="hero-title">
-            Crafting Unforgettable Journeys Across <span className="text-gradient">India & The World</span>
+            Crafting Unforgettable Journeys Across <span className="hero-title-enchanted">India & The World</span>
           </h1>
+
           <p className="hero-subtitle">
-            From trending Indian hotspots like <strong>Udaipur, Kumbhalgarh, Jaisalmer & Goa</strong> to international paradises in <strong>Vietnam, Thailand, Singapore, Bali & Europe</strong>, plus specialized <strong>Visitor Visas, Corporate MICE & Family Vacations</strong>.
+            From royal heritage in <strong>Udaipur, Kumbhalgarh & Jaisalmer</strong> to international paradises in <strong>Vietnam, Thailand, Singapore, Bali & Europe</strong>. Verified 4★ & 5★ luxury stays, bespoke itineraries, and 24/7 dedicated human concierge.
           </p>
 
-          {/* Quick Search Bar */}
+          {/* Quick Search Console */}
           <div className="hero-search-box">
             <div className="search-input-wrapper">
               <span className="search-icon">🔍</span>
               <input 
                 type="text" 
-                placeholder="Where to? (e.g. Udaipur, Vietnam, Thailand, Jaisalmer, Dubai Visa...)" 
+                placeholder="Where is your dream vacation? (e.g. Udaipur, Thailand, Vietnam, Kashmir...)" 
                 value={searchQuery}
                 onChange={(e) => {
                   const val = e.target.value;
@@ -1014,8 +1035,100 @@ function App() {
               )}
             </div>
             <a href="#destinations">
-              <button className="btn-search-explore">Explore Packages</button>
+              <button className="btn-search-explore">✨ Explore Packages</button>
             </a>
+          </div>
+
+          {/* Trending Destination Quick Pills */}
+          <div className="hero-trending-pills">
+            <span className="hero-trending-label">Trending Now:</span>
+            {[
+              { name: 'Thailand', icon: '🏝️', label: 'Thailand 4N/5D (₹14,999)' },
+              { name: 'Udaipur', icon: '🏰', label: 'Udaipur Royal Tour (₹7,999)' },
+              { name: 'Vietnam', icon: '🏮', label: 'Vietnam 3 Cities (₹59,999)' },
+              { name: 'Jaisalmer', icon: '🐪', label: 'Jaisalmer Desert Camp (₹25,500)' },
+              { name: 'Goa', icon: '🌴', label: 'Goa Watersports' }
+            ].map((item) => (
+              <button
+                key={item.name}
+                className="hero-trending-pill-btn"
+                onClick={() => {
+                  setSearchQuery(item.name);
+                  setSelectedCategory('all');
+                  const el = document.getElementById('destinations');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                <span>{item.icon}</span> {item.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Enchanting Floating Highlights Ribbon */}
+          <div className="hero-mini-showcase">
+            <div 
+              className="hero-mini-card"
+              onClick={() => {
+                setSearchQuery('Thailand');
+                setSelectedCategory('all');
+                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <img src="https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=400&q=80" alt="Thailand" />
+              <div className="hero-mini-info">
+                <span className="mini-tag">🔥 BESTSELLER</span>
+                <strong>Thailand Escapes</strong>
+                <span>4N/5D • ₹14,999</span>
+              </div>
+            </div>
+
+            <div 
+              className="hero-mini-card"
+              onClick={() => {
+                setSearchQuery('Udaipur');
+                setSelectedCategory('all');
+                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <img src="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=400&q=80" alt="Udaipur" />
+              <div className="hero-mini-info">
+                <span className="mini-tag">👑 ROYAL TOUR</span>
+                <strong>Udaipur & Shrinathji</strong>
+                <span>3D/2N • ₹7,999</span>
+              </div>
+            </div>
+
+            <div 
+              className="hero-mini-card"
+              onClick={() => {
+                setSearchQuery('Vietnam');
+                setSelectedCategory('all');
+                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80" alt="Vietnam" />
+              <div className="hero-mini-info">
+                <span className="mini-tag">🏮 POPULAR</span>
+                <strong>Vietnam 3 Cities</strong>
+                <span>7D/6N • ₹59,999</span>
+              </div>
+            </div>
+
+            <div 
+              className="hero-mini-card"
+              onClick={() => {
+                setSearchQuery('Jaisalmer');
+                setSelectedCategory('all');
+                document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=400&q=80" alt="Jaisalmer" />
+              <div className="hero-mini-info">
+                <span className="mini-tag">🐪 DESERT HIT</span>
+                <strong>Jaisalmer Luxury Camp</strong>
+                <span>4D/3N • ₹25,500/cpl</span>
+              </div>
+            </div>
           </div>
 
           {/* Trust Stats Bar */}
@@ -1044,81 +1157,8 @@ function App() {
       </section>
 
       {/* ========================================================
-          OFFICIAL PROMOTIONAL FLYERS & BROCHURES SHOWCASE
+          CURATED TOUR PACKAGES (WORLD-STANDARD SHOWCASE)
           ======================================================== */}
-      <section id="official-flyers" className="official-flyers-section">
-        <div className="container">
-          <div className="section-header">
-            <span className="section-eyebrow" style={{ color: '#F59E0B' }}>VERIFIED OFFICIAL OFFERS</span>
-            <h2 className="section-title">Official MNP <span className="text-gradient">Promotional Flyers & Departures</span></h2>
-            <p className="section-subtitle">
-              Browse our latest official posters and brochures with fixed group departures, exclusive resort tie-ups, special Vietnam & Thailand deals, and visa services. Click any flyer for high-resolution inspection.
-            </p>
-          </div>
-
-          {/* Category Tabs for Flyers */}
-          <div className="flyer-tabs-wrapper">
-            {flyerTabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`flyer-tab-btn ${flyerCategory === tab.id ? 'active' : ''}`}
-                onClick={() => setFlyerCategory(tab.id)}
-              >
-                <span>{tab.icon}</span>
-                <span>{tab.label}</span>
-              </button>
-            ))}
-          </div>
-
-          {/* 19 Official Flyers Grid */}
-          <div className="flyers-grid">
-            {filteredFlyers.map((flyer) => (
-              <div key={flyer.id} className="flyer-card">
-                <div 
-                  className="flyer-card-media" 
-                  onClick={() => setSelectedFlyer(flyer)}
-                  title="Click to view full high-res flyer"
-                >
-                  <img src={flyer.image} alt={flyer.title} loading="lazy" />
-                  <div className="flyer-tag-badge">{flyer.tag}</div>
-                  <div className="flyer-media-overlay">
-                    <button className="btn-flyer-zoom">🔍 Click to View Full Size</button>
-                  </div>
-                </div>
-
-                <div className="flyer-card-content">
-                  <h3 className="flyer-title">{flyer.title}</h3>
-                  <div style={{ color: '#38BDF8', fontWeight: 700, fontSize: '0.92rem', marginBottom: '0.4rem' }}>
-                    💰 {flyer.price}
-                  </div>
-                  <p className="flyer-summary">{flyer.desc}</p>
-                  <div style={{ fontSize: '0.78rem', color: '#94A3B8', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '0.5rem', marginBottom: '0.8rem' }}>
-                    🏢 {flyer.branches}
-                  </div>
-
-                  <div className="flyer-actions-row">
-                    <button 
-                      className="btn-flyer-view" 
-                      onClick={() => setSelectedFlyer(flyer)}
-                    >
-                      🔍 Full Flyer
-                    </button>
-                    <button 
-                      className="btn-flyer-wa" 
-                      onClick={() => handleFlyerWhatsApp(flyer.title, flyer.price)}
-                    >
-                      <IconWhatsApp size={16} color="#FFFFFF" />
-                      <span>Inquire on WhatsApp</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tour Packages Section */}
       <section id="destinations" className="destinations section-padding">
         <div className="container">
           <div className="section-header">
@@ -1128,7 +1168,6 @@ function App() {
               Handcrafted itineraries with premium hotels, seamless transfers, personalized guides, and 24/7 on-tour support.
             </p>
           </div>
-
 
           {/* In-Section Live Search Bar & Quick Destination Chips */}
           <div className="section-search-container">
@@ -1262,6 +1301,25 @@ function App() {
                     <span className="price-label">Starting from</span>
                     <span className="price-value">{pkg.price}</span>
                   </div>
+                  {pkg.flyer && (
+                    <button 
+                      className="btn-card-flyer-badge"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedFlyer({
+                          title: pkg.title,
+                          image: pkg.flyer,
+                          price: pkg.price,
+                          desc: pkg.desc,
+                          tag: pkg.tag,
+                          branches: 'Ahmedabad: 98251 79624 / 97122 04028 | Mumbai: 98980 83171'
+                        });
+                      }}
+                      title="Click to inspect official promotional brochure"
+                    >
+                      📄 Official Flyer
+                    </button>
+                  )}
                 </div>
 
                 <div className="package-info">
@@ -1374,6 +1432,94 @@ function App() {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* ========================================================
+          OFFICIAL PROMOTIONAL FLYERS & BROCHURES SHOWCASE (COMPACT CAROUSEL)
+          ======================================================== */}
+      <section id="official-flyers" className="official-flyers-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-eyebrow" style={{ color: '#F59E0B' }}>SPECIAL DEALS & GROUP DEPARTURES</span>
+            <h2 className="section-title">Official MNP <span className="text-gradient">Promo Brochures & Flyers</span></h2>
+            <p className="section-subtitle">
+              Browse our official promotional flyers, fixed group departure dates, and special packages. Swipe horizontally or tap any flyer for full high-resolution inspection.
+            </p>
+          </div>
+
+          {/* Category Tabs for Flyers */}
+          <div className="flyer-tabs-wrapper">
+            {flyerTabs.map((tab) => (
+              <button
+                key={tab.id}
+                className={`flyer-tab-btn ${flyerCategory === tab.id ? 'active' : ''}`}
+                onClick={() => setFlyerCategory(tab.id)}
+              >
+                <span>{tab.icon}</span>
+                <span>{tab.label}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Swipe indicator for mobile */}
+          <div className="flyers-swipe-hint">
+            <span>👉 Swipe sideways to browse all flyers</span>
+          </div>
+
+          {/* 19 Official Flyers Carousel / Responsive Track */}
+          <div className="flyers-carousel-track">
+            {filteredFlyers.map((flyer) => (
+              <div key={flyer.id} className="flyer-card">
+                <div 
+                  className="flyer-card-media" 
+                  onClick={() => setSelectedFlyer(flyer)}
+                  title="Click to view full high-res flyer"
+                >
+                  <img 
+                    src={flyer.image} 
+                    alt={flyer.title} 
+                    loading="lazy" 
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80';
+                    }}
+                  />
+                  <div className="flyer-tag-badge">{flyer.tag}</div>
+                  <div className="flyer-media-overlay">
+                    <button className="btn-flyer-zoom">🔍 Full Size</button>
+                  </div>
+                </div>
+
+                <div className="flyer-card-content">
+                  <h3 className="flyer-title">{flyer.title}</h3>
+                  <div className="flyer-price-chip">
+                    💰 {flyer.price}
+                  </div>
+                  <p className="flyer-summary">{flyer.desc}</p>
+                  <div className="flyer-branch-note">
+                    🏢 {flyer.branches}
+                  </div>
+
+                  <div className="flyer-actions-row">
+                    <button 
+                      className="btn-flyer-view" 
+                      onClick={() => setSelectedFlyer(flyer)}
+                    >
+                      🔍 Full Flyer
+                    </button>
+                    <button 
+                      className="btn-flyer-wa" 
+                      onClick={() => handleFlyerWhatsApp(flyer.title, flyer.price)}
+                    >
+                      <IconWhatsApp size={16} color="#FFFFFF" />
+                      <span>WhatsApp</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -1709,7 +1855,14 @@ function App() {
           <div className="flyer-lightbox-container" onClick={(e) => e.stopPropagation()}>
             <button className="flyer-lightbox-close" onClick={() => setSelectedFlyer(null)} aria-label="Close Flyer">✕</button>
             <div className="flyer-lightbox-image-wrap">
-              <img src={selectedFlyer.image} alt={selectedFlyer.title} />
+              <img 
+                src={selectedFlyer.image} 
+                alt={selectedFlyer.title} 
+                onError={(e) => {
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80';
+                }}
+              />
             </div>
             <div className="flyer-lightbox-footer">
               <div className="flyer-lightbox-meta">
@@ -1813,8 +1966,40 @@ function App() {
         </a>
       </aside>
 
+      {/* =======================================================
+          MOBILE PERSISTENT BOTTOM NAVIGATION BAR (FIXED ON SCROLL)
+          ======================================================= */}
+      <nav className="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+        <a href="#home" className="mobile-bottom-nav-item">
+          <span className="bottom-nav-icon">🏠</span>
+          <span className="bottom-nav-label">Home</span>
+        </a>
+        <a href="#destinations" className="mobile-bottom-nav-item">
+          <span className="bottom-nav-icon">🌍</span>
+          <span className="bottom-nav-label">Packages</span>
+        </a>
+        <a href="#official-flyers" className="mobile-bottom-nav-item">
+          <span className="bottom-nav-icon">📸</span>
+          <span className="bottom-nav-label">Flyers</span>
+          <span className="bottom-nav-pill">19</span>
+        </a>
+        <a href="#contact" className="mobile-bottom-nav-item">
+          <span className="bottom-nav-icon">📍</span>
+          <span className="bottom-nav-label">Offices</span>
+        </a>
+        <a 
+          href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
+          target="_blank" 
+          rel="noreferrer"
+          className="mobile-bottom-nav-item mobile-bottom-wa"
+        >
+          <span className="bottom-nav-icon">💬</span>
+          <span className="bottom-nav-label">WhatsApp</span>
+        </a>
+      </nav>
+
       {/* Footer */}
-      <footer>
+      <footer id="site-footer">
         <div className="container footer-content">
           <div className="footer-brand">
             <span className="logo-accent">MNP</span> Holidays Pvt. Ltd.
