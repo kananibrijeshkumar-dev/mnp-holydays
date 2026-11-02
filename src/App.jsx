@@ -165,7 +165,8 @@ export const FLYERS_DATA = [
     tag: 'Official Package Flyer',
     price: '3★ ₹14,999 | 4★ ₹17,999',
     desc: 'Explore the Land of Smiles! Includes Coral Island with lunch, Pattaya City tour, Tiger Park, Sunset Yacht party with liqueur, breakfast & airport transfers. No fixed dates.',
-    image: '/photos/mnp1.jpeg',
+    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp1.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
@@ -175,7 +176,8 @@ export const FLYERS_DATA = [
     tag: 'Ex-Ahmedabad & Mumbai',
     price: '10 Nights / 11 Days',
     desc: 'Fixed departure dates (Dec 2026 to Apr 2027). Includes return flight tickets, daily breakfast and dinner, all transfer sightseeing tickets, and airport pickups.',
-    image: '/photos/mnp2.jpeg',
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp2.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -185,7 +187,8 @@ export const FLYERS_DATA = [
     tag: 'Verified Resorts',
     price: 'Best Rates Guaranteed',
     desc: 'Booking available for 20+ top luxury resorts: Club Mahindra, Lemon Tree, Radisson Blu, Raajsa Resort, Sajjanbagh, Via Lakhela, and scenic valley stays.',
-    image: '/photos/mnp3.jpeg',
+    image: '/destinations/kumbhalgarh.jpg',
+    flyer: '/photos/mnp3.jpeg',
     branches: 'Ahmedabad: 97122 04028 | Mumbai: 98980 83171'
   },
   {
@@ -195,7 +198,8 @@ export const FLYERS_DATA = [
     tag: '7 to 10 Working Days',
     price: 'Hassle-Free Processing',
     desc: 'Fast approvals for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
-    image: '/photos/mnp4.jpeg',
+    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp4.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -205,7 +209,8 @@ export const FLYERS_DATA = [
     tag: 'Fixed Group Tour',
     price: 'ONLY ₹7,999/- Per Person',
     desc: '13-14-15 November 2026 departure! Full 3-day itinerary: City Palace, Lake Pichola, Bahubali Hills, Shilpgram, cultural folk dance show, DJ party & Shrinathji Darshan.',
-    image: '/photos/mnp5.jpeg',
+    image: '/destinations/udaipur.jpg',
+    flyer: '/photos/mnp5.jpeg',
     branches: 'Ahmedabad: 97122 04028'
   },
   {
@@ -215,7 +220,8 @@ export const FLYERS_DATA = [
     tag: 'Explore City of Dreams',
     price: '7 to 10 Working Days',
     desc: 'Safe, reliable & hassle-free Dubai visa processing with dedicated documentation assistance and fast approvals.',
-    image: '/photos/mnp6.jpeg',
+    image: '/destinations/dubai.jpg',
+    flyer: '/photos/mnp6.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -225,7 +231,8 @@ export const FLYERS_DATA = [
     tag: 'Family Holidays',
     price: 'Custom Family Plans',
     desc: 'Family-friendly vacations across Mountains, Beaches, Heritage forts, and scenic Road Trips with comfortable private transport and kid-friendly stays.',
-    image: '/photos/mnp7.jpeg',
+    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp7.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -235,7 +242,8 @@ export const FLYERS_DATA = [
     tag: 'Work Hard, Travel Smart',
     price: 'Custom Corporate Proposals',
     desc: 'Seamless corporate travel solutions: group flight bookings, luxury convention hotels, executive AC coaches, team building, and gala DJ nights.',
-    image: '/photos/mnp8.jpeg',
+    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp8.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -245,7 +253,8 @@ export const FLYERS_DATA = [
     tag: 'Romantic Getaways',
     price: 'Better Together Deals',
     desc: 'Unforgettable couple vacations to Goa, Udaipur, Manali, and Andaman with candlelight beach dining and private luxury stays.',
-    image: '/photos/mnp9.jpeg',
+    image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp9.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -255,7 +264,8 @@ export const FLYERS_DATA = [
     tag: 'Global Visa Desk',
     price: 'Document Assistance',
     desc: 'Tourist Visa, Family Visa, Business Visa, and Student Visa processing with complete documentation and expert file preparation.',
-    image: '/photos/mnp10.jpeg',
+    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp10.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -265,7 +275,8 @@ export const FLYERS_DATA = [
     tag: 'Best Airfares',
     price: 'Quick Confirmation',
     desc: 'Safe & secure flight bookings, exclusive airline deals, quick confirmation, and 24/7 flight customer support.',
-    image: '/photos/mnp11.jpeg',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp11.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -275,7 +286,8 @@ export const FLYERS_DATA = [
     tag: 'Comfort & Luxury',
     price: 'Best Deals Guaranteed',
     desc: 'Stay in comfort, travel in style! Verified 3★, 4★, and 5★ hotels and heritage boutique resorts across India and worldwide.',
-    image: '/photos/mnp12.jpeg',
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp12.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -285,7 +297,8 @@ export const FLYERS_DATA = [
     tag: 'Explore World Hassle-Free',
     price: '7 to 10 Working Days',
     desc: 'Comprehensive visa services for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
-    image: '/photos/mnp13.jpeg',
+    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp13.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -295,7 +308,8 @@ export const FLYERS_DATA = [
     tag: 'Global Dream Tours',
     price: 'From Dream to Destination',
     desc: 'World tour vacations with global destinations, hassle-free visa handling, premium verified hotels, and fully customized holiday plans.',
-    image: '/photos/mnp14.jpeg',
+    image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp14.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
   },
   {
@@ -305,7 +319,8 @@ export const FLYERS_DATA = [
     tag: 'Bestseller Vietnam',
     price: '₹59,999/- without flight*',
     desc: 'Three Cities One Unforgettable Journey: 2N Hanoi (Flower Garden Hotel), 2N Da Nang (Cicilla Hotel), 2N Ho Chi Minh (Adora Art Hotel). Includes 6 buffet breakfasts, Ninh Binh, Ba Na Hills & Mekong Delta.',
-    image: '/photos/mnp15.jpeg',
+    image: '/destinations/vietnam_bridge.jpg',
+    flyer: '/photos/mnp15.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
@@ -315,7 +330,8 @@ export const FLYERS_DATA = [
     tag: 'Ha Long Bay Cruise & Phu Quoc',
     price: '₹89,999/- without flight*',
     desc: '5 Destinations One Amazing Journey: Hanoi, Da Nang, Ho Chi Minh, Phu Quoc Island & 1 Night Overnight on La Regina Royal Cruise (Ha Long Bay). 9 buffet breakfasts included.',
-    image: '/photos/mnp16.jpeg',
+    image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp16.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
@@ -325,7 +341,8 @@ export const FLYERS_DATA = [
     tag: 'Island & Safari',
     price: '₹49,999/- rate per adult',
     desc: '4 Nights Times Corner Amalfi Hotel Phu Quoc. Includes Grand World Venice water taxi, Vin Pearl Safari, 4 Island speedboat tour, Cable Car, Sunset Town & Kiss Bridge.',
-    image: '/photos/mnp17.jpeg',
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp17.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
   },
   {
@@ -335,7 +352,8 @@ export const FLYERS_DATA = [
     tag: 'Cruise & Culture',
     price: '₹54,999/- rate per adult',
     desc: '2N Flower Garden Hanoi, 1N La Regina Royal Cruise (Ha Long Bay), 2N Cicilla Hotel Da Nang. 5 buffet breakfasts, Ninh Binh, Marble Mountain, Hoi An lantern boat & Ba Na Hills.',
-    image: '/photos/mnp18.jpeg',
+    image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
+    flyer: '/photos/mnp18.jpeg',
     branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
   },
   {
@@ -345,7 +363,8 @@ export const FLYERS_DATA = [
     tag: 'Rajasthan Desert Hit',
     price: '₹25,500/- Per Couple',
     desc: 'Arrival & Sam Sand Dunes Swiss luxury tent, camel safari, jeep dune bashing, Tanot Mata Temple, Longewala Border, Kuldhara abandoned village, Jaisalmer Fort & Patwon Ki Haveli.',
-    image: '/photos/mnp19.jpeg',
+    image: '/destinations/jaisalmer_desert.jpg',
+    flyer: '/photos/mnp19.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 98251 79524'
   }
 ];
@@ -366,7 +385,7 @@ const PACKAGES_DATA = [
     location: 'Udaipur & Shrinathji, Rajasthan',
     rating: '★ 4.9 (Official Group Tour)',
     inclusions: ['City Palace & Jagdish Temple', 'Lake Pichola & Fateh Sagar Lake', 'Bahubali Hills & Shilpgram Tour', 'Rajasthani Culture Show & DJ Party', 'Shrinathji Darshan Sightseeing', 'All Meals (Breakfast, Lunch, Dinner)'],
-    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/udaipur.jpg',
     flyer: '/photos/mnp5.jpeg'
   },
   {
@@ -380,7 +399,7 @@ const PACKAGES_DATA = [
     location: 'Kumbhalgarh & Udaipur, Rajasthan',
     rating: '★ 5.0 (20+ Top Resorts)',
     inclusions: ['20+ Verified Luxury Heritage Resorts', 'Kumbhalgarh Great Wall Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Pool Access'],
-    image: 'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/kumbhalgarh.jpg',
     flyer: '/photos/mnp3.jpeg'
   },
   {
@@ -394,7 +413,7 @@ const PACKAGES_DATA = [
     location: 'Jaisalmer & Sam Sand Dunes, Rajasthan',
     rating: '★ 5.0 (Desert Camp Special)',
     inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Music, Folk Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Meals Included'],
-    image: 'https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/jaisalmer_desert.jpg',
     flyer: '/photos/mnp19.jpeg'
   },
   {
@@ -421,7 +440,7 @@ const PACKAGES_DATA = [
     location: 'Kashmir, India',
     rating: '★ 4.9 (480+ reviews)',
     inclusions: ['1 Night Luxury Houseboat', '4 Nights 4★ Hotel', 'Dal Lake Shikara Ride', 'Gulmarg Cable Car Assistance', 'Breakfast & Dinner (MAP Plan)'],
-    image: 'https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=1200&q=85'
+    image: '/destinations/kashmir.jpg'
   },
   {
     id: 'dom-4',
@@ -492,7 +511,7 @@ const PACKAGES_DATA = [
     location: 'Hanoi, Da Nang & Ho Chi Minh, Vietnam',
     rating: '★ 4.9 (Popular Vietnam)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily Buffet Breakfasts', 'Hanoi 4 Hours City Tour + Ninh Binh Tour', 'Marble Mountain, Coconut Village & Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Tour', 'Cu Chi Tunnel & Mekong Delta Tour'],
-    image: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/vietnam_bridge.jpg',
     flyer: '/photos/mnp15.jpeg'
   },
   {
@@ -575,7 +594,7 @@ const PACKAGES_DATA = [
     location: 'Dubai & Abu Dhabi, UAE',
     rating: '★ 4.9 (510+ reviews)',
     inclusions: ['4★ Luxury City Centre Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 & BBQ Dinner', 'Dubai Marina Dhow Dinner Cruise', 'UAE Tourist Visa Included'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/dubai.jpg',
     flyer: '/photos/mnp6.jpeg'
   },
 
@@ -664,7 +683,7 @@ const PACKAGES_DATA = [
     location: 'Dubai & Marina, UAE',
     rating: '★ 5.0 (85+ Corporates)',
     inclusions: ['5★ Sheikh Zayed Road Luxury Hotel', 'Private Chartered Yacht Party with Live DJ', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Manager'],
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85'
+    image: '/destinations/dubai.jpg'
   },
 
   // ==========================================
@@ -681,7 +700,7 @@ const PACKAGES_DATA = [
     location: 'Delhi, Agra & Jaipur',
     rating: '★ 4.9 (160+ Schools)',
     inclusions: ['Student-Safe 3★/4★ Verified Hotels', 'Certified ASI Historian & Archeology Guides', 'All Monument Entries & Audio Guides', 'Nutritious Buffet Meals (Breakfast, Lunch, Dinner)', '24/7 Security Escorts & First Aid Trained Team'],
-    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=85'
+    image: '/destinations/tajmahal.jpg'
   },
   {
     id: 'edu-2',
@@ -738,6 +757,15 @@ function App() {
   const [selectedFlyer, setSelectedFlyer] = useState(null);
   const [flyerCategory, setFlyerCategory] = useState('all');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedInclusions, setExpandedInclusions] = useState({});
+  const [flyerModalView, setFlyerModalView] = useState('flyer');
+
+  const toggleInclusions = (id) => {
+    setExpandedInclusions((prev) => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1146,7 +1174,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=85" alt="Udaipur" />
+              <img src="/destinations/udaipur.jpg" alt="Udaipur City Palace" />
               <div className="hero-mini-info">
                 <span className="mini-tag">👑 ROYAL TOUR</span>
                 <strong>Udaipur & Shrinathji</strong>
@@ -1164,7 +1192,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=600&q=85" alt="Vietnam" />
+              <img src="/destinations/vietnam_bridge.jpg" alt="Vietnam Golden Bridge" />
               <div className="hero-mini-info">
                 <span className="mini-tag">🏮 POPULAR</span>
                 <strong>Vietnam 3 Cities</strong>
@@ -1182,7 +1210,7 @@ function App() {
                 document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <img src="https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&w=600&q=85" alt="Jaisalmer" />
+              <img src="/destinations/jaisalmer_desert.jpg" alt="Jaisalmer Desert Camp" />
               <div className="hero-mini-info">
                 <span className="mini-tag">🐪 DESERT HIT</span>
                 <strong>Jaisalmer Luxury Camp</strong>
@@ -1397,11 +1425,21 @@ function App() {
                   <p className="package-desc">{pkg.desc}</p>
 
                   <div className="inclusions-chips">
-                    {pkg.inclusions.slice(0, 3).map((inc, i) => (
+                    {(expandedInclusions[pkg.id] ? pkg.inclusions : pkg.inclusions.slice(0, 3)).map((inc, i) => (
                       <span key={i} className="inc-pill">✓ {inc}</span>
                     ))}
                     {pkg.inclusions.length > 3 && (
-                      <span className="inc-pill-more">+{pkg.inclusions.length - 3} more</span>
+                      <button 
+                        type="button"
+                        className={`inc-pill-more ${expandedInclusions[pkg.id] ? 'expanded' : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleInclusions(pkg.id);
+                        }}
+                        title={expandedInclusions[pkg.id] ? 'Click to show fewer inclusions' : `Click to view all ${pkg.inclusions.length} inclusions`}
+                      >
+                        {expandedInclusions[pkg.id] ? '▲ Show less' : `+${pkg.inclusions.length - 3} more`}
+                      </button>
                     )}
                   </div>
 
@@ -1543,8 +1581,11 @@ function App() {
               >
                 <div 
                   className="flyer-card-media" 
-                  onClick={() => setSelectedFlyer(flyer)}
-                  title="Click to view full high-res flyer"
+                  onClick={() => {
+                    setFlyerModalView('flyer');
+                    setSelectedFlyer(flyer);
+                  }}
+                  title="Click to view full high-res official brochure flyer"
                 >
                   <img 
                     src={flyer.image} 
@@ -1557,7 +1598,7 @@ function App() {
                   />
                   <div className="flyer-tag-badge">{flyer.tag}</div>
                   <div className="flyer-media-overlay">
-                    <button className="btn-flyer-zoom">🔍 Full Size</button>
+                    <button className="btn-flyer-zoom">📄 View Official Flyer</button>
                   </div>
                 </div>
 
@@ -1574,9 +1615,12 @@ function App() {
                   <div className="flyer-actions-row">
                     <button 
                       className="btn-flyer-view" 
-                      onClick={() => setSelectedFlyer(flyer)}
+                      onClick={() => {
+                        setFlyerModalView('flyer');
+                        setSelectedFlyer(flyer);
+                      }}
                     >
-                      🔍 Full Flyer
+                      📄 Official Flyer
                     </button>
                     <button 
                       className="btn-flyer-wa" 
@@ -1924,13 +1968,31 @@ function App() {
         <div className="flyer-lightbox-backdrop" onClick={() => setSelectedFlyer(null)}>
           <div className="flyer-lightbox-container" onClick={(e) => e.stopPropagation()}>
             <button className="flyer-lightbox-close" onClick={() => setSelectedFlyer(null)} aria-label="Close Flyer">✕</button>
+            {selectedFlyer.flyer && selectedFlyer.image && (
+              <div className="flyer-modal-view-toggle">
+                <button 
+                  type="button"
+                  className={`flyer-toggle-tab ${flyerModalView === 'flyer' ? 'active' : ''}`}
+                  onClick={() => setFlyerModalView('flyer')}
+                >
+                  📄 Official Brochure Flyer
+                </button>
+                <button 
+                  type="button"
+                  className={`flyer-toggle-tab ${flyerModalView === 'destination' ? 'active' : ''}`}
+                  onClick={() => setFlyerModalView('destination')}
+                >
+                  📷 Destination Photography
+                </button>
+              </div>
+            )}
             <div className="flyer-lightbox-image-wrap">
               <img 
-                src={selectedFlyer.image} 
+                src={flyerModalView === 'destination' ? selectedFlyer.image : (selectedFlyer.flyer || selectedFlyer.image)} 
                 alt={selectedFlyer.title} 
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80';
+                  e.currentTarget.src = selectedFlyer.image || selectedFlyer.flyer || 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=80';
                 }}
               />
             </div>

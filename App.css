@@ -1556,12 +1556,40 @@
 }
 
 .inc-pill-more {
-  background: #E2E8F0;
-  color: #64748B;
-  font-size: 0.72rem;
+  background: rgba(14, 165, 233, 0.14);
+  color: #0284C7;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  font-size: 0.74rem;
   font-weight: 700;
-  padding: 0.25rem 0.5rem;
+  padding: 0.26rem 0.65rem;
   border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+  line-height: 1.2;
+}
+
+.inc-pill-more:hover {
+  background: #0284C7;
+  color: #FFFFFF !important;
+  border-color: #0284C7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.inc-pill-more.expanded {
+  background: rgba(245, 158, 11, 0.16);
+  color: #D97706;
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+.inc-pill-more.expanded:hover {
+  background: #D97706;
+  color: #FFFFFF !important;
+  border-color: #D97706;
 }
 
 /* --- Elegant Package Card Actions --- */
@@ -3149,31 +3177,26 @@ footer {
 
 .flyer-card-media {
   position: relative;
-  height: 310px;
+  height: 240px;
   overflow: hidden;
-  background: radial-gradient(ellipse at center, rgba(30, 41, 59, 0.9) 0%, rgba(10, 15, 29, 0.98) 100%);
+  background: #0B132B;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.6rem;
+  display: block;
+  padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .flyer-card-media img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.4);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .flyer-card:hover .flyer-card-media img {
-  transform: scale(1.035);
-  box-shadow: 0 14px 34px rgba(2, 132, 199, 0.35), 0 4px 12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.06);
 }
 
 .flyer-media-overlay {
@@ -3394,8 +3417,41 @@ footer {
   transition: background 0.2s ease;
 }
 
-.flyer-lightbox-close:hover {
-  background: #EF4444;
+.flyer-modal-view-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1.1rem 1.5rem 0.6rem;
+  background: #0F172A;
+  z-index: 5;
+}
+
+.flyer-toggle-tab {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #94A3B8;
+  padding: 0.45rem 1.1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.25s ease;
+}
+
+.flyer-toggle-tab:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #FFFFFF;
+}
+
+.flyer-toggle-tab.active {
+  background: var(--primary-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
 }
 
 .flyer-lightbox-image-wrap {
@@ -3836,7 +3892,27 @@ footer {
 .package-card .inc-pill-more {
   background: rgba(14, 165, 233, 0.18) !important;
   color: #38BDF8 !important;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  cursor: pointer;
+}
+
+.package-card .inc-pill-more:hover {
+  background: #0284C7 !important;
+  color: #FFFFFF !important;
+  border-color: #38BDF8 !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4) !important;
+}
+
+.package-card .inc-pill-more.expanded {
+  background: rgba(245, 158, 11, 0.2) !important;
+  color: #FBBF24 !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+}
+
+.package-card .inc-pill-more.expanded:hover {
+  background: #F59E0B !important;
+  color: #0F172A !important;
+  border-color: #F59E0B !important;
 }
 
 .package-card-actions {
