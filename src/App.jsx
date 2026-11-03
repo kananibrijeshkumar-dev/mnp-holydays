@@ -1927,7 +1927,21 @@ function App() {
       </section>
 
       {/* Why Choose MNP Holidays Section */}
-      <section id="about" className="about section-padding">
+      <section id="about" className="about-section-dark section-padding">
+        {/* Dynamic 3D Logo Animation Video Background (Replacing the white space) */}
+        <div className="about-bg-video-wrapper" aria-hidden="true">
+          <video 
+            className="about-bg-video" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+          >
+            <source src="/hero-bg-video.mp4" type="video/mp4" />
+          </video>
+          <div className="about-bg-overlay"></div>
+        </div>
+
         <div className="container about-grid">
           <div className="about-visual">
             {/* High-Visibility 3D Stage Background */}
@@ -1950,16 +1964,11 @@ function App() {
 
             {/* Main Image Frame Elevated with 3D Depth */}
             <div className="about-img-frame">
-              <video 
-                className="about-img about-video" 
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-                poster="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80"
-              >
-                <source src="/hero-bg-video.mp4" type="video/mp4" />
-              </video>
+              <img 
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
+                alt="MNP Holidays Premium Travel" 
+                className="about-img"
+              />
               
               <div className="about-floating-accent-badge accent-badge-top-left">
                 <span className="accent-badge-icon">🌟</span>
