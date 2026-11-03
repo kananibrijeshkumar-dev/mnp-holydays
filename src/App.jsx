@@ -1256,12 +1256,16 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-glow-orb hero-glow-1"></div>
         <div className="hero-glow-orb hero-glow-2"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90" 
-          alt="World-Class Travel with MNP Holidays" 
-          className="hero-bg"
-          loading="eager"
-        />
+        <video 
+          className="hero-bg-video" 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          poster="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90"
+        >
+          <source src="/hero-bg-video.mp4" type="video/mp4" />
+        </video>
         <div className="hero-overlay"></div>
 
         {/* 3D Floating Travel Accent Badges with Depth */}
@@ -1930,15 +1934,12 @@ function App() {
       <section id="about" className="about-section-dark section-padding">
         {/* Dynamic 3D Logo Animation Video Background (Replacing the white space) */}
         <div className="about-bg-video-wrapper" aria-hidden="true">
-          <video 
-            className="about-bg-video" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-          >
-            <source src="/hero-bg-video.mp4" type="video/mp4" />
-          </video>
+          <img 
+            src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90" 
+            alt="World-Class Luxury Travel MNP Holidays" 
+            className="about-bg-img"
+            loading="lazy"
+          />
           <div className="about-bg-overlay"></div>
         </div>
 
