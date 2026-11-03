@@ -2179,7 +2179,7 @@ function App() {
           rel="noreferrer"
           className="mobile-bottom-nav-item mobile-bottom-wa"
         >
-          <span className="bottom-nav-icon">💬</span>
+          <IconWhatsApp3DBadge size={20} />
           <span className="bottom-nav-label">WhatsApp</span>
         </a>
       </nav>
