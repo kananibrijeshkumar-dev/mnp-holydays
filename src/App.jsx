@@ -89,13 +89,13 @@ export const IconWhatsApp = ({ size = 18, color = "#FFFFFF", className = "" }) =
     width={size} 
     height={size} 
     viewBox="0 0 24 24" 
-    fill={color} 
+    fill="currentColor" 
     className={`wa-btn-icon ${className}`} 
     xmlns="http://www.w3.org/2000/svg" 
     aria-hidden="true"
-    style={{ flexShrink: 0, display: 'inline-block', verticalAlign: 'middle' }}
+    style={{ flexShrink: 0, display: 'inline-block', verticalAlign: 'middle', color }}
   >
-    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 3.67C14.24 3.67 16.31 4.53 17.87 6.09C19.42 7.64 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.61 20.16 9.22 19.78 8.01 19.06L7.72 18.89L4.61 19.71L5.44 16.68L5.25 16.38C4.46 15.12 4.04 13.54 4.04 11.91C4.04 7.37 7.74 3.67 12.04 3.67ZM8.84 7.15C8.65 7.15 8.35 7.22 8.1 7.49C7.85 7.76 7.15 8.42 7.15 9.77C7.15 11.12 8.13 12.42 8.27 12.61C8.41 12.8 10.19 15.55 12.92 16.73C13.57 17.01 14.07 17.18 14.47 17.31C15.13 17.52 15.73 17.49 16.2 17.42C16.73 17.34 17.83 16.75 18.06 16.1C18.29 15.45 18.29 14.89 18.22 14.77C18.15 14.65 17.96 14.58 17.68 14.44C17.4 14.3 16.03 13.62 15.78 13.53C15.53 13.44 15.35 13.39 15.16 13.67C14.98 13.95 14.45 14.58 14.29 14.77C14.13 14.95 13.97 14.98 13.69 14.84C13.41 14.7 12.52 14.41 11.46 13.47C10.64 12.73 10.08 11.83 9.92 11.55C9.76 11.27 9.9 11.12 10.04 10.98C10.17 10.85 10.33 10.64 10.47 10.48C10.61 10.32 10.66 10.2 10.75 10.02C10.84 9.83 10.8 9.67 10.73 9.53C10.66 9.39 10.1 8.02 9.87 7.46C9.64 6.92 9.41 7 9.24 6.99C9.08 6.99 8.89 7.15 8.84 7.15Z" />
+    <path fillRule="evenodd" clipRule="evenodd" d="M18.403 5.638A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.2 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.094h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.346zm-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.976c.002-4.114 3.349-7.461 7.465-7.461a7.417 7.417 0 0 1 5.276 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.46-7.462 7.467zm4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58 0.729-.711.879-.262.168-.486.056-.948-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.182-.438-.367-.378-.504-.385l-.43-.008c-.149 0-.393.056-.599.281s-.786.767-.786 1.872.805 2.171.917 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.066-.056-.093-.205-.15-.43-.262z" />
   </svg>
 );
 
@@ -1690,15 +1690,15 @@ function App() {
                       title={`View photos & detailed itinerary for ${pkg.title}`}
                     >
                       <IconItinerary size={16} />
-                      <span>View Photos & Itinerary</span>
+                      <span>Photos & Plan</span>
                     </button>
                     <button 
                       className="btn-card-wa"
                       onClick={() => handleBookOnWhatsApp(pkg.title, pkg.price, pkg.duration)}
                       title={`Inquire on WhatsApp for ${pkg.title}`}
                     >
-                      <IconWhatsApp size={18} color="#FFFFFF" />
-                      <span>Inquire on WhatsApp</span>
+                      <IconWhatsApp3DBadge size={20} />
+                      <span>WhatsApp</span>
                     </button>
                   </div>
                 </div>
@@ -2326,7 +2326,7 @@ function App() {
                     className="modal-btn-wa"
                     onClick={() => handleBookOnWhatsApp(selectedPackage.title, selectedPackage.price, selectedPackage.duration)}
                   >
-                    <IconWhatsApp size={18} color="#FFFFFF" />
+                    <IconWhatsApp3DBadge size={22} />
                     <span>Inquire on WhatsApp</span>
                   </button>
                   <a href="tel:+919712204028" className="modal-btn-call">
@@ -2398,7 +2398,7 @@ function App() {
                   style={{ padding: '0.75rem 1.4rem', fontSize: '0.95rem' }}
                   onClick={() => handleFlyerWhatsApp(selectedFlyer.title, selectedFlyer.price)}
                 >
-                  <IconWhatsApp size={18} color="#FFFFFF" />
+                  <IconWhatsApp3DBadge size={22} />
                   <span>Inquire on WhatsApp</span>
                 </button>
                 <a 
