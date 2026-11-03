@@ -414,6 +414,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (Official Group Tour)',
     inclusions: ['City Palace & Jagdish Temple', 'Lake Pichola & Fateh Sagar Lake', 'Bahubali Hills & Shilpgram Tour', 'Rajasthani Culture Show & DJ Party', 'Shrinathji Darshan Sightseeing', 'All Meals (Breakfast, Lunch, Dinner)'],
     image: '/destinations/udaipur.jpg',
+    gallery: [
+      '/destinations/udaipur.jpg',
+      'https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp5.jpeg'
   },
   {
@@ -428,6 +434,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (20+ Top Resorts)',
     inclusions: ['20+ Verified Luxury Heritage Resorts', 'Kumbhalgarh Great Wall Excursion', 'Private AC Chauffeur Sedan / SUV', 'Daily Royal Buffet Breakfast & Dinner', 'Scenic Valley Views & Pool Access'],
     image: '/destinations/kumbhalgarh.jpg',
+    gallery: [
+      '/destinations/kumbhalgarh.jpg',
+      'https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp3.jpeg'
   },
   {
@@ -442,6 +454,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Desert Camp Special)',
     inclusions: ['Luxury Swiss Tent Stay at Sam Sand Dunes', 'Camel Safari & Sunset Jeep Dune Bashing', 'Tanot Mata Temple & Longewala Border Visit', 'Live Langa Music, Folk Dance & Fire Show', 'Jaisalmer Fort, Patwon Ki Haveli & Gadisar Lake', 'Delicious Rajasthani Meals Included'],
     image: '/destinations/jaisalmer_desert.jpg',
+    gallery: [
+      '/destinations/jaisalmer_desert.jpg',
+      '/destinations/jaisalmer_fort.jpg',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp19.jpeg'
   },
   {
@@ -455,7 +473,13 @@ const PACKAGES_DATA = [
     location: 'Ooty & Coonoor, Tamil Nadu',
     rating: '★ 4.8 (240+ reviews)',
     inclusions: ['Hillview Luxury Resort', 'Nilgiri Heritage Toy Train Ride', 'Tea Factory & Fresh Tasting Tour', 'Dedicated Sightseeing Cab', 'Daily Breakfast & Dinner'],
-    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'dom-3',
@@ -468,7 +492,13 @@ const PACKAGES_DATA = [
     location: 'Kashmir, India',
     rating: '★ 4.9 (480+ reviews)',
     inclusions: ['1 Night Luxury Houseboat', '4 Nights 4★ Hotel', 'Dal Lake Shikara Ride', 'Gulmarg Cable Car Assistance', 'Breakfast & Dinner (MAP Plan)'],
-    image: '/destinations/kashmir.jpg'
+    image: '/destinations/kashmir.jpg',
+    gallery: [
+      '/destinations/kashmir.jpg',
+      'https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'dom-4',
@@ -481,7 +511,13 @@ const PACKAGES_DATA = [
     location: 'North & South Goa, India',
     rating: '★ 4.8 (390+ reviews)',
     inclusions: ['4★ Beachside Resort with Pool', 'Sunset River Cruise', 'Speedboat & Parasailing Combo', 'AC Sedan / SUV Transfers', 'Daily Breakfast Buffet'],
-    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'dom-5',
@@ -494,7 +530,13 @@ const PACKAGES_DATA = [
     location: 'Kerala, India',
     rating: '★ 4.9 (340+ reviews)',
     inclusions: ['Private Houseboat Cruise', 'Munnar 4★ Tea Valley Resort', 'Spice Plantation Guided Tour', 'Private Dedicated Vehicle', 'All Meals on Houseboat'],
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
 
   // ==========================================
@@ -512,6 +554,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (MNP Bestseller)',
     inclusions: ['Airport Pickup & Drop Transfers', '1st Day Breakfast at Tiger Topia', 'Daily Buffet Breakfast', 'Coral Island Speedboat Tour with Lunch', 'Pattaya City Tour & View Point', 'Sunset Yacht Party with Liqueur', 'Visa on Arrival FREE for Indians'],
     image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp1.jpeg'
   },
   {
@@ -526,6 +574,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Fixed Group Departure)',
     inclusions: ['Roundtrip International Flight Tickets', 'Daily Breakfast and Dinner Included', 'All Transfer Sightseeing with Entry Tickets', 'Airport Pickups and Drops Throughout', 'Universal Studios & Sentosa Access', 'Kuala Lumpur, Genting & Bangkok Highlights'],
     image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp2.jpeg'
   },
   {
@@ -540,6 +594,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (Popular Vietnam)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '2N Stay at Cicilla Hotel Da Nang', '2N Stay at Adora Art Hotel Ho Chi Minh', '6 Daily Buffet Breakfasts', 'Hanoi 4 Hours City Tour + Ninh Binh Tour', 'Marble Mountain, Coconut Village & Basket Boat', 'Hoi An Lantern Boat & Ba Na Hills Tour', 'Cu Chi Tunnel & Mekong Delta Tour'],
     image: '/destinations/vietnam_bridge.jpg',
+    gallery: [
+      '/destinations/vietnam_bridge.jpg',
+      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp15.jpeg'
   },
   {
@@ -554,6 +614,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Luxury Cruise Special)',
     inclusions: ['1 Night Stay at La Regina Royal Cruise (Ha Long Bay)', '2N Flower Garden Hanoi + 2N Cicilla Da Nang', '2N Adora Art Hotel Ho Chi Minh', '2N Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour, Vin Pearl Safari & Speedboat Tour', 'Hanoi City, Ninh Binh & Ba Na Hills Golden Bridge', '9 Daily Buffet Breakfasts'],
     image: 'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
+      '/destinations/vietnam_bridge.jpg',
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp16.jpeg'
   },
   {
@@ -568,6 +634,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (Tropical Island)',
     inclusions: ['4 Nights at Times Corner Amalfi Hotel Phu Quoc', 'Grand World Tour with Venice Water Taxi', 'Vin Pearl Safari & Vin Wonder Pass', '4 Island Tour in South by Speedboat', 'One Way Cable Car, Sunset Town & Kiss Bridge', 'Kiss of The Sea Spectacular Show Pass', '4 Daily Buffet Breakfasts'],
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp17.jpeg'
   },
   {
@@ -582,6 +654,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (Cruise & Heritage)',
     inclusions: ['2N Stay at Flower Garden Hanoi Hotel', '1N Stay on Luxury La Regina Royal Cruise (Ha Long Bay)', '2N Stay at Cicilla Hotel Da Nang', '5 Daily Buffet Breakfasts', 'Hanoi City Tour & Ninh Binh Day Tour', 'Marble Mountain & Coconut Village Basket Boat', 'Hoi An Ancient Town Lantern Boat & Ba Na Hills'],
     image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85',
+      '/destinations/vietnam_bridge.jpg',
+      'https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp18.jpeg'
   },
   {
@@ -596,6 +674,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (World Tour Special)',
     inclusions: ['Global Destinations Coverage', 'Hassle-Free Visa & E-Visa Processing', 'Premium 4★ & 5★ Accommodations', 'Airport Transfers & Guided Sightseeing', 'Customized Family & Group Itineraries'],
     image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85',
+      '/destinations/dubai.jpg',
+      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp14.jpeg'
   },
   {
@@ -609,7 +693,13 @@ const PACKAGES_DATA = [
     location: 'Bali, Indonesia',
     rating: '★ 4.9 (560+ reviews)',
     inclusions: ['4★ Ubud & Kuta Resorts', 'Nusa Penida West Island Tour & Boat', 'Bali Jungle Swing Pass', 'Private Chauffeur Daily', 'Airport Pickup & Drop'],
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'int-4',
@@ -623,6 +713,12 @@ const PACKAGES_DATA = [
     rating: '★ 4.9 (510+ reviews)',
     inclusions: ['4★ Luxury City Centre Hotel', 'Burj Khalifa 124th Floor Entry Ticket', 'Desert Safari with 4x4 & BBQ Dinner', 'Dubai Marina Dhow Dinner Cruise', 'UAE Tourist Visa Included'],
     image: '/destinations/dubai.jpg',
+    gallery: [
+      '/destinations/dubai.jpg',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp6.jpeg'
   },
 
@@ -641,6 +737,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Couple Specialist)',
     inclusions: ['Handpicked Romantic Resorts & Overwater Villas', 'Candlelight Beach Dinner Setup', 'Flower Bed Decoration & Honeymoon Cake', 'Couple Spa Rejuvenation Session', 'Private Chauffeur Sedan Car Throughout'],
     image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85',
+      '/destinations/udaipur.jpg',
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp9.jpeg'
   },
   {
@@ -654,7 +756,13 @@ const PACKAGES_DATA = [
     location: 'Maldives Islands',
     rating: '★ 5.0 (380+ couples)',
     inclusions: ['Overwater Villa with Pool Access', 'Speedboat Airport Transfers', 'Candlelight 3-Course Beach Dinner', 'Snorkeling & Coral Reef Safari', 'All-Inclusive Dine Around Meals'],
-    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'hny-2',
@@ -667,7 +775,13 @@ const PACKAGES_DATA = [
     location: 'Ubud & Seminyak, Bali',
     rating: '★ 4.9 (310+ couples)',
     inclusions: ['Private Pool Luxury Villa Stay', 'Flower Petal Bath & Couple Massage', 'Uluwatu Clifftop Sunset Dinner', 'Private Chauffeur Car Throughout', 'Honeymoon Cake & Room Setup'],
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
 
   // ==========================================
@@ -685,6 +799,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Corporate Specialist)',
     inclusions: ['Group Flight Bookings & Seat Blocks', '5★ Hotel & Convention Reservations', 'Ground AC Volvo / Luxury Transportation', 'Curated Professional Team Building Facilitator', 'Dedicated 24/7 Corporate Travel Account Manager'],
     image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp8.jpeg'
   },
   {
@@ -698,7 +818,13 @@ const PACKAGES_DATA = [
     location: 'North & South Goa, India',
     rating: '★ 4.9 (110+ Corporates)',
     inclusions: ['5★ Beachfront Resort Group Booking', 'State-of-art AC Conference Hall & AV/Projectors', 'Exclusive Gala Dinner & DJ Sound Setup', 'Curated Professional Team Building Facilitator', 'Airport AC Coach Transfers'],
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'corp-2',
@@ -711,7 +837,13 @@ const PACKAGES_DATA = [
     location: 'Dubai & Marina, UAE',
     rating: '★ 5.0 (85+ Corporates)',
     inclusions: ['5★ Sheikh Zayed Road Luxury Hotel', 'Private Chartered Yacht Party with Live DJ', 'Desert Safari Gala Dinner & Entertainment', 'Corporate Group Visa Expedited Processing', 'Dedicated MNP On-Ground Tour Manager'],
-    image: '/destinations/dubai.jpg'
+    image: '/destinations/dubai.jpg',
+    gallery: [
+      '/destinations/dubai.jpg',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
 
   // ==========================================
@@ -728,7 +860,13 @@ const PACKAGES_DATA = [
     location: 'Delhi, Agra & Jaipur',
     rating: '★ 4.9 (160+ Schools)',
     inclusions: ['Student-Safe 3★/4★ Verified Hotels', 'Certified ASI Historian & Archeology Guides', 'All Monument Entries & Audio Guides', 'Nutritious Buffet Meals (Breakfast, Lunch, Dinner)', '24/7 Security Escorts & First Aid Trained Team'],
-    image: '/destinations/tajmahal.jpg'
+    image: '/destinations/tajmahal.jpg',
+    gallery: [
+      '/destinations/tajmahal.jpg',
+      'https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
   {
     id: 'edu-2',
@@ -741,7 +879,13 @@ const PACKAGES_DATA = [
     location: 'Singapore',
     rating: '★ 5.0 (55+ Institutions)',
     inclusions: ['Singapore Science Centre & Omni-Theatre Pass', 'Universal Studios STEM Workshop Access', 'Group International Flights & Student Visas', 'Pure Hygienic Indian Meals Daily', 'Experienced Teacher Escorts & Medical Insurance'],
-    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85'
+    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
+    gallery: [
+      'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1200&q=85'
+    ]
   },
 
   // ==========================================
@@ -759,6 +903,12 @@ const PACKAGES_DATA = [
     rating: '★ 5.0 (Family Specialist)',
     inclusions: ['Family-Friendly Verified Safe Hotels', 'Spacious AC Private Vehicles (Innova / Crysta)', 'Customized Relaxed Itineraries for All Ages', 'Daily Breakfast & Multi-Cuisine Meal Plans', '24/7 Family Assistance Support'],
     image: '/destinations/family_vacation.jpg',
+    gallery: [
+      '/destinations/family_vacation.jpg',
+      '/destinations/udaipur.jpg',
+      '/destinations/andaman.jpg',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85'
+    ],
     flyer: '/photos/mnp7.jpeg'
   },
   {
@@ -772,7 +922,13 @@ const PACKAGES_DATA = [
     location: 'Port Blair & Havelock Island',
     rating: '★ 4.9 (280+ Families)',
     inclusions: ['Catamaran Sea Cruise between Islands', 'Beachside Family Cottage Stay', 'Glass-Bottom Coral Boat Ride', 'Port Blair Airport Transfers', 'Daily Breakfast & Dinner'],
-    image: '/destinations/andaman.jpg'
+    image: '/destinations/andaman.jpg',
+    gallery: [
+      '/destinations/andaman.jpg',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85'
+    ]
   }
 ];
 
@@ -782,11 +938,17 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [activeModalImgIdx, setActiveModalImgIdx] = useState(0);
   const [selectedFlyer, setSelectedFlyer] = useState(null);
   const [flyerCategory, setFlyerCategory] = useState('all');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedInclusions, setExpandedInclusions] = useState({});
   const [flyerModalView, setFlyerModalView] = useState('flyer');
+
+  const openPackageModal = (pkg) => {
+    setActiveModalImgIdx(0);
+    setSelectedPackage(pkg);
+  };
 
   const toggleInclusions = (id) => {
     setExpandedInclusions((prev) => ({
@@ -794,6 +956,25 @@ function App() {
       [id]: !prev[id]
     }));
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedPackage) return;
+      const gallery = (selectedPackage.gallery && selectedPackage.gallery.length > 0)
+        ? selectedPackage.gallery
+        : [selectedPackage.image];
+
+      if (e.key === 'Escape') {
+        setSelectedPackage(null);
+      } else if (e.key === 'ArrowLeft') {
+        setActiveModalImgIdx((prev) => (prev > 0 ? prev - 1 : gallery.length - 1));
+      } else if (e.key === 'ArrowRight') {
+        setActiveModalImgIdx((prev) => (prev < gallery.length - 1 ? prev + 1 : 0));
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedPackage]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -1083,37 +1264,6 @@ function App() {
         />
         <div className="hero-overlay"></div>
 
-        {/* 3D Floating Travel Accent Badges with Depth */}
-        <div className="hero-3d-floating-elements" aria-hidden="true">
-          <div className="float-badge float-badge-left-1">
-            <span className="float-badge-icon">✈️</span>
-            <div className="float-badge-text">
-              <strong>Fixed Group Flights</strong>
-              <span>Ahmedabad & Mumbai</span>
-            </div>
-          </div>
-          <div className="float-badge float-badge-right-1">
-            <span className="float-badge-icon">🏰</span>
-            <div className="float-badge-text">
-              <strong>20+ Royal Resorts</strong>
-              <span>Kumbhalgarh & Udaipur</span>
-            </div>
-          </div>
-          <div className="float-badge float-badge-left-2">
-            <span className="float-badge-icon">🛂</span>
-            <div className="float-badge-text">
-              <strong>Fast E-Visa Desk</strong>
-              <span>7-10 Days Worldwide</span>
-            </div>
-          </div>
-          <div className="float-badge float-badge-right-2">
-            <span className="float-badge-icon">🌟</span>
-            <div className="float-badge-text">
-              <strong>15,000+ Guests</strong>
-              <span>★ 4.9 Verified Reviews</span>
-            </div>
-          </div>
-        </div>
 
         <div className="hero-content animate-fade-up">
           <div className="hero-badge-enchanting">
@@ -1424,7 +1574,14 @@ function App() {
                 onMouseMove={handleCardTilt}
                 onMouseLeave={handleCardReset}
               >
-                <div className="package-img-wrap">
+                <div 
+                  className="package-img-wrap"
+                  onClick={() => openPackageModal(pkg)}
+                  title={`Click to view all 4 photos & details for ${pkg.title}`}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => { if (e.key === 'Enter') openPackageModal(pkg); }}
+                >
                   <img 
                     src={pkg.image} 
                     alt={pkg.title} 
@@ -1435,6 +1592,9 @@ function App() {
                     }}
                   />
                   <div className="package-tag">{pkg.tag}</div>
+                  <div className="package-gallery-badge" title="4 High-Resolution Location Photos">
+                    📸 4 Photos
+                  </div>
                   <div className="package-price-overlay">
                     <span className="price-label">Starting from</span>
                     <span className="price-value">{pkg.price}</span>
@@ -1491,11 +1651,11 @@ function App() {
                   <div className="package-card-actions">
                     <button 
                       className="btn-card-details"
-                      onClick={() => setSelectedPackage(pkg)}
-                      title={`View detailed itinerary for ${pkg.title}`}
+                      onClick={() => openPackageModal(pkg)}
+                      title={`View photos & detailed itinerary for ${pkg.title}`}
                     >
                       <IconItinerary size={16} />
-                      <span>View Itinerary</span>
+                      <span>View Photos & Itinerary</span>
                     </button>
                     <button 
                       className="btn-card-wa"
@@ -1972,47 +2132,134 @@ function App() {
         </div>
       </section>
 
-      {/* Package Detail Modal */}
-      {selectedPackage && (
-        <div className="modal-backdrop" onClick={() => setSelectedPackage(null)}>
-          <div className="modal-card" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedPackage(null)}>✕</button>
-            <div className="modal-img-wrap">
-              <img src={selectedPackage.image} alt={selectedPackage.title} />
-              <div className="modal-badge">{selectedPackage.tag}</div>
-            </div>
-            <div className="modal-body">
-              <span className="modal-loc">📍 {selectedPackage.location}</span>
-              <h2>{selectedPackage.title}</h2>
-              <div className="modal-price-row">
-                <span className="modal-duration">⏱️ {selectedPackage.duration}</span>
-                <span className="modal-price">{selectedPackage.price}</span>
-              </div>
-              <p className="modal-desc">{selectedPackage.desc}</p>
-              
-              <h4>Package Inclusions:</h4>
-              <ul className="modal-inclusions">
-                {selectedPackage.inclusions.map((inc, idx) => (
-                  <li key={idx}>✓ {inc}</li>
-                ))}
-              </ul>
+      {/* Package Detail Modal with 4-Photo Multi-Image Gallery */}
+      {selectedPackage && (() => {
+        const gallery = (selectedPackage.gallery && selectedPackage.gallery.length > 0)
+          ? selectedPackage.gallery
+          : [selectedPackage.image];
+        const activeImg = gallery[activeModalImgIdx] || selectedPackage.image;
 
-              <div className="modal-actions">
-                <button 
-                  className="modal-btn-wa"
-                  onClick={() => handleBookOnWhatsApp(selectedPackage.title, selectedPackage.price, selectedPackage.duration)}
-                >
-                  <IconWhatsApp size={18} color="#FFFFFF" />
-                  <span>Inquire on WhatsApp</span>
-                </button>
-                <a href="tel:+919712204028" className="modal-btn-call">
-                  📞 Call Desk (+91 97122 04028)
-                </a>
+        const handlePrevImg = (e) => {
+          e.stopPropagation();
+          setActiveModalImgIdx((prev) => (prev > 0 ? prev - 1 : gallery.length - 1));
+        };
+
+        const handleNextImg = (e) => {
+          e.stopPropagation();
+          setActiveModalImgIdx((prev) => (prev < gallery.length - 1 ? prev + 1 : 0));
+        };
+
+        return (
+          <div className="modal-backdrop" onClick={() => setSelectedPackage(null)}>
+            <div className="modal-card modal-card-gallery" onClick={(e) => e.stopPropagation()}>
+              <button 
+                className="modal-close" 
+                onClick={() => setSelectedPackage(null)}
+                aria-label="Close modal"
+              >✕</button>
+
+              {/* Multi-Photo Gallery Showcase */}
+              <div className="modal-gallery-wrapper">
+                <div className="modal-gallery-main">
+                  <img 
+                    key={activeImg}
+                    src={activeImg} 
+                    alt={`${selectedPackage.title} - Photo ${activeModalImgIdx + 1}`} 
+                    className="modal-gallery-active-img"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = selectedPackage.image || 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85';
+                    }}
+                  />
+                  <div className="modal-badge">{selectedPackage.tag}</div>
+
+                  {gallery.length > 1 && (
+                    <>
+                      <button 
+                        type="button"
+                        className="modal-gallery-arrow modal-gallery-prev" 
+                        onClick={handlePrevImg}
+                        aria-label="Previous photo"
+                        title="Previous photo (or press ← Left Arrow)"
+                      >
+                        ‹
+                      </button>
+                      <button 
+                        type="button"
+                        className="modal-gallery-arrow modal-gallery-next" 
+                        onClick={handleNextImg}
+                        aria-label="Next photo"
+                        title="Next photo (or press → Right Arrow)"
+                      >
+                        ›
+                      </button>
+                      <div className="modal-gallery-counter">
+                        📸 {activeModalImgIdx + 1} / {gallery.length} Photos
+                      </div>
+                    </>
+                  )}
+                </div>
+
+                {/* Clickable 4-Photo Thumbnail Strip */}
+                {gallery.length > 1 && (
+                  <div className="modal-thumbnails-strip" role="tablist" aria-label="Package photo thumbnails">
+                    {gallery.map((thumbUrl, idx) => (
+                      <button
+                        key={idx}
+                        type="button"
+                        className={`modal-thumb-btn ${idx === activeModalImgIdx ? 'active' : ''}`}
+                        onClick={() => setActiveModalImgIdx(idx)}
+                        aria-label={`View photo ${idx + 1}`}
+                        title={`View photo ${idx + 1} of ${gallery.length}`}
+                      >
+                        <img 
+                          src={thumbUrl} 
+                          alt={`Thumbnail ${idx + 1}`} 
+                          onError={(e) => {
+                            e.currentTarget.onerror = null;
+                            e.currentTarget.src = selectedPackage.image;
+                          }}
+                        />
+                        <span className="thumb-idx-badge">{idx + 1}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="modal-body">
+                <span className="modal-loc">📍 {selectedPackage.location}</span>
+                <h2>{selectedPackage.title}</h2>
+                <div className="modal-price-row">
+                  <span className="modal-duration">⏱️ {selectedPackage.duration}</span>
+                  <span className="modal-price">{selectedPackage.price}</span>
+                </div>
+                <p className="modal-desc">{selectedPackage.desc}</p>
+                
+                <h4>Package Inclusions:</h4>
+                <ul className="modal-inclusions">
+                  {selectedPackage.inclusions.map((inc, idx) => (
+                    <li key={idx}>✓ {inc}</li>
+                  ))}
+                </ul>
+
+                <div className="modal-actions">
+                  <button 
+                    className="modal-btn-wa"
+                    onClick={() => handleBookOnWhatsApp(selectedPackage.title, selectedPackage.price, selectedPackage.duration)}
+                  >
+                    <IconWhatsApp size={18} color="#FFFFFF" />
+                    <span>Inquire on WhatsApp</span>
+                  </button>
+                  <a href="tel:+919712204028" className="modal-btn-call">
+                    📞 Call Desk (+91 97122 04028)
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
       {/* Official Flyer Full-Screen Lightbox Modal */}
       {selectedFlyer && (
