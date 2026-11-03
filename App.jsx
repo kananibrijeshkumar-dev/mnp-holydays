@@ -1256,16 +1256,12 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-glow-orb hero-glow-1"></div>
         <div className="hero-glow-orb hero-glow-2"></div>
-        <video 
-          className="hero-bg-video" 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
-          poster="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90"
-        >
-          <source src="/hero-bg-video.mp4" type="video/mp4" />
-        </video>
+        <img 
+          src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=90" 
+          alt="World-Class Travel with MNP Holidays" 
+          className="hero-bg"
+          loading="eager"
+        />
         <div className="hero-overlay"></div>
 
         {/* 3D Floating Travel Accent Badges with Depth */}
@@ -1954,11 +1950,16 @@ function App() {
 
             {/* Main Image Frame Elevated with 3D Depth */}
             <div className="about-img-frame">
-              <img 
-                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
-                alt="MNP Holidays Premium Travel" 
-                className="about-img"
-              />
+              <video 
+                className="about-img about-video" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                poster="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80"
+              >
+                <source src="/hero-bg-video.mp4" type="video/mp4" />
+              </video>
               
               <div className="about-floating-accent-badge accent-badge-top-left">
                 <span className="accent-badge-icon">🌟</span>

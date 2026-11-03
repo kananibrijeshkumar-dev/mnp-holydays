@@ -2100,6 +2100,13 @@
   display: block;
 }
 
+.about-video {
+  background: #070D1E;
+  opacity: 0.88; /* Medium balanced opacity: crystal-clear 3D animation visibility without glare */
+  filter: brightness(0.96) contrast(1.08);
+  pointer-events: none;
+}
+
 /* Floating 3D Accent Badges */
 .about-floating-accent-badge {
   position: absolute;
