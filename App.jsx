@@ -2152,38 +2152,6 @@ function App() {
         </a>
       </aside>
 
-      {/* =======================================================
-          MOBILE PERSISTENT BOTTOM NAVIGATION BAR (FIXED ON SCROLL)
-          ======================================================= */}
-      <nav className="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
-        <a href="#home" className="mobile-bottom-nav-item">
-          <span className="bottom-nav-icon">🏠</span>
-          <span className="bottom-nav-label">Home</span>
-        </a>
-        <a href="#destinations" className="mobile-bottom-nav-item">
-          <span className="bottom-nav-icon">🌍</span>
-          <span className="bottom-nav-label">Packages</span>
-        </a>
-        <a href="#official-flyers" className="mobile-bottom-nav-item">
-          <span className="bottom-nav-icon">📸</span>
-          <span className="bottom-nav-label">Flyers</span>
-          <span className="bottom-nav-pill">19</span>
-        </a>
-        <a href="#contact" className="mobile-bottom-nav-item">
-          <span className="bottom-nav-icon">📍</span>
-          <span className="bottom-nav-label">Offices</span>
-        </a>
-        <a 
-          href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
-          target="_blank" 
-          rel="noreferrer"
-          className="mobile-bottom-nav-item mobile-bottom-wa"
-        >
-          <IconWhatsApp3DBadge size={20} />
-          <span className="bottom-nav-label">WhatsApp</span>
-        </a>
-      </nav>
-
       {/* Footer */}
       <footer id="site-footer">
         <div className="container footer-content">
