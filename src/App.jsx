@@ -2160,7 +2160,7 @@ function App() {
             >
               <div className="form-group">
                 <label>Your Full Name</label>
-                <input type="text" name="name" placeholder="e.g. Brijesh Patel" required />
+                <input type="text" name="name" placeholder="e.g. Nikesh Prajapati" required />
               </div>
               <div className="form-group">
                 <label>WhatsApp / Phone Number</label>
