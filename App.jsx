@@ -178,7 +178,7 @@ export const FLYERS_DATA = [
     desc: 'Fixed departure dates (Dec 2026 to Apr 2027). Includes return flight tickets, daily breakfast and dinner, all transfer sightseeing tickets, and airport pickups.',
     image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp2.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-3',
@@ -200,7 +200,7 @@ export const FLYERS_DATA = [
     desc: 'Fast approvals for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
     image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp4.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-5',
@@ -222,7 +222,7 @@ export const FLYERS_DATA = [
     desc: 'Safe, reliable & hassle-free Dubai visa processing with dedicated documentation assistance and fast approvals.',
     image: '/destinations/dubai.jpg',
     flyer: '/photos/mnp6.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-7',
@@ -233,7 +233,7 @@ export const FLYERS_DATA = [
     desc: 'Family-friendly vacations across Mountains, Beaches, Heritage forts, and scenic Road Trips with comfortable private transport and kid-friendly stays.',
     image: '/destinations/family_vacation.jpg',
     flyer: '/photos/mnp7.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-8',
@@ -244,7 +244,7 @@ export const FLYERS_DATA = [
     desc: 'Seamless corporate travel solutions: group flight bookings, luxury convention hotels, executive AC coaches, team building, and gala DJ nights.',
     image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp8.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-9',
@@ -255,7 +255,7 @@ export const FLYERS_DATA = [
     desc: 'Unforgettable couple vacations to Goa, Udaipur, Manali, and Andaman with candlelight beach dining and private luxury stays.',
     image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp9.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-10',
@@ -266,7 +266,7 @@ export const FLYERS_DATA = [
     desc: 'Tourist Visa, Family Visa, Business Visa, and Student Visa processing with complete documentation and expert file preparation.',
     image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp10.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-11',
@@ -277,7 +277,7 @@ export const FLYERS_DATA = [
     desc: 'Safe & secure flight bookings, exclusive airline deals, quick confirmation, and 24/7 flight customer support.',
     image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp11.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-12',
@@ -288,7 +288,7 @@ export const FLYERS_DATA = [
     desc: 'Stay in comfort, travel in style! Verified 3★, 4★, and 5★ hotels and heritage boutique resorts across India and worldwide.',
     image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp12.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-13',
@@ -299,7 +299,7 @@ export const FLYERS_DATA = [
     desc: 'Comprehensive visa services for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
     image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp13.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-14',
@@ -310,7 +310,7 @@ export const FLYERS_DATA = [
     desc: 'World tour vacations with global destinations, hassle-free visa handling, premium verified hotels, and fully customized holiday plans.',
     image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp14.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171 / 91367 74277'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-15',
@@ -343,7 +343,7 @@ export const FLYERS_DATA = [
     desc: '4 Nights Times Corner Amalfi Hotel Phu Quoc. Includes Grand World Venice water taxi, Vin Pearl Safari, 4 Island speedboat tour, Cable Car, Sunset Town & Kiss Bridge.',
     image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp17.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-18',
@@ -354,7 +354,7 @@ export const FLYERS_DATA = [
     desc: '2N Flower Garden Hanoi, 1N La Regina Royal Cruise (Ha Long Bay), 2N Cicilla Hotel Da Nang. 5 buffet breakfasts, Ninh Binh, Marble Mountain, Hoi An lantern boat & Ba Na Hills.',
     image: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1200&q=85',
     flyer: '/photos/mnp18.jpeg',
-    branches: 'Ahmedabad: 93273 71565 / 98251 79524 | Mumbai: 98980 83171'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 | Mumbai: 98980 83171'
   },
   {
     id: 'fl-19',
@@ -365,7 +365,7 @@ export const FLYERS_DATA = [
     desc: 'Arrival & Sam Sand Dunes Swiss luxury tent, camel safari, jeep dune bashing, Tanot Mata Temple, Longewala Border, Kuldhara abandoned village, Jaisalmer Fort & Patwon Ki Haveli.',
     image: '/destinations/jaisalmer_desert.jpg',
     flyer: '/photos/mnp19.jpeg',
-    branches: 'Ahmedabad: 97122 04028 / 98251 79524'
+    branches: 'Ahmedabad: 97122 04028 / 93273 71565 | Mumbai: 98980 83171'
   }
 ];
 
@@ -839,12 +839,12 @@ function App() {
 
   const handleBookOnWhatsApp = (pkgTitle, pkgPrice, pkgDuration) => {
     const message = `Hello MNP Holidays! I am interested in booking the "${pkgTitle}" package (${pkgDuration} - ${pkgPrice}). Please share the detailed itinerary, inclusions, and best quote.`;
-    window.open(`https://wa.me/919825179624?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/919712204028?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleFlyerWhatsApp = (flyerTitle, flyerPrice) => {
     const message = `Hello MNP Holidays! I saw your official flyer for "${flyerTitle}" (${flyerPrice}). Please share full itinerary details, departure dates, and best quotation.`;
-    window.open(`https://wa.me/919825179624?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/919712204028?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   // Ultra-Smooth 3D Perspective Tilt & Specular Light Reflection
@@ -878,9 +878,9 @@ function App() {
           <div className="top-banner-contacts">
             <span className="banner-branch-group">
               <span className="banner-branch-title">Ahmedabad:</span>
-              <a href="tel:+919825179624" className="banner-contact-link">📞 +91 98251 79624</a>
+              <a href="tel:+919712204028" className="banner-contact-link">📞 +91 97122 04028</a>
               <span className="banner-dot">•</span>
-              <a href="tel:+919712204028" className="banner-contact-link">+91 97122 04028</a>
+              <a href="tel:+919327371565" className="banner-contact-link">+91 93273 71565</a>
             </span>
             <span className="banner-dot banner-dot-desktop">•</span>
             <span className="banner-branch-group">
@@ -919,7 +919,7 @@ function App() {
             <a href="#about" className="nav-link">Why Choose Us</a>
             <a href="#contact" className="nav-link">Contact</a>
             <a 
-              href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
+              href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
               target="_blank" 
               rel="noreferrer"
               className="btn-nav-wa"
@@ -933,7 +933,7 @@ function App() {
           {/* Mobile & Tablet Quick Actions (WhatsApp & Hamburger) */}
           <div className="nav-mobile-controls">
             <a 
-              href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
+              href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
               target="_blank" 
               rel="noreferrer"
               className="btn-nav-wa-mobile"
@@ -996,8 +996,8 @@ function App() {
                   Shop 467/1, TP No. 11, FP 109/1, SF 224, Townplaza, Near Raspan Cross Road, Nikol, Ahmedabad - 382350
                 </div>
                 <div className="mobile-branch-actions">
-                  <a href="tel:+919825179624" className="mobile-branch-call-btn">📞 +91 98251 79624</a>
                   <a href="tel:+919712204028" className="mobile-branch-call-btn">📞 +91 97122 04028</a>
+                  <a href="tel:+919327371565" className="mobile-branch-call-btn">+91 93273 71565</a>
                   <a 
                     href="https://www.google.com/maps/dir/23.0447408,72.6387762/MNP+HOLIDAYS+PVT+LTD,+224,+Town+Plazza,+Raspan+Cross+Rd,+New+India+Colony,+Nicol+Gam,+Nik" 
                     target="_blank" 
@@ -1016,7 +1016,6 @@ function App() {
                 </div>
                 <div className="mobile-branch-actions">
                   <a href="tel:+919898083171" className="mobile-branch-call-btn">📞 +91 98980 83171</a>
-                  <a href="tel:+919136774277" className="mobile-branch-call-btn">📞 +91 91367 74277</a>
                   <a 
                     href="https://www.google.com/maps/search/?api=1&query=Shop+No.8+Rangari+Height+Samarth+Hanuman+Lane+Dr.+A.B.Road+Lal+Baug+Kalachowki+Mumbai+400033" 
                     target="_blank" 
@@ -1032,7 +1031,7 @@ function App() {
 
             <div className="mobile-cta-buttons">
               <a 
-                href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20want%20to%20plan%20a%20trip" 
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20want%20to%20plan%20a%20trip" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="mobile-btn wa"
@@ -1423,7 +1422,7 @@ function App() {
                           price: pkg.price,
                           desc: pkg.desc,
                           tag: pkg.tag,
-                          branches: 'Ahmedabad: 98251 79624 / 97122 04028 | Mumbai: 98980 83171'
+                          branches: 'Ahmedabad: 97122 04028 / 93273 71565 | Mumbai: 98980 83171'
                         });
                       }}
                       title="Click to inspect official promotional brochure"
@@ -1542,7 +1541,7 @@ function App() {
                   ↺ Reset All Filters & View All Packages
                 </button>
                 <a 
-                  href={`https://wa.me/919825179624?text=${encodeURIComponent(`Hello MNP Holidays! I searched for "${searchQuery || 'Custom Destination'}" on your website and would like a custom itinerary & quotation.`)}`}
+                  href={`https://wa.me/919712204028?text=${encodeURIComponent(`Hello MNP Holidays! I searched for "${searchQuery || 'Custom Destination'}" on your website and would like a custom itinerary & quotation.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-empty-whatsapp"
@@ -1673,7 +1672,7 @@ function App() {
                 <li>✓ Dedicated Senior MNP Tour Director On-Ground</li>
               </ul>
               <a 
-                href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20we%20want%20a%20custom%20quote%20for%20a%20Corporate/MICE%20Tour" 
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20we%20want%20a%20custom%20quote%20for%20a%20Corporate/MICE%20Tour" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="btn-service-cta corp"
@@ -1696,7 +1695,7 @@ function App() {
                 <li>✓ Comprehensive Student Medical & Travel Insurance</li>
               </ul>
               <a 
-                href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20we%20want%20a%20quote%20for%20a%20School/College%20Educational%20Tour" 
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20we%20want%20a%20quote%20for%20a%20School/College%20Educational%20Tour" 
                 target="_blank" 
                 rel="noreferrer" 
                 className="btn-service-cta edu"
@@ -1779,7 +1778,6 @@ function App() {
                 <div className="branch-phones-group">
                   <span className="branch-phone-label">Direct Lines:</span>
                   <div className="branch-chips-row">
-                    <a href="tel:+919825179624" className="branch-phone-chip">📞 +91 98251 79624</a>
                     <a href="tel:+919712204028" className="branch-phone-chip">📞 +91 97122 04028</a>
                     <a href="tel:+919327371565" className="branch-phone-chip">+91 93273 71565</a>
                     <a href="tel:+919327130670" className="branch-phone-chip">+91 93271 30670</a>
@@ -1808,7 +1806,6 @@ function App() {
                   <span className="branch-phone-label">Direct Lines:</span>
                   <div className="branch-chips-row">
                     <a href="tel:+919898083171" className="branch-phone-chip mumbai-chip">📞 +91 98980 83171</a>
-                    <a href="tel:+919136774277" className="branch-phone-chip mumbai-chip">📞 +91 91367 74277</a>
                     <a 
                       href="https://www.google.com/maps/search/?api=1&query=Shop+No.8+Rangari+Height+Samarth+Hanuman+Lane+Dr.+A.B.Road+Lal+Baug+Kalachowki+Mumbai+400033" 
                       target="_blank" 
@@ -1836,19 +1833,19 @@ function App() {
               <h4>Connect With Us Across Official Channels:</h4>
               <div className="social-3d-badges-row">
                 <a 
-                  href="tel:+919825179624" 
+                  href="tel:+919712204028" 
                   className="social-3d-btn"
                   title="Direct Phone Call"
                 >
                   <IconPhone3D />
                   <div className="social-3d-meta">
                     <span className="social-name">Calling Desk</span>
-                    <span className="social-detail">+91 98251 79624</span>
+                    <span className="social-detail">+91 97122 04028</span>
                   </div>
                 </a>
 
                 <a 
-                  href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays" 
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="social-3d-btn"
@@ -1907,7 +1904,7 @@ function App() {
                 const type = e.target.type.value;
                 const travelers = e.target.travelers.value;
                 const text = `Hi MNP Holidays! I am requesting a quote:\n\n• Name: ${name}\n• Phone: ${phone}\n• Destination: ${dest}\n• Tour Type: ${type}\n• Travelers: ${travelers}`;
-                window.open(`https://wa.me/919825179624?text=${encodeURIComponent(text)}`, '_blank');
+                window.open(`https://wa.me/919712204028?text=${encodeURIComponent(text)}`, '_blank');
               }}
             >
               <div className="form-group">
@@ -1916,7 +1913,7 @@ function App() {
               </div>
               <div className="form-group">
                 <label>WhatsApp / Phone Number</label>
-                <input type="tel" name="phone" placeholder="e.g. 98251 79624" required />
+                <input type="tel" name="phone" placeholder="e.g. 97122 04028" required />
               </div>
               <div className="form-row">
                 <div className="form-group">
@@ -1980,8 +1977,8 @@ function App() {
                   <IconWhatsApp size={18} color="#FFFFFF" />
                   <span>Inquire on WhatsApp</span>
                 </button>
-                <a href="tel:+919825179624" className="modal-btn-call">
-                  📞 Call Desk (+91 98251 79624)
+                <a href="tel:+919712204028" className="modal-btn-call">
+                  📞 Call Desk (+91 97122 04028)
                 </a>
               </div>
             </div>
@@ -2052,7 +2049,7 @@ function App() {
                   <span>Inquire on WhatsApp</span>
                 </button>
                 <a 
-                  href="tel:+919825179624" 
+                  href="tel:+919712204028" 
                   className="btn-flyer-view"
                   style={{ padding: '0.75rem 1.2rem', textDecoration: 'none' }}
                 >
@@ -2070,24 +2067,24 @@ function App() {
       <aside className="floating-dock" aria-label="Quick 3D Contact and Social Dock">
         {/* Phone Dialer 3D Icon */}
         <a 
-          href="tel:+919825179624" 
+          href="tel:+919712204028" 
           className="dock-item" 
-          title="Direct Phone Call: +91 98251 79624"
+          title="Direct Phone Call: +91 97122 04028"
           aria-label="Call MNP Holidays"
         >
           <div className="dock-icon-wrapper">
             <IconPhone3D />
           </div>
-          <span className="dock-tooltip">Call Desk (+91 98251 79624)</span>
+          <span className="dock-tooltip">Call Desk (+91 97122 04028)</span>
         </a>
 
         {/* WhatsApp 3D Icon */}
         <a 
-          href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20inquire%20about%20a%20tour" 
+          href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20inquire%20about%20a%20tour" 
           target="_blank" 
           rel="noreferrer" 
           className="dock-item dock-pulse" 
-          title="Instant WhatsApp: +91 98251 79624"
+          title="Instant WhatsApp: +91 97122 04028"
           aria-label="Chat on WhatsApp"
         >
           <div className="dock-icon-wrapper">
@@ -2149,7 +2146,7 @@ function App() {
           <span className="bottom-nav-label">Offices</span>
         </a>
         <a 
-          href="https://wa.me/919825179624?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
+          href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20plan%20a%20tour" 
           target="_blank" 
           rel="noreferrer"
           className="mobile-bottom-nav-item mobile-bottom-wa"
@@ -2172,9 +2169,9 @@ function App() {
               <h5>📍 Ahmedabad Head Office (Gujarat)</h5>
               <p>Shop 467/1, TP No. 11, FP 109/1, SF 224, Townplaza, Near Raspan Cross Road, Nikol, Ahmedabad - 382350</p>
               <div className="footer-branch-links">
-                <a href="tel:+919825179624">📞 +91 98251 79624</a>
+                <a href="tel:+919712204028">📞 +91 97122 04028</a>
                 <span>•</span>
-                <a href="tel:+919712204028">+91 97122 04028</a>
+                <a href="tel:+919327371565">+91 93273 71565</a>
                 <span>•</span>
                 <a 
                   href="https://www.google.com/maps/dir/23.0447408,72.6387762/MNP+HOLIDAYS+PVT+LTD,+224,+Town+Plazza,+Raspan+Cross+Rd,+New+India+Colony,+Nicol+Gam,+Nik" 
@@ -2192,8 +2189,6 @@ function App() {
               <p>Shop No.8, Rangari Height, Samarth Hanuman Lane, Dr. A.B.Road, Lal Baug, Kalachowki, Mumbai - 400033</p>
               <div className="footer-branch-links">
                 <a href="tel:+919898083171">📞 +91 98980 83171</a>
-                <span>•</span>
-                <a href="tel:+919136774277">+91 91367 74277</a>
                 <span>•</span>
                 <a 
                   href="https://www.google.com/maps/search/?api=1&query=Shop+No.8+Rangari+Height+Samarth+Hanuman+Lane+Dr.+A.B.Road+Lal+Baug+Kalachowki+Mumbai+400033" 
