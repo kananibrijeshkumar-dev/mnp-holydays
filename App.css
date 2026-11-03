@@ -1908,30 +1908,162 @@
   align-items: center;
 }
 
-.about-img-container {
+.about-visual {
   position: relative;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+/* 3D Animated Background Layer Behind Image */
+.about-3d-backdrop {
+  position: absolute;
+  inset: -28px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-3d-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(48px);
+  opacity: 0.65;
+  animation: orbPulse3D 7s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+.orb-emerald {
+  width: 240px;
+  height: 240px;
+  top: -20px;
+  left: -20px;
+  background: radial-gradient(circle, rgba(37, 211, 102, 0.55) 0%, rgba(37, 211, 102, 0) 70%);
+}
+
+.orb-amber {
+  width: 220px;
+  height: 220px;
+  bottom: -25px;
+  right: -25px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.5) 0%, rgba(245, 158, 11, 0) 70%);
+  animation-duration: 9s;
+  animation-direction: alternate-reverse;
+}
+
+.about-3d-depth-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(37, 211, 102, 0.3);
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.ring-1 {
+  width: 320px;
+  height: 320px;
+  top: -15px;
+  left: -35px;
+  animation: ringSpin3D 24s linear infinite;
+}
+
+.ring-2 {
+  width: 240px;
+  height: 240px;
+  bottom: -15px;
+  right: -25px;
+  border-color: rgba(56, 189, 248, 0.3);
+  animation: ringSpin3D 18s linear infinite reverse;
+}
+
+@keyframes orbPulse3D {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(20px, -20px, 40px) scale(1.15);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate3d(-15px, 15px, -20px) scale(0.95);
+    opacity: 0.6;
+  }
+}
+
+@keyframes ringSpin3D {
+  0% {
+    transform: rotateX(45deg) rotateY(15deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(15deg) rotateZ(360deg);
+  }
+}
+
+.about-img-frame {
+  position: relative;
+  z-index: 2;
+  border-radius: 28px;
+  transform-style: preserve-3d;
+  box-shadow: 0 25px 65px -15px rgba(0, 0, 0, 0.35), 0 0 30px rgba(37, 211, 102, 0.18);
+  animation: aboutFrameFloat3D 6.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes aboutFrameFloat3D {
+  0%, 100% {
+    transform: translateY(0px) rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate3d(1, 1, 0, 1.5deg);
+  }
 }
 
 .about-img {
   width: 100%;
   border-radius: 28px;
-  box-shadow: var(--shadow-md);
   object-fit: cover;
   height: 480px;
+  display: block;
+}
+
+.about-floating-accent-badge {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 0.5rem 1.1rem;
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  transform: translateZ(35px);
+  z-index: 3;
+}
+
+.accent-badge-icon {
+  font-size: 1.05rem;
 }
 
 .about-floating-badge {
   position: absolute;
-  bottom: -1.5rem;
-  right: -1.5rem;
+  bottom: -1.25rem;
+  right: -1.25rem;
   background: white;
   border-radius: 20px;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  padding: 1.4rem 1.9rem;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2), 0 0 25px rgba(37, 211, 102, 0.2);
   display: flex;
   flex-direction: column;
   max-width: 220px;
-  border: 1px solid #F1F5F9;
+  border: 1.5px solid rgba(37, 211, 102, 0.35);
+  transform: translateZ(45px);
+  z-index: 4;
 }
 
 .badge-number {
@@ -3066,13 +3198,30 @@ footer {
     font-size: 0.85rem;
   }
   .about-img {
-    height: 300px;
-    border-radius: 18px;
+    height: 330px;
+    border-radius: 20px;
   }
   .about-floating-badge {
-    position: static;
-    margin-top: 1rem;
-    max-width: 100%;
+    position: absolute;
+    bottom: 0.85rem;
+    right: 0.85rem;
+    margin-top: 0;
+    max-width: 175px;
+    padding: 0.85rem 1.15rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  .about-floating-badge .badge-number {
+    font-size: 1.8rem;
+  }
+  .about-floating-badge .badge-text {
+    font-size: 0.72rem;
+  }
+  .about-floating-accent-badge {
+    top: 0.85rem;
+    left: 0.85rem;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.72rem;
   }
   .inquiry-form-wrapper {
     padding: 1.6rem;
@@ -3923,6 +4072,135 @@ footer {
    ULTRA-PREMIUM 3D DESIGN & BOLD CHARMING ANIMATIONS
    ======================================================== */
 
+/* --- Adjusted 3D Hero Floating Badges (Properly Visible, No Card Overlap) --- */
+.hero-3d-floating-elements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.float-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 0.65rem 1.25rem;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.25);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.float-badge-icon {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.float-badge-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.float-badge-text strong {
+  font-size: 0.86rem;
+  font-family: 'Outfit', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+}
+
+.float-badge-text span {
+  font-size: 0.74rem;
+  color: #38BDF8;
+  font-weight: 600;
+}
+
+/* Positioned safely in open margins so they do not overlap center content */
+.float-badge-left-1 {
+  top: 14%;
+  left: 2%;
+  border-color: rgba(56, 189, 248, 0.6);
+  animation: float3D_1 6.5s ease-in-out infinite;
+}
+
+.float-badge-right-1 {
+  top: 15%;
+  right: 2%;
+  border-color: rgba(245, 158, 11, 0.6);
+  animation: float3D_2 7.2s ease-in-out infinite;
+}
+
+.float-badge-left-2 {
+  bottom: 8%;
+  left: 2%;
+  border-color: rgba(37, 211, 102, 0.6);
+  animation: float3D_3 6.8s ease-in-out infinite;
+}
+
+.float-badge-right-2 {
+  bottom: 8%;
+  right: 2%;
+  border-color: rgba(251, 191, 36, 0.6);
+  animation: float3D_1 7.5s ease-in-out infinite reverse;
+}
+
+@keyframes float3D_1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg) scale(1.02);
+  }
+}
+
+@keyframes float3D_2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-14px) rotate(-2deg) scale(1.03);
+  }
+}
+
+@keyframes float3D_3 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg) scale(1.02);
+  }
+}
+
+@media (max-width: 1250px) {
+  .float-badge {
+    padding: 0.45rem 0.95rem;
+  }
+  .float-badge-text strong {
+    font-size: 0.78rem;
+  }
+  .float-badge-text span {
+    font-size: 0.68rem;
+  }
+  .float-badge-left-1 { top: 9%; left: 1%; }
+  .float-badge-right-1 { top: 10%; right: 1%; }
+  .float-badge-left-2 { bottom: 4%; left: 1%; }
+  .float-badge-right-2 { bottom: 4%; right: 1%; }
+}
+
+@media (max-width: 960px) {
+  .hero-3d-floating-elements {
+    display: none;
+  }
+}
 
 /* --- 3D Depth on Cards & Light Glare --- */
 .package-card,

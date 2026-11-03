@@ -1264,6 +1264,37 @@ function App() {
         />
         <div className="hero-overlay"></div>
 
+        {/* 3D Floating Travel Accent Badges with Depth */}
+        <div className="hero-3d-floating-elements" aria-hidden="true">
+          <div className="float-badge float-badge-left-1">
+            <span className="float-badge-icon">✈️</span>
+            <div className="float-badge-text">
+              <strong>Fixed Group Flights</strong>
+              <span>Ahmedabad & Mumbai</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-right-1">
+            <span className="float-badge-icon">🏰</span>
+            <div className="float-badge-text">
+              <strong>20+ Royal Resorts</strong>
+              <span>Kumbhalgarh & Udaipur</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-left-2">
+            <span className="float-badge-icon">🛂</span>
+            <div className="float-badge-text">
+              <strong>Fast E-Visa Desk</strong>
+              <span>7-10 Days Worldwide</span>
+            </div>
+          </div>
+          <div className="float-badge float-badge-right-2">
+            <span className="float-badge-icon">🌟</span>
+            <div className="float-badge-text">
+              <strong>15,000+ Guests</strong>
+              <span>★ 4.9 Verified Reviews</span>
+            </div>
+          </div>
+        </div>
 
         <div className="hero-content animate-fade-up">
           <div className="hero-badge-enchanting">
@@ -1899,14 +1930,26 @@ function App() {
       <section id="about" className="about section-padding">
         <div className="container about-grid">
           <div className="about-visual">
-            <img 
-              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
-              alt="MNP Holidays Premium Travel" 
-              className="about-img"
-            />
-            <div className="about-floating-badge">
-              <span className="badge-number">12+</span>
-              <span className="badge-text">Years of Travel Excellence in Gujarat</span>
+            <div className="about-3d-backdrop" aria-hidden="true">
+              <div className="about-3d-glow-orb orb-emerald"></div>
+              <div className="about-3d-glow-orb orb-amber"></div>
+              <div className="about-3d-depth-ring ring-1"></div>
+              <div className="about-3d-depth-ring ring-2"></div>
+            </div>
+            <div className="about-img-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
+                alt="MNP Holidays Premium Travel" 
+                className="about-img"
+              />
+              <div className="about-floating-accent-badge">
+                <span className="accent-badge-icon">🌟</span>
+                <span className="accent-badge-text">100% Verified Partners</span>
+              </div>
+              <div className="about-floating-badge">
+                <span className="badge-number">12+</span>
+                <span className="badge-text">Years of Travel Excellence in Gujarat</span>
+              </div>
             </div>
           </div>
           
