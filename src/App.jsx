@@ -1930,22 +1930,42 @@ function App() {
       <section id="about" className="about section-padding">
         <div className="container about-grid">
           <div className="about-visual">
-            <div className="about-3d-backdrop" aria-hidden="true">
-              <div className="about-3d-glow-orb orb-emerald"></div>
-              <div className="about-3d-glow-orb orb-amber"></div>
-              <div className="about-3d-depth-ring ring-1"></div>
-              <div className="about-3d-depth-ring ring-2"></div>
+            {/* High-Visibility 3D Stage Background */}
+            <div className="about-3d-stage" aria-hidden="true">
+              {/* Slanted 3D Backing Canvas Plate */}
+              <div className="about-3d-backing-card">
+                <div className="backing-card-grid"></div>
+                <div className="backing-glow-orb backing-orb-1"></div>
+                <div className="backing-glow-orb backing-orb-2"></div>
+                <div className="backing-card-badge">
+                  <span className="backing-badge-dot"></span>
+                  <span>MNP LUXURY TRAVEL SUITE</span>
+                </div>
+              </div>
+
+              {/* 3D Animated Orbital Rings */}
+              <div className="about-3d-orbit ring-outer"></div>
+              <div className="about-3d-orbit ring-inner"></div>
             </div>
+
+            {/* Main Image Frame Elevated with 3D Depth */}
             <div className="about-img-frame">
               <img 
                 src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=80" 
                 alt="MNP Holidays Premium Travel" 
                 className="about-img"
               />
-              <div className="about-floating-accent-badge">
+              
+              <div className="about-floating-accent-badge accent-badge-top-left">
                 <span className="accent-badge-icon">🌟</span>
                 <span className="accent-badge-text">100% Verified Partners</span>
               </div>
+
+              <div className="about-floating-accent-badge accent-badge-top-right">
+                <span className="accent-badge-icon">✈️</span>
+                <span className="accent-badge-text">Daily Flight Deals</span>
+              </div>
+
               <div className="about-floating-badge">
                 <span className="badge-number">12+</span>
                 <span className="badge-text">Years of Travel Excellence in Gujarat</span>
