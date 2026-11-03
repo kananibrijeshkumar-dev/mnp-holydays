@@ -297,7 +297,7 @@ export const FLYERS_DATA = [
     tag: 'Explore World Hassle-Free',
     price: '7 to 10 Working Days',
     desc: 'Comprehensive visa services for Singapore, Bali, Vietnam, Cambodia, Hong Kong, Azerbaijan, Kazakhstan, Georgia, and Uzbekistan.',
-    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85',
+    image: '/destinations/tourist_visa_showcase.jpg',
     flyer: '/photos/mnp13.jpeg',
     branches: 'Ahmedabad: 97122 04028 / 93273 71565 / 93271 30670 | Mumbai: 98980 83171'
   },
