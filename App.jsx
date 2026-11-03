@@ -55,6 +55,34 @@ export const IconWhatsApp3D = () => (
   </svg>
 );
 
+// 3D Mini Badge Icon for WhatsApp Desk with specular shine and depth
+export const IconWhatsApp3DBadge = ({ size = 22 }) => (
+  <span className="wa-3d-badge" style={{ width: size, height: size }}>
+    <svg viewBox="0 0 36 36" width={size} height={size} fill="none" xmlns="http://www.w3.org/2000/svg" className="wa-3d-svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="waDeskGlow" cx="30%" cy="25%" r="75%">
+          <stop offset="0%" stopColor="#86EFAC" />
+          <stop offset="35%" stopColor="#25D366" />
+          <stop offset="100%" stopColor="#0E755E" />
+        </radialGradient>
+        <linearGradient id="waDeskShine" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
+        </linearGradient>
+        <filter id="waDeskShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="2" stdDeviation="2" floodColor="#064E3B" floodOpacity="0.5" />
+        </filter>
+      </defs>
+      <circle cx="18" cy="18" r="16" fill="url(#waDeskGlow)" filter="url(#waDeskShadow)" />
+      <ellipse cx="18" cy="9" rx="9" ry="4" fill="url(#waDeskShine)" />
+      {/* Official WhatsApp Chat Bubble */}
+      <path d="M18 8C12.5 8 8 12.5 8 18C8 19.8 8.5 21.6 9.5 23.1L8.2 27.5L12.7 26.3C14.2 27.4 16.1 28 18 28C23.5 28 28 23.5 28 18C28 12.5 23.5 8 18 8Z" fill="#FFFFFF" />
+      {/* Official WhatsApp Phone Receiver */}
+      <path d="M14.6 13.5C14.3 12.9 14.1 12.9 13.8 12.9C13.5 12.9 13.2 12.9 13 13.2C12.7 13.5 12 14.1 12 15.4C12 16.7 12.9 18 13.1 18.2C13.2 18.4 15 21.2 17.6 22.3C20 23.3 20.4 23.1 20.9 23C21.4 22.9 22.5 22.3 22.8 21.5C23 20.8 23 20.2 22.9 20.1C22.8 20 22.6 19.9 22.3 19.8C22 19.6 20.7 19 20.4 18.9C20.2 18.8 20 18.7 19.8 19C19.6 19.4 19 20.1 18.8 20.3C18.6 20.5 18.4 20.6 18.1 20.4C17.8 20.3 16.9 20 15.8 19C15 18.3 14.4 17.4 14.2 17.1C14 16.8 14.2 16.6 14.3 16.5C14.5 16.3 14.7 16.1 14.8 15.9C15 15.7 15 15.6 15.1 15.4C15.2 15.2 15.1 15.1 15.1 14.9C15 14.8 14.8 13.9 14.6 13.5Z" fill="#128C7E" />
+    </svg>
+  </span>
+);
+
 // Official High-Precision WhatsApp Vector Icon
 export const IconWhatsApp = ({ size = 18, color = "#FFFFFF", className = "" }) => (
   <svg 
@@ -925,7 +953,7 @@ function App() {
               className="btn-nav-wa"
             >
               <span className="wa-dot"></span>
-              <span className="wa-icon">💬</span>
+              <IconWhatsApp3DBadge size={22} />
               <span className="wa-text">WhatsApp Desk</span>
             </a>
           </div>
@@ -940,7 +968,7 @@ function App() {
               aria-label="Instant WhatsApp Inquiry"
             >
               <span className="wa-dot"></span>
-              <span className="wa-icon">💬</span>
+              <IconWhatsApp3DBadge size={18} />
               <span className="wa-mobile-text">WhatsApp</span>
             </a>
             <button 
