@@ -2125,7 +2125,7 @@ function App() {
                 </a>
 
                 <a 
-                  href="https://www.instagram.com/mnpholidays/" 
+                  href="https://www.instagram.com/mnp_holidays/" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="social-3d-btn"
@@ -2134,12 +2134,12 @@ function App() {
                   <IconInstagram3D />
                   <div className="social-3d-meta">
                     <span className="social-name">Instagram</span>
-                    <span className="social-detail">@mnpholidays</span>
+                    <span className="social-detail">@mnp_holidays</span>
                   </div>
                 </a>
 
                 <a 
-                  href="https://www.facebook.com/mnpholidays/" 
+                  href="https://www.facebook.com/profile.php?id=61570853468348" 
                   target="_blank" 
                   rel="noreferrer" 
                   className="social-3d-btn"
@@ -2148,7 +2148,7 @@ function App() {
                   <IconFacebook3D />
                   <div className="social-3d-meta">
                     <span className="social-name">Facebook</span>
-                    <span className="social-detail">/mnpholidays</span>
+                    <span className="social-detail">MNP Holidays</span>
                   </div>
                 </a>
               </div>
@@ -2448,22 +2448,22 @@ function App() {
 
         {/* Instagram 3D Icon */}
         <a 
-          href="https://www.instagram.com/mnpholidays/" 
+          href="https://www.instagram.com/mnp_holidays/" 
           target="_blank" 
           rel="noreferrer" 
           className="dock-item" 
-          title="Follow us on Instagram"
+          title="Follow us on Instagram (@mnp_holidays)"
           aria-label="Instagram Profile"
         >
           <div className="dock-icon-wrapper">
             <IconInstagram3D />
           </div>
-          <span className="dock-tooltip">Follow on Instagram</span>
+          <span className="dock-tooltip">Follow @mnp_holidays</span>
         </a>
 
         {/* Facebook 3D Icon */}
         <a 
-          href="https://www.facebook.com/mnpholidays/" 
+          href="https://www.facebook.com/profile.php?id=61570853468348" 
           target="_blank" 
           rel="noreferrer" 
           className="dock-item" 
