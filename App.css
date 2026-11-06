@@ -116,11 +116,51 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
   text-decoration: none;
   flex-shrink: 0;
   white-space: nowrap;
   user-select: none;
+}
+
+.brand-logo-img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 9px;
+  background: #FFFFFF;
+  padding: 3px 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
+}
+
+.logo:hover .brand-logo-img {
+  transform: scale(1.06) rotate(-2deg);
+}
+
+.verified-luxury-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.22) 0%, rgba(245, 158, 11, 0.12) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: #FCD34D;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-left: 0.2rem;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.15);
+}
+
+@media (max-width: 1080px) {
+  .verified-luxury-badge {
+    display: none;
+  }
 }
 
 .logo-text-group {
@@ -453,9 +493,26 @@
 .mobile-menu-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-bottom: 0.65rem;
+  gap: 0.85rem;
+  padding-bottom: 0.85rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-menu-logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2px 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.mobile-menu-brand-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
 .mobile-menu-brand {
@@ -467,13 +524,15 @@
 }
 
 .mobile-menu-badge {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: #38BDF8;
   font-weight: 600;
   background: rgba(14, 165, 233, 0.12);
   padding: 0.2rem 0.55rem;
   border-radius: 6px;
   border: 1px solid rgba(14, 165, 233, 0.25);
+  display: inline-block;
+  width: fit-content;
 }
 
 .mobile-nav-items {
@@ -3101,6 +3160,31 @@ footer {
   color: white;
 }
 
+.footer-brand-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  background: #FFFFFF;
+  border-radius: 9px;
+  padding: 3px 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+
+.footer-brand-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
 .footer-brand p {
   font-size: 0.88rem;
   color: #64748B;
@@ -4195,6 +4279,94 @@ footer {
   .stat-separator {
     display: none;
   }
+
+  /* Style 9: Monaco Riviera Mobile App Bottom Bar */
+  body {
+    padding-bottom: 74px;
+  }
+
+  .floating-dock {
+    bottom: 5.6rem !important;
+    right: 1rem !important;
+  }
+
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 68px;
+    background: rgba(15, 37, 87, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    padding: 0 0.5rem;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.45);
+  }
+
+  .mobile-bottom-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    color: #94A3B8;
+    text-decoration: none;
+    font-size: 0.68rem;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    transition: all 0.25s ease;
+    flex: 1;
+    text-align: center;
+  }
+
+  .mobile-bottom-tab:active,
+  .mobile-bottom-tab:hover,
+  .mobile-bottom-tab.active {
+    color: #FFFFFF;
+  }
+
+  .bottom-tab-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+
+  .bottom-tab-label {
+    letter-spacing: 0.2px;
+  }
+
+  .mobile-tab-flight-center {
+    position: relative;
+    top: -12px;
+  }
+
+  .center-flight-orb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF4820 0%, #FF3A1A 50%, #D82200 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(255, 58, 26, 0.55), 0 0 0 4px #0F2557;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    margin: 0 auto 2px;
+  }
+
+  .center-flight-icon {
+    font-size: 1.45rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transform: rotate(-45deg);
+    display: inline-block;
+  }
+
+  .mobile-tab-flight-center:active .center-flight-orb {
+    transform: scale(0.94);
+  }
 }
 
 /* ========================================================
@@ -4514,5 +4686,1042 @@ footer {
   transform: scale(1.15) translateX(-6px) !important;
 }
 
+/* ========================================================
+   TRIP.COM INSPIRED QUICK-HUB & EXCLUSIVE DEAL CONSOLE
+   ======================================================== */
+.trip-hub-section {
+  padding: 1.5rem 0 2rem 0;
+  position: relative;
+  z-index: 20;
+  margin-top: -3.5rem;
+}
 
+.trip-hub-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  box-shadow: 0 16px 48px rgba(2, 132, 199, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.6rem;
+  border: 1px solid rgba(2, 132, 199, 0.12);
+}
+
+/* 8-Service Grid */
+.trip-service-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.trip-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.6rem 0.4rem;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+}
+
+.trip-service-item:hover {
+  background: #F0F9FF;
+  transform: translateY(-3px);
+}
+
+.trip-service-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.45rem;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.trip-service-item:hover .trip-service-icon-wrap {
+  background: #0284C7;
+  transform: scale(1.08);
+}
+
+.trip-service-icon {
+  font-size: 1.6rem;
+}
+
+.trip-service-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #1E293B;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Quick City Tags */
+.trip-tags-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.trip-tags-row::-webkit-scrollbar {
+  display: none;
+}
+
+.trip-tags-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  margin-right: 0.2rem;
+}
+
+.trip-tag-pill {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  color: #334155;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.trip-tag-pill:hover,
+.trip-tag-pill.active {
+  background: #0284C7;
+  color: #FFFFFF;
+  border-color: #0284C7;
+}
+
+.trip-tag-map {
+  background: #FFF7ED !important;
+  color: #FF5722 !important;
+  border-color: #FFEDD5 !important;
+  font-weight: 800 !important;
+  text-decoration: none;
+}
+
+.trip-tag-map:hover {
+  background: #FF5722 !important;
+  color: #FFFFFF !important;
+}
+
+/* Sub-features Row */
+.trip-sub-features {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.9rem 0;
+  border-top: 1px solid #F1F5F9;
+  border-bottom: 1px solid #F1F5F9;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trip-sub-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  transition: background 0.2s ease;
+}
+
+.trip-sub-feature-item:hover {
+  background: #F1F5F9;
+}
+
+.trip-sub-circle {
+  font-size: 1.15rem;
+}
+
+.trip-sub-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+/* Perforated Voucher Banner */
+.trip-voucher-banner {
+  background: linear-gradient(135deg, #FFF7ED 0%, #EFF6FF 100%);
+  border: 1px solid #FFEDD5;
+  border-radius: 18px;
+  padding: 1.1rem 1.4rem;
+  margin-top: 1.25rem;
+}
+
+.trip-voucher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.trip-voucher-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #0F172A;
+}
+
+.trip-voucher-sub {
+  color: #EA580C;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.trip-btn-claim-all {
+  background: #0284C7;
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.45rem 1.1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.trip-btn-claim-all:hover {
+  background: #0369A1;
+  transform: translateY(-1px);
+}
+
+.trip-tickets-row {
+  display: flex;
+  gap: 0.9rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 0.2rem;
+}
+
+.trip-ticket-card {
+  position: relative;
+  background: #FFFFFF;
+  border: 1.5px solid #BAE6FD;
+  border-radius: 12px;
+  padding: 0.65rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  min-width: 175px;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trip-ticket-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.16);
+}
+
+.hotel-ticket {
+  border-color: #FECACA !important;
+}
+
+.tour-ticket {
+  border-color: #BBF7D0 !important;
+}
+
+.ticket-cutout {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #FDF9F6;
+  border-radius: 50%;
+  border: 1.5px solid #BAE6FD;
+}
+
+.ticket-cutout.top {
+  top: -7px;
+  left: 65%;
+}
+
+.ticket-cutout.bottom {
+  bottom: -7px;
+  left: 65%;
+}
+
+.ticket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-type {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0284C7;
+}
+
+.hotel-ticket .ticket-type {
+  color: #DC2626;
+}
+
+.tour-ticket .ticket-type {
+  color: #16A34A;
+}
+
+.ticket-val {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #0F172A;
+}
+
+.ticket-divider {
+  width: 1px;
+  height: 28px;
+  background: #E2E8F0;
+  border-left: 1px dashed #94A3B8;
+}
+
+.ticket-action {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  background: #0284C7;
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+}
+
+.hotel-ticket .ticket-action {
+  background: #DC2626;
+}
+
+.tour-ticket .ticket-action {
+  background: #16A34A;
+}
+
+/* Dual Promotional Banners */
+.trip-dual-promo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.trip-promo-banner {
+  position: relative;
+  height: 175px;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease;
+}
+
+.trip-promo-banner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+}
+
+.banner-thailand {
+  background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1000&q=80');
+}
+
+.banner-megasale {
+  background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80');
+}
+
+.promo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.85) 100%);
+  z-index: 1;
+}
+
+.promo-text-wrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.promo-brand-tag {
+  color: #93C5FD;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.promo-headline {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.promo-highlight {
+  color: #FDE047;
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.promo-subhead {
+  color: #93C5FD;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.promo-dates {
+  color: #FDE047;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.promo-chips {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.2rem 0;
+}
+
+.promo-chips span {
+  background: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+}
+
+.promo-pill-super {
+  background: #FF5722;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-top: 0.35rem;
+}
+
+.promo-pill-white {
+  background: #FFFFFF;
+  color: #FF5722;
+  font-size: 0.78rem;
+  font-weight: 900;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-top: 0.35rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .trip-service-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .trip-hub-section {
+    margin-top: -1.5rem;
+    padding: 0.5rem 0 1.5rem 0;
+  }
+  .trip-hub-card {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+  .trip-service-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+  }
+  .trip-service-icon-wrap {
+    width: 44px;
+    height: 44px;
+  }
+  .trip-service-icon {
+    font-size: 1.35rem;
+  }
+  .trip-service-title {
+    font-size: 0.72rem;
+  }
+  .trip-dual-promo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Trip.com Signature 5-Tab Mobile Bottom Navigation --- */
+.trip-bottom-bar {
+  background: #FFFFFF !important;
+  border-top: 1px solid #E2E8F0 !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08) !important;
+  padding: 0.5rem 0.25rem 0.6rem 0.25rem !important;
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.trip-bottom-bar .mobile-bottom-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: #64748B;
+  padding: 0.2rem 0.4rem;
+}
+
+.trip-bottom-bar .mobile-bottom-tab.active {
+  color: #0284C7 !important;
+}
+
+.tab-icon-wrap {
+  position: relative;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.tab-badge-unread {
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  background: #FF5722;
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 0.1rem 0.35rem;
+  line-height: 1;
+}
+
+.tab-active-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #FF5722;
+  margin-top: 3px;
+}
+
+/* --- Floating Mac App Preview Launcher --- */
+.btn-mac-app-preview {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  background: linear-gradient(135deg, #0284C7 0%, #FF5722 100%);
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  padding: 0.75rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.5);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-mac-app-preview:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(255, 87, 34, 0.4);
+}
+
+.mac-preview-icon {
+  font-size: 1.25rem;
+}
+
+/* Phone Simulator Frame Modal */
+.simulator-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.phone-simulator-frame {
+  width: 380px;
+  height: 780px;
+  max-height: 92vh;
+  background: #0284C7;
+  border-radius: 46px;
+  border: 10px solid #1E293B;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6), 0 0 0 2px #475569;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-notch-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.4rem;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #0284C7;
+}
+
+.phone-notch {
+  width: 100px;
+  height: 18px;
+  background: #1E293B;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.sim-app-header {
+  padding: 0.4rem 1.2rem 0.8rem 1.2rem;
+  background: #0284C7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sim-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #FFFFFF;
+}
+
+.sim-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 2px;
+}
+
+.sim-brand strong {
+  font-size: 1.1rem;
+  display: block;
+  line-height: 1;
+}
+
+.sim-sub {
+  font-size: 0.65rem;
+  color: #BAE6FD;
+}
+
+.sim-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sim-badge-coin {
+  background: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+  border-radius: 12px;
+}
+
+.sim-call-btn, .sim-close-btn {
+  background: rgba(255, 255, 255, 0.22);
+  color: #FFFFFF;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sim-scroll-body {
+  flex: 1;
+  background: #F3F4F6;
+  overflow-y: auto;
+  padding-bottom: 70px;
+}
+
+.sim-search-bar {
+  background: #FFFFFF;
+  margin: 0.8rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  gap: 0.4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(2, 132, 199, 0.15);
+}
+
+.sim-search-bar input,
+.sim-search-bar input:focus,
+.sim-search-bar input:focus-visible,
+.sim-search-bar input:hover,
+.sim-search-bar input:active {
+  flex: 1;
+  border: none !important;
+  outline: none !important;
+  outline-width: 0 !important;
+  outline-color: transparent !important;
+  outline-style: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -webkit-appearance: none !important;
+  font-size: 0.78rem;
+  color: #0F172A;
+  background: transparent !important;
+}
+
+.sim-btn-search {
+  background: #0284C7;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 14px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+.sim-service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  background: #FFFFFF;
+  padding: 0.8rem 0.5rem;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  margin-bottom: 0.6rem;
+}
+
+.sim-service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.sim-icon-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #F0F9FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.sim-service-item span {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.sim-tags-scroll {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0 0.8rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 0.6rem;
+}
+
+.sim-tag-pill {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  color: #475569;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.sim-voucher-card {
+  margin: 0.6rem 0.8rem;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 0.75rem;
+  border: 1px solid #FFEDD5;
+}
+
+.sim-voucher-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 0.4rem;
+}
+
+.sim-claim-tag {
+  background: #0284C7;
+  color: #FFFFFF;
+  padding: 0.15rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.65rem;
+}
+
+.sim-tickets-row {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+}
+
+.sim-ticket {
+  background: #EFF6FF;
+  border: 1px solid #BAE6FD;
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.68rem;
+  color: #0284C7;
+  white-space: nowrap;
+}
+
+.sim-ticket.red {
+  background: #FEF2F2;
+  border-color: #FECACA;
+  color: #DC2626;
+}
+
+.sim-ticket.green {
+  background: #F0FDF4;
+  border-color: #BBF7D0;
+  color: #16A34A;
+}
+
+.sim-dual-banners {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.sim-promo-card {
+  flex: 1;
+  height: 110px;
+  border-radius: 12px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.sim-promo-card.thailand {
+  background: linear-gradient(135deg, #0F172A 0%, #0369A1 100%);
+}
+
+.sim-promo-card.mega {
+  background: linear-gradient(135deg, #1E1B4B 0%, #4338CA 100%);
+}
+
+.sim-promo-card h4 {
+  font-size: 0.88rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+.sim-promo-card p {
+  font-size: 0.7rem;
+  color: #FDE047;
+  margin: 0;
+}
+
+.sim-super-badge {
+  background: #FF5722;
+  font-size: 0.6rem;
+  font-weight: 900;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.sim-white-badge {
+  background: #FFFFFF;
+  color: #FF5722;
+  font-size: 0.6rem;
+  font-weight: 900;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  align-self: flex-start;
+}
+
+.sim-feed-title {
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sim-feed-title strong {
+  font-size: 0.82rem;
+  color: #0F172A;
+}
+
+.sim-feed-title span {
+  font-size: 0.68rem;
+  color: #64748B;
+}
+
+.sim-masonry-feed {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 0.8rem;
+}
+
+.sim-masonry-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sim-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.sim-card img {
+  width: 100%;
+  height: 95px;
+  object-fit: cover;
+  display: block;
+}
+
+.sim-card-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.sim-card-badge {
+  font-size: 0.58rem;
+  font-weight: 900;
+  color: #0284C7;
+  text-transform: uppercase;
+}
+
+.sim-card-badge.gold {
+  color: #D97706;
+}
+
+.sim-card-badge.orange {
+  color: #FF5722;
+}
+
+.sim-card-badge.purple {
+  color: #7C3AED;
+}
+
+.sim-card-info h5 {
+  font-size: 0.72rem;
+  margin: 0;
+  color: #0F172A;
+  line-height: 1.2;
+}
+
+.sim-author {
+  font-size: 0.62rem;
+  color: #64748B;
+}
+
+.sim-price {
+  font-size: 0.78rem;
+  font-weight: 900;
+  color: #0284C7;
+}
+
+.sim-floating-ai-pill {
+  position: absolute;
+  bottom: 58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  border: 1.5px solid #BAE6FD;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  border-radius: 20px;
+  padding: 0.35rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #0284C7;
+  white-space: nowrap;
+}
+
+.sim-bottom-bar {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  border-top: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem 0.2rem;
+}
+
+.sim-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.15rem;
+  color: #64748B;
+}
+
+.sim-tab label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.sim-tab.active {
+  color: #0284C7;
+}
+
+.sim-tab.active label {
+  color: #0284C7;
+  font-weight: 800;
+}
+
+.sim-dot {
+  width: 3px;
+  height: 3px;
+  background: #FF5722;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.phone-home-indicator {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 4px;
+  background: #0F172A;
+  border-radius: 2px;
+}
 

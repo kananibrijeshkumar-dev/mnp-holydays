@@ -944,6 +944,7 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedInclusions, setExpandedInclusions] = useState({});
   const [flyerModalView, setFlyerModalView] = useState('flyer');
+  const [showAppPreview, setShowAppPreview] = useState(false);
 
   const openPackageModal = (pkg) => {
     setActiveModalImgIdx(0);
@@ -1108,11 +1109,15 @@ function App() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <a href="#home" className="logo" aria-label="MNP Holidays Home">
+            <img src="/logo.png" alt="MNP Holidays Pvt. Ltd." className="brand-logo-img" />
             <div className="logo-text-group">
               <span className="logo-accent">MNP</span>
               <span className="logo-name">Holidays</span>
             </div>
             <span className="logo-reg-tag">Pvt. Ltd.</span>
+            <span className="verified-luxury-badge">
+              <span>👑</span> Verified Luxury Operator
+            </span>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -1166,8 +1171,11 @@ function App() {
         {mobileMenuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-header">
-              <span className="mobile-menu-brand">MNP Holidays</span>
-              <span className="mobile-menu-badge">Pvt. Ltd. • Official Tours</span>
+              <img src="/logo.png" alt="MNP Holidays" className="mobile-menu-logo" />
+              <div className="mobile-menu-brand-info">
+                <span className="mobile-menu-brand">MNP Holidays</span>
+                <span className="mobile-menu-badge">Pvt. Ltd. • Official Luxury Tours</span>
+              </div>
             </div>
             
             <div className="mobile-nav-items">
@@ -1469,6 +1477,196 @@ function App() {
             <div className="stat-item" onMouseMove={handleCardTilt} onMouseLeave={handleCardReset}>
               <strong>4.9 ★</strong>
               <span>Customer Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          TRIP.COM STYLE QUICK-HUB & EXCLUSIVE DEAL CONSOLE
+          ======================================================== */}
+      <section className="trip-hub-section">
+        <div className="container">
+          <div className="trip-hub-card">
+            {/* Quick 8-Service Grid: 100% Authentic MNP Services */}
+            <div className="trip-service-grid">
+              {[
+                { title: 'Tour Packages', icon: '🏖️', query: 'All-Inclusive Curated Tour Packages' },
+                { title: 'Fixed Flights', icon: '✈️', query: 'Fixed Group Departure Flights (Singapore, Malaysia & Thailand)' },
+                { title: 'Rajasthan', icon: '🏰', query: 'Udaipur, Kumbhalgarh & Jaisalmer Royal Tours' },
+                { title: 'International', icon: '🌏', query: 'Thailand, Vietnam, Bali, Dubai & Europe Tours' },
+                { title: 'Fast E-Visas', icon: '📋', query: 'Tourist Visa & E-Visa Fast Assistance (7-10 Days)' },
+                { title: '19 Flyers', icon: '📸', query: '19 Official MNP Tour Flyers & Brochures' },
+                { title: 'Corporate MICE', icon: '💼', query: 'Corporate MICE & Executive Team Building Offsites' },
+                { title: 'College Tours', icon: '🎓', query: 'School & College Group Educational Expeditions' },
+              ].map((svc) => (
+                <a
+                  key={svc.title}
+                  href={`https://wa.me/919712204028?text=${encodeURIComponent('Hello MNP Holidays! I would like to inquire about: ' + svc.query)}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="trip-service-item"
+                >
+                  <div className="trip-service-icon-wrap">
+                    <span className="trip-service-icon">{svc.icon}</span>
+                  </div>
+                  <span className="trip-service-title">{svc.title}</span>
+                </a>
+              ))}
+            </div>
+
+            {/* Quick City Navigation Chips: Authentic MNP Destinations */}
+            <div className="trip-tags-row">
+              <span className="trip-tags-label">Popular Hubs:</span>
+              {['All', 'Thailand', 'Udaipur', 'Vietnam', 'Dubai', 'Kashmir', 'Jaisalmer', 'Kumbhalgarh', 'Bali', 'Goa', 'Andaman'].map((city) => (
+                <button
+                  key={city}
+                  className={`trip-tag-pill ${searchQuery.toLowerCase() === city.toLowerCase() || (city === 'All' && !searchQuery) ? 'active' : ''}`}
+                  onClick={() => {
+                    setSearchQuery(city === 'All' ? '' : city);
+                    setSelectedCategory('all');
+                    document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  {city}
+                </button>
+              ))}
+              <a
+                href="https://maps.google.com/?q=MNP+Holidays+Ahmedabad"
+                target="_blank"
+                rel="noreferrer"
+                className="trip-tag-pill trip-tag-map"
+              >
+                📍 Map
+              </a>
+            </div>
+
+            {/* Trip.com Sub-Features Row: Authentic MNP Offerings */}
+            <div className="trip-sub-features">
+              {[
+                { label: 'Deals', icon: '🏷️', link: '#destinations' },
+                { label: '19 Flyers', icon: '📸', link: '#official-flyers' },
+                { label: '20+ Resorts', icon: '🏰', link: 'https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20share%20Kumbhalgarh%20and%20Udaipur%20resort%20options' },
+                { label: 'Fast Visas', icon: '📋', link: 'https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20need%20Fast%20Visa%20assistance' },
+                { label: 'Custom Plan', icon: '🧭', link: 'https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20create%20a%20custom%20trip%20itinerary%20for%20me' },
+              ].map((f) => (
+                <a
+                  key={f.label}
+                  href={f.link}
+                  target={f.link.startsWith('http') ? '_blank' : '_self'}
+                  rel="noreferrer"
+                  className="trip-sub-feature-item"
+                >
+                  <div className="trip-sub-circle">{f.icon}</div>
+                  <span className="trip-sub-label">{f.label}</span>
+                </a>
+              ))}
+            </div>
+
+            {/* Perforated Voucher Discounts Banner */}
+            <div className="trip-voucher-banner">
+              <div className="trip-voucher-header">
+                <div className="trip-voucher-title-wrap">
+                  <span className="trip-gift-emoji">🎁</span>
+                  <strong>New Traveler Discounts Available</strong>
+                  <span className="trip-voucher-sub">• Instant Savings on 2026-2027 Departures</span>
+                </div>
+                <a
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20claim%20all%20new%20user%20discount%20vouchers"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="trip-btn-claim-all"
+                >
+                  Claim All
+                </a>
+              </div>
+
+              <div className="trip-tickets-row">
+                <a
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20claim%203%25%20off%20flight%20departure%20coupon"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="trip-ticket-card flight-ticket"
+                >
+                  <div className="ticket-cutout top"></div>
+                  <div className="ticket-cutout bottom"></div>
+                  <div className="ticket-info">
+                    <span className="ticket-type">✈️ Flights</span>
+                    <strong className="ticket-val">3% off</strong>
+                  </div>
+                  <div className="ticket-divider"></div>
+                  <span className="ticket-action">Use</span>
+                </a>
+
+                <a
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20claim%2010%25%20off%20hotel%20resort%20coupon"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="trip-ticket-card hotel-ticket"
+                >
+                  <div className="ticket-cutout top"></div>
+                  <div className="ticket-cutout bottom"></div>
+                  <div className="ticket-info">
+                    <span className="ticket-type">🏨 Hotels</span>
+                    <strong className="ticket-val">10% off</strong>
+                  </div>
+                  <div className="ticket-divider"></div>
+                  <span className="ticket-action">Use</span>
+                </a>
+
+                <a
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20claim%2010%25%20off%20tour%20package%20coupon"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="trip-ticket-card tour-ticket"
+                >
+                  <div className="ticket-cutout top"></div>
+                  <div className="ticket-cutout bottom"></div>
+                  <div className="ticket-info">
+                    <span className="ticket-type">🏖️ Tours</span>
+                    <strong className="ticket-val">10% off</strong>
+                  </div>
+                  <div className="ticket-divider"></div>
+                  <span className="ticket-action">Use</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Dual Promotional Sale Banners (Side-by-Side) */}
+            <div className="trip-dual-promo-grid">
+              <a
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20want%20the%20Go%20Thailand%20Super%20Sale%2050%25%20off%20package"
+                target="_blank"
+                rel="noreferrer"
+                className="trip-promo-banner banner-thailand"
+              >
+                <div className="promo-overlay"></div>
+                <div className="promo-text-wrap">
+                  <span className="promo-brand-tag">MNP.Holidays</span>
+                  <h3 className="promo-headline">GO THAILAND</h3>
+                  <p className="promo-highlight">Up to 50% off</p>
+                  <span className="promo-pill-super">SUPER SALE</span>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20want%20details%20for%20the%20Mega%20Sale%20of%20the%20Year%20Flights%20and%20Hotels"
+                target="_blank"
+                rel="noreferrer"
+                className="trip-promo-banner banner-megasale"
+              >
+                <div className="promo-overlay"></div>
+                <div className="promo-text-wrap">
+                  <h3 className="promo-headline">MEGA SALE</h3>
+                  <span className="promo-subhead">OF THE YEAR</span>
+                  <span className="promo-dates">⏰ 11 NOV - 14 NOV</span>
+                  <div className="promo-chips">
+                    <span>✈️ Flights</span>
+                    <span>🏨 Hotels</span>
+                  </div>
+                  <span className="promo-pill-white">UP TO 50% OFF</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -2481,7 +2679,10 @@ function App() {
       <footer id="site-footer">
         <div className="container footer-content">
           <div className="footer-brand">
-            <span className="logo-accent">MNP</span> Holidays Pvt. Ltd.
+            <div className="footer-brand-title-wrap">
+              <img src="/logo.png" alt="MNP Holidays Pvt. Ltd." className="footer-logo-img" />
+              <span className="footer-brand-title"><span className="logo-accent">MNP</span> Holidays Pvt. Ltd.</span>
+            </div>
             <p>Your premier tour operator in Ahmedabad & Mumbai for Domestic trending tours, International vacations, Group Departures, Visas, Corporate MICE, School & College tours, and Honeymoons.</p>
           </div>
 
@@ -2531,6 +2732,358 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* Trip.com Signature Mobile App Bottom Bar (5 Tabs) */}
+      <nav className="mobile-bottom-nav trip-bottom-bar" aria-label="Mobile App Navigation">
+        <a href="#home" className="mobile-bottom-tab active">
+          <div className="tab-icon-wrap">
+            <span className="bottom-tab-icon">🏠</span>
+          </div>
+          <span className="bottom-tab-label">Home</span>
+          <span className="tab-active-dot"></span>
+        </a>
+        <a 
+          href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20have%20an%20inquiry" 
+          target="_blank" 
+          rel="noreferrer" 
+          className="mobile-bottom-tab"
+        >
+          <div className="tab-icon-wrap">
+            <span className="bottom-tab-icon">✉️</span>
+            <span className="tab-badge-unread">1</span>
+          </div>
+          <span className="bottom-tab-label">Messages</span>
+        </a>
+        <a href="#official-flyers" className="mobile-bottom-tab">
+          <div className="tab-icon-wrap">
+            <span className="bottom-tab-icon">👥</span>
+          </div>
+          <span className="bottom-tab-label">Community</span>
+        </a>
+        <a href="#destinations" className="mobile-bottom-tab">
+          <div className="tab-icon-wrap">
+            <span className="bottom-tab-icon">🧳</span>
+          </div>
+          <span className="bottom-tab-label">My Trips</span>
+        </a>
+        <a href="#contact" className="mobile-bottom-tab">
+          <div className="tab-icon-wrap">
+            <span className="bottom-tab-icon">👤</span>
+          </div>
+          <span className="bottom-tab-label">Sign In</span>
+        </a>
+      </nav>
+
+      {/* Floating Mac App Preview Launcher Button */}
+      <button 
+        className="btn-mac-app-preview" 
+        onClick={() => setShowAppPreview(true)}
+        title="Preview Mobile App on Mac"
+      >
+        <span className="mac-preview-icon">📱</span>
+        <span className="mac-preview-text">Preview Mobile App</span>
+      </button>
+
+      {/* Interactive Mac Phone Simulator Modal */}
+      {showAppPreview && (
+        <div className="simulator-modal-backdrop" onClick={() => setShowAppPreview(false)}>
+          <div className="phone-simulator-frame" onClick={(e) => e.stopPropagation()}>
+            {/* Phone Notch & Status Bar */}
+            <div className="phone-notch-bar">
+              <span className="phone-status-time">9:41</span>
+              <div className="phone-notch"></div>
+              <span className="phone-status-icons">5G 📶 🔋</span>
+            </div>
+
+            {/* Simulated Mobile App Window Header */}
+            <div className="sim-app-header">
+              <div className="sim-brand">
+                <img src="/logo.png" alt="MNP Holidays" className="sim-logo" />
+                <div>
+                  <strong>MNP<span style={{ color: '#FF9800' }}>.Holidays</span></strong>
+                  <span className="sim-sub">Official Tours</span>
+                </div>
+              </div>
+              <div className="sim-header-right">
+                <span className="sim-badge-coin">🪙 Deals</span>
+                <a href="tel:+919712204028" className="sim-call-btn">📞</a>
+                <button className="sim-close-btn" onClick={() => setShowAppPreview(false)} title="Close Preview">✕</button>
+              </div>
+            </div>
+
+            {/* Scrollable Simulated Mobile Content */}
+            <div className="sim-scroll-body">
+              {/* Trip.com Pill Search Bar */}
+              <div className="sim-search-bar">
+                <span className="sim-search-icon">🔍</span>
+                <input 
+                  type="text" 
+                  placeholder="Search destinations, hotels, flights..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+                <button className="sim-btn-search">Search</button>
+              </div>
+
+              {/* 8-Service Grid: 100% Authentic MNP Services */}
+              <div className="sim-service-grid">
+                {[
+                  { name: 'Packages', icon: '🏖️', query: 'Tour Packages' },
+                  { name: 'Flights', icon: '✈️', query: 'Fixed Flight Group Departures' },
+                  { name: 'Rajasthan', icon: '🏰', query: 'Rajasthan Heritage Tours' },
+                  { name: 'International', icon: '🌏', query: 'International Tours' },
+                  { name: 'E-Visas', icon: '📋', query: 'Tourist Visa / E-Visa Fast Assistance' },
+                  { name: '19 Flyers', icon: '📸', query: '19 Official Flyers' },
+                  { name: 'Corporate', icon: '💼', query: 'Corporate MICE & Offsites' },
+                  { name: 'Colleges', icon: '🎓', query: 'School & College Group Expeditions' },
+                ].map((s) => (
+                  <div 
+                    key={s.name} 
+                    className="sim-service-item"
+                    onClick={() => {
+                      if (s.name === 'Packages' || s.name === 'Rajasthan' || s.name === 'International') {
+                        setSearchQuery(s.name === 'Packages' ? '' : s.name);
+                      } else {
+                        window.open(`https://wa.me/919712204028?text=${encodeURIComponent('Hello MNP Holidays! I would like details about: ' + s.query)}`, '_blank');
+                      }
+                    }}
+                  >
+                    <div className="sim-icon-circle">{s.icon}</div>
+                    <span>{s.name}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Quick Tags: Authentic MNP Destinations */}
+              <div className="sim-tags-scroll">
+                {['All', 'Thailand', 'Udaipur', 'Vietnam', 'Dubai', 'Kashmir', 'Jaisalmer', 'Kumbhalgarh', 'Bali', 'Goa', 'Andaman'].map((t) => (
+                  <span 
+                    key={t} 
+                    className={`sim-tag-pill ${searchQuery.toLowerCase() === t.toLowerCase() || (t === 'All' && !searchQuery) ? 'active' : ''}`}
+                    onClick={() => setSearchQuery(t === 'All' ? '' : t)}
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {/* Vouchers Banner: Authentic MNP Special Offers */}
+              <div className="sim-voucher-card">
+                <div className="sim-voucher-top">
+                  <span>🎁 New User Discounts Available</span>
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20would%20like%20to%20claim%20all%20discount%20vouchers"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-claim-tag"
+                  >
+                    Claim All
+                  </a>
+                </div>
+                <div className="sim-tickets-row">
+                  <div className="sim-ticket">✈️ Flights <strong>3% off</strong></div>
+                  <div className="sim-ticket red">🏨 Hotels <strong>10% off</strong></div>
+                  <div className="sim-ticket green">🏖️ Tours <strong>10% off</strong></div>
+                </div>
+              </div>
+
+              {/* Dual Promo Banners: Authentic MNP Top Deals */}
+              <div className="sim-dual-banners">
+                <a 
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20am%20interested%20in%20Thailand%204N/5D%20Tour%20Package%20for%20₹14,999"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="sim-promo-card thailand"
+                >
+                  <span className="sim-promo-tag">MNP.Holidays</span>
+                  <h4>GO THAILAND</h4>
+                  <p>4N/5D • ₹14,999</p>
+                  <span className="sim-super-badge">SUPER SALE</span>
+                </a>
+                <a 
+                  href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20am%20interested%20in%20Magical%20Udaipur%20Group%20Tour%20for%20₹7,999"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="sim-promo-card mega"
+                >
+                  <span className="sim-promo-tag">MAGICAL UDAIPUR</span>
+                  <h4>2N/3D GROUP</h4>
+                  <p>ONLY ₹7,999</p>
+                  <span className="sim-white-badge">BESTSELLER</span>
+                </a>
+              </div>
+
+              {/* Recommendations Title */}
+              <div className="sim-feed-title">
+                <strong>🔥 Popular Holiday Recommendations</strong>
+                <span>Official MNP Tour Packages</span>
+              </div>
+
+              {/* 2-Column Waterfall Cards: Authentic MNP Packages & Real Photos */}
+              <div className="sim-masonry-feed">
+                <div className="sim-masonry-col">
+                  {/* Thailand 4N/5D */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20details%20for%20Thailand%204N/5D%20Package%20(₹14,999)"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=600&q=80" alt="Thailand Coral Island" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge orange">SUPER SALE</span>
+                      <h5>Thailand 4N/5D Coral Island & Yacht</h5>
+                      <span className="sim-author">📍 Pattaya & Bangkok</span>
+                      <strong className="sim-price">₹14,999 <small>/person</small></strong>
+                    </div>
+                  </a>
+
+                  {/* Udaipur Royal Heritage */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20details%20for%20Magical%20Udaipur%20Group%20Tour%20(₹7,999)"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="/destinations/udaipur.jpg" alt="Udaipur City Palace" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge gold">ROYAL HIT</span>
+                      <h5>Magical Udaipur 2N/3D Group Tour</h5>
+                      <span className="sim-author">📍 Udaipur & Shrinathji</span>
+                      <strong className="sim-price">₹7,999 <small>/person</small></strong>
+                    </div>
+                  </a>
+
+                  {/* Jaisalmer Desert Camp */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20details%20for%20Jaisalmer%20Desert%20Camp"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="/destinations/jaisalmer_desert.jpg" alt="Jaisalmer Thar Desert Camp" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge gold">DESERT HIT</span>
+                      <h5>Jaisalmer Luxury Swiss Tent & Safari</h5>
+                      <span className="sim-author">📍 Sam Sand Dunes, Thar</span>
+                      <strong className="sim-price">₹25,500 <small>/couple</small></strong>
+                    </div>
+                  </a>
+                </div>
+
+                <div className="sim-masonry-col">
+                  {/* Vietnam 3 Cities */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20details%20for%20Vietnam%203%20Cities%20Tour%20(₹59,999)"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="/destinations/vietnam_bridge.jpg" alt="Vietnam Ba Na Hills Golden Bridge" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge blue">TRENDING</span>
+                      <h5>Vietnam 3 Cities: Hanoi, Da Nang & Saigon</h5>
+                      <span className="sim-author">📍 Vietnam 7D/6N</span>
+                      <strong className="sim-price">₹59,999 <small>/person</small></strong>
+                    </div>
+                  </a>
+
+                  {/* Kashmir Paradise */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20details%20for%20Heavenly%20Kashmir%20Tour%20(₹18,999)"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="/destinations/kashmir.jpg" alt="Kashmir Dal Lake Houseboat" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge green">PARADISE</span>
+                      <h5>Kashmir Dal Lake & Gulmarg Gondola</h5>
+                      <span className="sim-author">📍 Srinagar & Gulmarg</span>
+                      <strong className="sim-price">₹18,999 <small>/person</small></strong>
+                    </div>
+                  </a>
+
+                  {/* Kumbhalgarh Resorts */}
+                  <a 
+                    href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20please%20send%20rates%20for%20Kumbhalgarh%20Top%20Luxury%20Resorts"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="sim-card"
+                  >
+                    <img src="/destinations/kumbhalgarh.jpg" alt="Kumbhalgarh Luxury Resorts" />
+                    <div className="sim-card-info">
+                      <span className="sim-card-badge gold">20+ RESORTS</span>
+                      <h5>Kumbhalgarh Fort & Luxury Resorts</h5>
+                      <span className="sim-author">📍 Kumbhalgarh Valley</span>
+                      <strong className="sim-price">Best Rates <small>Guaranteed</small></strong>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Concierge Pill in Simulator */}
+            <a 
+              href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays,%20I%20am%20using%20the%20app%20and%20need%20assistance"
+              target="_blank"
+              rel="noreferrer"
+              className="sim-floating-ai-pill"
+            >
+              <span className="sim-mic-icon">💬</span>
+              <span>WhatsApp Concierge (97122 04028)</span>
+            </a>
+
+            {/* Phone Bottom Tab Bar: Authentic MNP Navigation */}
+            <div className="sim-bottom-bar">
+              <div className="sim-tab active" onClick={() => setSearchQuery('')}>
+                <span>🏠</span>
+                <label>Home</label>
+                <div className="sim-dot"></div>
+              </div>
+              <a 
+                href="https://wa.me/919712204028?text=Hello%20MNP%20Holidays"
+                target="_blank"
+                rel="noreferrer"
+                className="sim-tab"
+              >
+                <span>✉️</span>
+                <label>Messages</label>
+              </a>
+              <div 
+                className="sim-tab"
+                onClick={() => {
+                  setShowAppPreview(false);
+                  document.getElementById('official-flyers')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                <span>📸</span>
+                <label>19 Flyers</label>
+              </div>
+              <div 
+                className="sim-tab"
+                onClick={() => {
+                  setShowAppPreview(false);
+                  document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                <span>🧳</span>
+                <label>Packages</label>
+              </div>
+              <a 
+                href="tel:+919712204028"
+                className="sim-tab"
+              >
+                <span>👤</span>
+                <label>Sign In</label>
+              </a>
+            </div>
+
+            {/* Phone Bottom Home Bar */}
+            <div className="phone-home-indicator"></div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
