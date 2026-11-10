@@ -1145,10 +1145,14 @@ function App() {
     });
   };
 
-  // URL auto-open check for ?crm=true or #crm
+  // Auto-launch CRM if visiting crm.mnpholidays.com or with ?crm=true
   useEffect(() => {
-    if (typeof window !== 'undefined' && (window.location.search.includes('crm') || window.location.hash.includes('crm'))) {
-      setShowCrmPortal(true);
+    if (typeof window !== 'undefined') {
+      const isCrmSubdomain = window.location.hostname.startsWith('crm.');
+      const hasCrmParam = window.location.search.includes('crm') || window.location.hash.includes('crm');
+      if (isCrmSubdomain || hasCrmParam) {
+        setShowCrmPortal(true);
+      }
     }
   }, []);
 
