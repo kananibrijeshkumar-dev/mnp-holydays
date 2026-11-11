@@ -6518,4 +6518,826 @@ footer {
   transform: translateY(-1px);
 }
 
+/* ========================================================
+   MNP PRIVATE TRAVEL CRM - ENTERPRISE MODULES
+   Pipeline Kanban, Tour Calendar, Follow-ups Hub & Analytics
+   ======================================================== */
+
+/* CRM Sub-Navigation Tabs Bar */
+.mnp-crm-subnav {
+  background: #08152F;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.crm-subnav-btn {
+  background: transparent;
+  color: #94A3B8;
+  border: 1px solid transparent;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.5rem 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.crm-subnav-btn:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.crm-subnav-btn.active {
+  color: #FFFFFF;
+  background: #0F2557;
+  border-color: #FF6B00;
+  box-shadow: 0 2px 8px rgba(255, 107, 0, 0.25);
+}
+
+.crm-badge-count {
+  background: #FF6B00;
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 9999px;
+  font-weight: 800;
+}
+
+.crm-subnav-right-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ========================================================
+   1. VISUAL SALES PIPELINE (KANBAN BOARD)
+   ======================================================== */
+.mnp-crm-pipeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.mnp-crm-pipeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pipeline-title-group h3 {
+  color: #0F2557;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pipeline-title-group p {
+  color: #64748B;
+  font-size: 0.8rem;
+  margin: 2px 0 0 0;
+}
+
+.mnp-crm-kanban-board {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(280px, 1fr));
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  align-items: flex-start;
+  scrollbar-width: thin;
+}
+
+.mnp-crm-kanban-col {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 14px rgba(15, 37, 87, 0.05);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 230px);
+  min-height: 480px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.kanban-col-header {
+  padding: 0.85rem 1rem;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #F8FAFC;
+}
+
+.kanban-col-header.new { border-bottom-color: #0284C7; }
+.kanban-col-header.quote { border-bottom-color: #8B5CF6; }
+.kanban-col-header.followup { border-bottom-color: #FF6B00; }
+.kanban-col-header.visa { border-bottom-color: #0D9488; }
+.kanban-col-header.confirmed { border-bottom-color: #10B981; }
+.kanban-col-header.completed { border-bottom-color: #F59E0B; }
+
+.kanban-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.kanban-col-title {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: #0F172A;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.kanban-col-count {
+  background: #E2E8F0;
+  color: #0F2557;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.kanban-col-value {
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 700;
+}
+
+.kanban-cards-list {
+  padding: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.kanban-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.kanban-card:hover {
+  transform: translateY(-2px);
+  border-color: #0F2557;
+  box-shadow: 0 8px 18px rgba(15, 37, 87, 0.09);
+}
+
+.kanban-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.kanban-client-name {
+  font-weight: 800;
+  color: #0F2557;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.kanban-lead-id {
+  font-size: 0.68rem;
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.kanban-dest-badge {
+  color: #0284C7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  line-height: 1.25;
+}
+
+.kanban-metrics-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.76rem;
+  color: #475569;
+}
+
+.kanban-budget {
+  font-weight: 800;
+  font-size: 0.92rem;
+  color: #FF6B00;
+}
+
+.kanban-followup-pill {
+  background: #FEF3C7;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.kanban-followup-pill.urgent {
+  background: #FEE2E2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.kanban-agent-pill {
+  font-size: 0.68rem;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.kanban-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #F1F5F9;
+}
+
+.btn-kanban-action {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  border: 1px solid #CBD5E1;
+  background: #FFFFFF;
+  color: #0F2557;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+
+.btn-kanban-action.wa {
+  background: #25D366;
+  color: #FFFFFF;
+  border-color: #25D366;
+}
+
+.btn-kanban-action.wa:hover {
+  background: #1EBE5D;
+}
+
+.btn-kanban-stage-move {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  color: #0F2557;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+}
+
+.btn-kanban-stage-move:hover {
+  background: #0F2557;
+  color: #FFFFFF;
+}
+
+/* ========================================================
+   2. INTERACTIVE TOUR CALENDAR VIEW
+   ======================================================== */
+.mnp-crm-calendar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mnp-crm-calendar-header {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 1rem 1.4rem;
+  border: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cal-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cal-nav-btn {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  color: #0F2557;
+  font-weight: 800;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cal-nav-btn:hover {
+  background: #0F2557;
+  color: #FFFFFF;
+}
+
+.cal-month-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0F2557;
+  min-width: 180px;
+  text-align: center;
+}
+
+.cal-legend-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cal-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.cal-legend-dot.departure { background: #0284C7; }
+.cal-legend-dot.followup { background: #FF6B00; }
+.cal-legend-dot.payment { background: #10B981; }
+
+.mnp-crm-calendar-grid-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 14px rgba(15, 37, 87, 0.05);
+  overflow: hidden;
+}
+
+.mnp-crm-cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #0F2557;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.7rem 0;
+}
+
+.mnp-crm-cal-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid #E2E8F0;
+}
+
+.cal-day-cell {
+  min-height: 110px;
+  border-right: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #FFFFFF;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.cal-day-cell:nth-child(7n) {
+  border-right: none;
+}
+
+.cal-day-cell:hover {
+  background: #F8FAFC;
+}
+
+.cal-day-cell.other-month {
+  background: #F8FAFC;
+  opacity: 0.45;
+}
+
+.cal-day-cell.today {
+  background: rgba(255, 107, 0, 0.04);
+}
+
+.cal-day-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cal-day-number {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1E293B;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.cal-day-cell.today .cal-day-number {
+  background: #FF6B00;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.cal-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cal-event-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: transform 0.1s;
+}
+
+.cal-event-pill:hover {
+  transform: scale(1.02);
+}
+
+.cal-event-pill.departure {
+  background: rgba(2, 132, 199, 0.14);
+  color: #0284C7;
+  border: 1px solid rgba(2, 132, 199, 0.3);
+}
+
+.cal-event-pill.followup {
+  background: rgba(255, 107, 0, 0.14);
+  color: #EA580C;
+  border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.cal-event-pill.payment {
+  background: rgba(16, 185, 129, 0.14);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* ========================================================
+   3. DEDICATED FOLLOW-UPS & REMINDERS HUB
+   ======================================================== */
+.mnp-crm-followups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.followup-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.followup-metric-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.followup-metric-card.urgent { border-left: 4px solid #EF4444; }
+.followup-metric-card.today { border-left: 4px solid #FF6B00; }
+.followup-metric-card.upcoming { border-left: 4px solid #0284C7; }
+.followup-metric-card.completed { border-left: 4px solid #10B981; }
+
+.followup-metric-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.followup-metric-card.urgent .followup-metric-icon { background: #FEE2E2; color: #DC2626; }
+.followup-metric-card.today .followup-metric-icon { background: #FFEDD5; color: #EA580C; }
+.followup-metric-card.upcoming .followup-metric-icon { background: #E0F2FE; color: #0284C7; }
+.followup-metric-card.completed .followup-metric-icon { background: #D1FAE5; color: #059669; }
+
+.followup-metric-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.followup-metric-num {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.followup-metric-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+}
+
+.followups-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.followup-chips-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.followup-chip {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.followup-chip.active {
+  background: #0F2557;
+  color: #FFFFFF;
+  border-color: #0F2557;
+}
+
+.followups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.followup-task-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(15, 37, 87, 0.04);
+  transition: all 0.2s;
+  flex-wrap: wrap;
+}
+
+.followup-task-card:hover {
+  border-color: #0F2557;
+  box-shadow: 0 6px 16px rgba(15, 37, 87, 0.08);
+}
+
+.followup-task-card.is-completed {
+  opacity: 0.65;
+  background: #F8FAFC;
+}
+
+.followup-task-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.followup-check-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #CBD5E1;
+  background: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.followup-check-btn.checked {
+  background: #10B981;
+  border-color: #10B981;
+}
+
+.followup-task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.followup-client-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.followup-client-name {
+  font-weight: 800;
+  color: #0F2557;
+  font-size: 0.95rem;
+}
+
+.followup-due-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.followup-due-tag.urgent { background: #FEE2E2; color: #DC2626; }
+.followup-due-tag.today { background: #FFEDD5; color: #EA580C; }
+.followup-due-tag.upcoming { background: #E0F2FE; color: #0284C7; }
+.followup-due-tag.completed { background: #D1FAE5; color: #059669; }
+
+.followup-dest-info {
+  font-size: 0.8rem;
+  color: #64748B;
+  font-weight: 600;
+}
+
+.followup-note-text {
+  font-size: 0.82rem;
+  color: #1E293B;
+  background: #F1F5F9;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  margin-top: 0.2rem;
+  display: inline-block;
+}
+
+.followup-task-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* ========================================================
+   4. BRANCH & AGENT PERFORMANCE ANALYTICS
+   ======================================================== */
+.mnp-crm-analytics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.analytics-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.2rem;
+}
+
+.analytics-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid #E2E8F0;
+  padding: 1.3rem;
+  box-shadow: 0 4px 14px rgba(15, 37, 87, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.analytics-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #F1F5F9;
+  padding-bottom: 0.75rem;
+}
+
+.analytics-card-title {
+  font-weight: 800;
+  font-size: 1rem;
+  color: #0F2557;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.analytics-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #475569;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed #F1F5F9;
+}
+
+.analytics-stat-row strong {
+  color: #0F172A;
+  font-weight: 800;
+}
+
+.dest-rank-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.dest-rank-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.dest-rank-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #E2E8F0;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.dest-rank-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FF6B00 0%, #EA580C 100%);
+  border-radius: 9999px;
+}
+
+@media (max-width: 900px) {
+  .mnp-crm-kanban-board {
+    grid-template-columns: repeat(6, 260px);
+  }
+}
+
+
 
