@@ -5826,6 +5826,32 @@ footer {
   border: 2px solid rgba(15, 37, 87, 0.15);
 }
 
+/* Dedicated Standalone CRM Application (for crm.mnpholidays.com) */
+.mnp-crm-standalone-app {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  background: #070D1E;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+}
+
+.mnp-crm-standalone-app .mnp-crm-portal {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
 /* CRM Top Navigation */
 .mnp-crm-topbar {
   background: linear-gradient(135deg, #070D1E 0%, #0F2557 60%, #1E3A8A 100%);
